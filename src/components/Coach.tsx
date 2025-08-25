@@ -5,11 +5,7 @@ import Image from 'next/image'
 export default function Coach() {
   return (
     <section id="about" className="relative h-[1600px] px-4 sm:px-6 lg:px-8 overflow-hidden bg-transparent flex items-center justify-center">
-      {/* Background with subtle lighting effects */}
-      <div className="absolute inset-0">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
-      </div>
+
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto text-center">

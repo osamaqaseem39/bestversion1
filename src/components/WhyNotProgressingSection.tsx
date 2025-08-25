@@ -29,12 +29,7 @@ export default function WhyNotProgressingSection() {
 
   return (
     <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-transparent min-h-screen">
-      {/* Background with glow effects */}
-      <div className="absolute inset-0">
-        {/* Subtle glows in corners */}
-        <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
-      </div>
+
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto">
@@ -52,8 +47,6 @@ export default function WhyNotProgressingSection() {
 
         {/* Feature Cards */}
         <div className="relative mb-16">
-          {/* Generic glow behind entire cards section */}
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/15 to-blue-500/10 rounded-3xl blur-2xl opacity-60"></div>
           
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8">
             {reasons.map((reason, index) => (

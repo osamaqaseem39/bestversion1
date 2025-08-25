@@ -113,17 +113,7 @@ export default function TrainingSection() {
 
   return (
     <section ref={sectionRef} id="method" className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-transparent min-h-screen flex items-center justify-center">
-      {/* Background with glow effects */}
-      <div className="absolute inset-0">
-        {/* Main glow effect - positioned under cards */}
-        <div className={`absolute left-1/2 top-1/4 w-[700px] h-[700px] bg-gradient-to-br from-[#1B1E3E] via-[#1B1E3E]/80 to-blue-500/10 rounded-full blur-3xl transition-all duration-2000 transform -translate-x-1/2 -translate-y-1/2 mt-96 ${
-          isVisible ? 'opacity-100 scale-100' : 'opacity-50 scale-75'
-        }`}></div>
-        {/* Additional fade spread */}
-        <div className={`absolute left-1/2 top-1/2 w-[900px] h-[900px] bg-gradient-to-br from-[#1B1E3E]/30 to-transparent rounded-full blur-2xl transition-all duration-2000 delay-300 transform -translate-x-1/2 -translate-y-1/2 mt-96 ${
-          isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-75'
-        }`}></div>
-      </div>
+
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto text-center">

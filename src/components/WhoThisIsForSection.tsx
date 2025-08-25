@@ -34,13 +34,7 @@ export default function WhoThisIsForSection() {
 
   return (
     <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-transparent min-h-screen">
-      {/* Background with glow effects */}
-      <div className="absolute inset-0">
-        {/* Left side glow */}
-        <div className="absolute left-0 top-0 w-96 h-full bg-gradient-to-b from-blue-500/20 via-purple-500/20 to-blue-500/20 blur-3xl"></div>
-        {/* Additional subtle glows */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
-      </div>
+
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto">

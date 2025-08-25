@@ -107,7 +107,6 @@ export default function Header() {
                   alt="Best Version 1 Logo"
                   width={100}
                   height={100}
-                  className="w-40 h-40"
                 />
               </div>
 

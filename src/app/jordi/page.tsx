@@ -25,7 +25,7 @@ const JordiPage = () => {
           <div className="relative mb-12">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-blue-600 to-blue-800">
               <Image
-                src="/jordi.jpg"
+                src="/jordi about.png"
                 alt="Jordi Roura"
                 width={800}
                 height={600}
