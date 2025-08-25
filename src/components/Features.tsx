@@ -1,0 +1,129 @@
+'use client'
+
+import Image from 'next/image'
+
+export default function Features() {
+  const features = [
+    {
+      image: "/Tag 1.png",
+      text: "GET FASTER"
+    },
+    {
+      image: "/Tag 2.png",
+      text: "BEAT THE DEFENDER"
+    },
+    {
+      image: "/Tag 3.png",
+      text: "FOLLOW ALONG COURSES"
+    },
+    {
+      image: "/Tag 4.png",
+      text: "IMPROVED FOOTWORK"
+    },
+    {
+      image: "/Tag 5.png",
+      text: "LEARN STRATEGY"
+    },
+    {
+      image: "/Tag 6.png",
+      text: "IMPROVED FOOTWORK"
+    },
+    {
+      image: "/Tag 7.png",
+      text: "ELITE CONE DRILLS"
+    },
+    {
+      image: "/Tag 8.png",
+      text: "IMPROVED FOOTWORK"
+    },
+    {
+      image: "/Tag 9.png",
+      text: "ELITE CONE DRILLS"
+    },
+    {
+      image: "/Tag 10.png",
+      text: "24/7 PRO COACH FEEDBACK"
+    },
+    {
+      image: "/Tag 11.png",
+      text: "IMPROVE KICK UPS"
+    },
+    {
+      image: "/Tag 12.png",
+      text: "BETTER BALL CONTROL"
+    },
+    {
+      image: "/Tag 1.png",
+      text: "GET FASTER"
+    },
+    {
+      image: "/Tag 2.png",
+      text: "BEAT THE DEFENDER"
+    },
+    {
+      image: "/Tag 3.png",
+      text: "FOLLOW ALONG COURSES"
+    },
+    {
+      image: "/Tag 4.png",
+      text: "IMPROVED FOOTWORK"
+    }
+  ]
+
+  return (
+    <section className="relative max-w-8xl mx-auto overflow-hidden bg-transparent">
+      {/* Background with subtle gradient */}
+      <div className="absolute inset-0">
+        <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-purple-500/5 rounded-full blur-3xl"></div>
+      </div>
+
+      {/* Features Grid - Two Parallel Rows */}
+      <div className="relative z-10 max-w-8xl mx-auto w-full">
+        {/* Top Row */}
+        <div className="flex justify-between items-center gap-0 mb-0 w-full transform rotate-[-5deg] relative z-20">
+          {features.slice(0, 8).map((feature, index) => (
+            <div
+              key={index}
+              className="bg-transparent hover:scale-105 transition-all duration-300 flex-1"
+            >
+              {/* Card Content */}
+              <div className="relative">
+                {/* Tag Image */}
+                <Image
+                  src={feature.image}
+                  alt={feature.text}
+                  width={350}
+                  height={250}
+                  className="object-contain drop-shadow-2xl"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom Row */}
+        <div className="flex justify-between items-center gap-0 w-full transform rotate-[5deg] relative z-10 -mt-56">
+          {features.slice(8, 16).map((feature, index) => (
+            <div
+              key={index + 8}
+              className="bg-transparent hover:scale-105 transition-all duration-300 flex-1"
+            >
+              {/* Card Content */}
+              <div className="relative">
+                {/* Tag Image */}
+                <Image
+                  src={feature.image}
+                  alt={feature.text}
+                  width={350}
+                  height={250}
+                  className="object-contain drop-shadow-2xl"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+} 
