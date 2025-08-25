@@ -36,7 +36,7 @@ const NicoPage = () => {
             </div>
             <div className=" text-center">
               <h2 className="font-poppins text-white" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '100%', letterSpacing: '0%' }}>
-                From Miami to Spain: The Modern Player's Journey to Elite Development
+                From Miami to Spain: The Modern Player&apos;s Journey to Elite Development
               </h2>
             </div>
           </div>
@@ -97,7 +97,7 @@ const NicoPage = () => {
               </h3>
             </div>
             <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
-              Nico's playing career gave him firsthand experience with the evolution of modern football training and methodology. 
+              Nico&apos;s playing career gave him firsthand experience with the evolution of modern football training and methodology. 
               He trained alongside international players and experienced the cutting-edge approaches used in European academies, 
               giving him insights that traditional coaches often lack.
             </p>
@@ -108,7 +108,7 @@ const NicoPage = () => {
               <li>• Understands contemporary player psychology and needs</li>
             </ul>
             <p className="font-poppins text-white/90 mt-4" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
-              This unique background allows him to connect with today's players on a level that traditional coaches cannot.
+              This unique background allows him to connect with today&apos;s players on a level that traditional coaches cannot.
             </p>
           </div>
 
