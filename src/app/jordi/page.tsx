@@ -16,113 +16,115 @@ const JordiPage = () => {
       </div>
 
       <div className="container mx-auto px-4 pb-20">
-        <div className="max-w-6xl mx-auto">
-          {/* Hero Section */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-            <div className="relative">
-              <div className="relative aspect-square rounded-2xl overflow-hidden">
-                <Image
-                  src="/jordi.jpg"
-                  alt="Jordi Roura"
-                  width={800}
-                  height={800}
-                  className="w-full h-full object-cover object-center"
-                  quality={100}
-                  priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-              </div>
-            </div>
-            
-            <div className="text-white">
-              <h1 className="font-poppins font-thin text-6xl mb-6 leading-tight uppercase" style={{ fontWeight: 250, letterSpacing: '0%' }}>
-                Jordi Roura
+        <div className="max-w-4xl mx-auto">
+          {/* Meet Jordi Roura Header */}
+          <div className="text-center mb-8">
+            <div className="inline-block border border-white rounded-lg px-6 py-2 mb-6">
+              <h1 className="font-poppins font-light text-white text-xl uppercase" style={{ fontWeight: 300, letterSpacing: '0%' }}>
+                Meet Jordi Roura
               </h1>
-              <p className="font-poppins font-light text-2xl mb-8 leading-relaxed" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                Former FC Barcelona Coach and La Masia Director
-              </p>
-              <p className="font-poppins font-light text-lg leading-relaxed text-white/90" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                With over 40 years of experience developing some of the world&apos;s top talents, 
-                Jordi Roura brings unparalleled expertise in youth development and elite football coaching.
-              </p>
             </div>
           </div>
 
-          {/* Experience Section */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-white/20">
-            <h2 className="font-poppins font-thin text-4xl text-white mb-8 uppercase" style={{ fontWeight: 250, letterSpacing: '0%' }}>
-              Professional Experience
-            </h2>
+          {/* Hero Image Section */}
+          <div className="relative mb-12">
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-blue-600 to-blue-800">
+              <Image
+                src="/jordi.jpg"
+                alt="Jordi Roura"
+                width={800}
+                height={600}
+                className="w-full h-full object-cover object-center"
+                quality={100}
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+            </div>
+            <div className="absolute bottom-6 left-6 text-white">
+              <h2 className="font-poppins font-light text-2xl leading-tight" style={{ fontWeight: 300, letterSpacing: '0%' }}>
+                From La Masia Graduate to Architect of a $3 Billion Football Legacy
+              </h2>
+            </div>
+          </div>
+
+          {/* Elite Developer Section */}
+          <div className="mb-12">
+            <div className="border border-white rounded-lg p-4 mb-6">
+              <h3 className="font-poppins font-medium text-white text-xl" style={{ fontWeight: 500, letterSpacing: '0%' }}>
+                Elite Developer of Football Intelligence
+              </h3>
+            </div>
+            <p className="font-poppins font-light text-white/90 leading-relaxed" style={{ fontWeight: 300, letterSpacing: '0%' }}>
+              Jordi Roura Sola is a world-class football professional with over 40 years of experience, 
+              known for his leadership at La Masia, FC Barcelona&apos;s iconic academy. His ability to develop 
+              players who succeed at the highest level reflects deep tactical knowledge and leadership under pressure.
+            </p>
+          </div>
+
+          {/* Director of La Masia Section */}
+          <div className="mb-12">
+            <div className="border border-white rounded-lg p-4 mb-6">
+              <h3 className="font-poppins font-medium text-white text-xl" style={{ fontWeight: 500, letterSpacing: '0%' }}>
+                Director of La Masia (2014-2021)
+              </h3>
+            </div>
+            <div className="mb-6">
+              <h4 className="font-poppins font-bold text-white text-2xl mb-4" style={{ fontWeight: 700, letterSpacing: '0%' }}>
+                $3 Billion in Player Market Value Developed
+              </h4>
+            </div>
+            <p className="font-poppins font-light text-white/90 leading-relaxed" style={{ fontWeight: 300, letterSpacing: '0%' }}>
+              During his 7-year tenure as Director of La Masia, Jordi oversaw the scouting and development 
+              of hundreds of young players, contributing to a talent pool valued at over $3 billion. 
+              His leadership maintained La Masia&apos;s global reputation and ensured the production of 
+              world-class players under his guidance.
+            </p>
+          </div>
+
+          {/* From La Masia Player Section */}
+          <div className="mb-12">
+            <div className="border border-white rounded-lg p-4 mb-6">
+              <h3 className="font-poppins font-medium text-white text-xl" style={{ fontWeight: 500, letterSpacing: '0%' }}>
+                From La Masia Player to FC Barcelona Coach
+              </h3>
+            </div>
+            <p className="font-poppins font-light text-white/90 leading-relaxed" style={{ fontWeight: 300, letterSpacing: '0%' }}>
+              Born in Llagostera, Girona, Jordi joined the original La Masia as a young player, 
+              experiencing firsthand the transformative power of elite youth development. This unique 
+              perspective, combined with his extensive coaching experience, allows him to understand 
+              both the player&apos;s journey and the coach&apos;s responsibility in nurturing talent.
+            </p>
+          </div>
+
+          {/* Additional Experience Section */}
+          <div className="mb-12">
+            <div className="border border-white rounded-lg p-4 mb-6">
+              <h3 className="font-poppins font-medium text-white text-xl" style={{ fontWeight: 500, letterSpacing: '0%' }}>
+                Professional Achievements
+              </h3>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h3 className="font-poppins font-medium text-xl text-white mb-4" style={{ fontWeight: 500, letterSpacing: '0%' }}>
-                  FC Barcelona
-                </h3>
-                <ul className="space-y-3 text-white/90 font-poppins font-light" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                  <li>• La Masia Director</li>
+                <h4 className="font-poppins font-medium text-white text-lg mb-3" style={{ fontWeight: 500, letterSpacing: '0%' }}>
+                  FC Barcelona Roles
+                </h4>
+                <ul className="space-y-2 text-white/90 font-poppins font-light" style={{ fontWeight: 300, letterSpacing: '0%' }}>
+                  <li>• La Masia Director (2014-2021)</li>
                   <li>• First Team Assistant Coach</li>
                   <li>• Youth Development Coordinator</li>
                   <li>• Technical Director</li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-poppins font-medium text-xl text-white mb-4" style={{ fontWeight: 500, letterSpacing: '0%' }}>
-                  Key Achievements
-                </h3>
-                <ul className="space-y-3 text-white/90 font-poppins font-light" style={{ fontWeight: 300, letterSpacing: '0%' }}>
+                <h4 className="font-poppins font-medium text-white text-lg mb-3" style={{ fontWeight: 500, letterSpacing: '0%' }}>
+                  Key Contributions
+                </h4>
+                <ul className="space-y-2 text-white/90 font-poppins font-light" style={{ fontWeight: 300, letterSpacing: '0%' }}>
                   <li>• Developed world-class talents</li>
                   <li>• 40+ years in football development</li>
                   <li>• Expert in youth coaching methodology</li>
                   <li>• International coaching experience</li>
                 </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Philosophy Section */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-white/20">
-            <h2 className="font-poppins font-thin text-4xl text-white mb-8 uppercase" style={{ fontWeight: 250, letterSpacing: '0%' }}>
-              Coaching Philosophy
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                  </svg>
-                </div>
-                <h3 className="font-poppins font-medium text-xl text-white mb-3" style={{ fontWeight: 500, letterSpacing: '0%' }}>
-                  Innovation
-                </h3>
-                <p className="text-white/90 font-poppins font-light" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                  Pioneering modern training methodologies that adapt to each player&apos;s unique potential
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
-                  </svg>
-                </div>
-                <h3 className="font-poppins font-medium text-xl text-white mb-3" style={{ fontWeight: 500, letterSpacing: '0%' }}>
-                  Individual Development
-                </h3>
-                <p className="text-white/90 font-poppins font-light" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                  Personalized coaching approach that nurtures each player&apos;s strengths and addresses weaknesses
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <h3 className="font-poppins font-medium text-xl text-white mb-3" style={{ fontWeight: 500, letterSpacing: '0%' }}>
-                  Excellence
-                </h3>
-                <p className="text-white/90 font-poppins font-light" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                  Commitment to developing players who excel both technically and mentally on the pitch
-                </p>
               </div>
             </div>
           </div>
