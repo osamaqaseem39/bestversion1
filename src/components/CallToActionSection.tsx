@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
 
 const CallToActionSection = () => {
   return (
@@ -22,13 +23,11 @@ const CallToActionSection = () => {
         >
           {/* Logo in top right corner */}
           <div className="absolute top-6 right-6">
-            <img 
+            <Image 
               src="/bv1icon.png" 
               alt="BV1 Icon" 
-              style={{
-                width: '100px',
-                height: '100px'
-              }}
+              width={100}
+              height={100}
             />
           </div>
 

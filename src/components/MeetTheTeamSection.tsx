@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const MeetTheTeamSection = () => {
   const coaches = [
@@ -64,22 +65,24 @@ const MeetTheTeamSection = () => {
                 </p>
                 
                 {/* View More Button */}
-                <button className="w-full bg-transparent border border-white/30 hover:bg-white/10 text-white font-poppins font-medium py-3 px-6 rounded-full transition-all duration-300 flex items-center justify-center gap-2" style={{ fontWeight: 500, letterSpacing: '0%' }}>
-                  VIEW MORE
-                  <svg 
-                    className="w-4 h-4" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    viewBox="0 0 24 24"
-                  >
-                    <path 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round" 
-                      strokeWidth={2} 
-                      d="M9 5l7 7-7 7" 
-                    />
-                  </svg>
-                                 </button>
+                <Link href={coach.name === "JORDI ROURA" ? "/jordi" : "/nico"}>
+                  <button className="w-full bg-transparent border border-white/30 hover:bg-white/10 text-white font-poppins font-medium py-3 px-6 rounded-full transition-all duration-300 flex items-center justify-center gap-2" style={{ fontWeight: 500, letterSpacing: '0%' }}>
+                    VIEW MORE
+                    <svg 
+                      className="w-4 h-4" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth={2} 
+                        d="M9 5l7 7-7 7" 
+                      />
+                    </svg>
+                  </button>
+                </Link>
                 </div>
                </div>
              </div>

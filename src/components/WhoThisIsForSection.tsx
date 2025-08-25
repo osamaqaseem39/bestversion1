@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 
 export default function WhoThisIsForSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -86,10 +87,11 @@ export default function WhoThisIsForSection() {
               {/* Card with actual image */}
               <div className="w-full min-h-[470px] rounded-2xl relative overflow-hidden">
                 {/* Background image */}
-                <img 
+                <Image 
                   src={category.image} 
                   alt={category.category}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
                 
                                  {/* Category Tag with Action Icon */}

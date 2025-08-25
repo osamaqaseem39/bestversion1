@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Footer = () => {
   const navigationLinks = [
@@ -36,13 +37,15 @@ const Footer = () => {
             <div className="space-y-2 lg:text-right">
                           {/* Logo */}
               <div className="flex items-center lg:justify-end mb-0">
-                <div className="w-32 h-32 flex items-center justify-center">
-                  <img 
-                    src="/logo.png" 
-                    alt="Best Version 1 Logo" 
-                    className="w-32 h-32 object-contain"
-                  />
-                </div>
+                               <div className="w-32 h-32 flex items-center justify-center">
+                 <Image 
+                   src="/logo.png" 
+                   alt="Best Version 1 Logo" 
+                   width={128}
+                   height={128}
+                   className="object-contain"
+                 />
+               </div>
               </div>
 
               {/* Company Description */}

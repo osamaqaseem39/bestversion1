@@ -1,27 +1,29 @@
 'use client'
 
+import Image from 'next/image';
+
 export default function WhyNotProgressingSection() {
   const reasons = [
     {
       icon: (
-        <img src="/wnp1.png" alt="Football IQ" className="w-20 h-20" />
+        <Image src="/wnp1.png" alt="Football IQ" width={80} height={80} className="w-20 h-20" />
       ),
-      title: "YOU'VE NEVER BEEN TAUGHT FOOTBALL IQ",
+      title: "YOU&apos;VE NEVER BEEN TAUGHT FOOTBALL IQ",
       description: "MOST PLAYERS ARE ONLY SHOWN DRILLS NOT HOW TO SCAN, POSITION, OR MAKE BETTER DECISIONS ON THE PITCH. WITHOUT UNDERSTANDING THE WHY, YOUR PROGRESS HITS A CEILING."
     },
     {
       icon: (
-        <img src="/wpn2.png" alt="Coach Expectations" className="w-20 h-20" />
+        <Image src="/wpn2.png" alt="Coach Expectations" width={80} height={80} className="w-20 h-20" />
       ),
-      title: "YOU DON'T KNOW WHAT COACHES REALLY LOOK FOR",
-      description: "YOU'RE WORKING HARD, BUT NOT ON THE THINGS THAT MATTER MOST. COACHES WANT INTELLIGENT PLAYERS WHO READ THE GAME, REACT FAST, AND STAY COMPOSED UNDER PRESSURE NOT JUST FLASHY SKILLS."
+      title: "YOU DON&apos;T KNOW WHAT COACHES REALLY LOOK FOR",
+      description: "YOU&apos;RE WORKING HARD, BUT NOT ON THE THINGS THAT MATTER MOST. COACHES WANT INTELLIGENT PLAYERS WHO READ THE GAME, REACT FAST, AND STAY COMPOSED UNDER PRESSURE NOT JUST FLASHY SKILLS."
     },
     {
       icon: (
-        <img src="/wpn3.png" alt="Real Guidance" className="w-20 h-20" />
+        <Image src="/wpn3.png" alt="Real Guidance" width={80} height={80} className="w-20 h-20" />
       ),
-      title: "YOU'RE TRYING TO IMPROVE WITHOUT REAL GUIDANCE",
-      description: "YOU'RE TRAINING HARD — BUT WITHOUT EXPERT DIRECTION, YOU'RE GUESSING. MOST PLAYERS FOCUS ON THE WRONG THINGS AND NEVER DEVELOP REAL FOOTBALL INTELLIGENCE. WITHOUT SOMEONE SHOWING YOU WHAT ACTUALLY MATTERS, PROGRESS STAYS SLOW"
+      title: "YOU&apos;RE TRYING TO IMPROVE WITHOUT REAL GUIDANCE",
+      description: "YOU&apos;RE TRAINING HARD — BUT WITHOUT EXPERT DIRECTION, YOU&apos;RE GUESSING. MOST PLAYERS FOCUS ON THE WRONG THINGS AND NEVER DEVELOP REAL FOOTBALL INTELLIGENCE. WITHOUT SOMEONE SHOWING YOU WHAT ACTUALLY MATTERS, PROGRESS STAYS SLOW"
     }
   ]
 
@@ -40,11 +42,11 @@ export default function WhyNotProgressingSection() {
         <div className="text-center mb-16">
           <div className="flex justify-center mb-6">
             <h2 className="font-poppins font-extralight text-[45px] text-white uppercase leading-[132%] text-center whitespace-nowrap" style={{ fontWeight: 275 }}>
-              WHY YOU'RE NOT PROGRESSING - EVEN IF YOU TRAIN HARD
+              WHY YOU&apos;RE NOT PROGRESSING - EVEN IF YOU TRAIN HARD
             </h2>
           </div>
           <p className="font-poppins font-extralight text-[25px] text-white/90 leading-[132%] text-center uppercase max-w-5xl mx-auto" style={{ fontWeight: 275, letterSpacing: '0%' }}>
-            THOUSANDS OF PLAYERS TRAIN EVERY DAY — PUTTING IN THE HOURS, FOLLOWING DRILLS, AND GIVING THEIR ALL. BUT EVEN WITH ALL THAT EFFORT, MANY STILL FEEL STUCK. THEY'RE NOT IMPROVING FAST ENOUGH, NOT GETTING NOTICED, OR JUST UNSURE WHAT'S HOLDING THEM BACK.
+            THOUSANDS OF PLAYERS TRAIN EVERY DAY — PUTTING IN THE HOURS, FOLLOWING DRILLS, AND GIVING THEIR ALL. BUT EVEN WITH ALL THAT EFFORT, MANY STILL FEEL STUCK. THEY&apos;RE NOT IMPROVING FAST ENOUGH, NOT GETTING NOTICED, OR JUST UNSURE WHAT&apos;S HOLDING THEM BACK.
           </p>
         </div>
 

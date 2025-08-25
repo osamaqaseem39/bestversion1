@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 
 export default function WhyBV1Section() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -43,13 +43,13 @@ export default function WhyBV1Section() {
   const cardsPerView = 4 // Show 4 cards at a time
   const totalSlides = Math.ceil(features.length / cardsPerView) // Move all 4 cards at once
   
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev + 1) % totalSlides)
-  }
+  }, [totalSlides])
   
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides)
-  }
+  }, [totalSlides])
   
   // Auto-advance carousel
   useEffect(() => {
@@ -58,7 +58,7 @@ export default function WhyBV1Section() {
     }, 8000) // Change slide every 6 seconds
     
     return () => clearInterval(interval)
-  }, [currentSlide])
+  }, [currentSlide, nextSlide])
 
   return (
     <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-transparent min-h-screen">
