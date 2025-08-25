@@ -62,12 +62,12 @@ export default function Header() {
             {/* Dropdown Menu */}
             {isMenuOpen && (
               <div className="absolute top-full left-0 mt-2 bg-gray-800/95 rounded-lg border border-white/30 py-2 min-w-[200px]">
-                <button 
-                  onClick={() => scrollToSection('about')} 
+                <Link 
+                  href="/about"
                   className="block w-full text-left px-4 py-2 text-white hover:bg-gray-700/50 transition-colors text-sm"
                 >
-                  About
-                </button>
+                  About Us
+                </Link>
                 <button 
                   onClick={() => scrollToSection('programs')} 
                   className="block w-full text-left px-4 py-2 text-white hover:bg-gray-700/50 transition-colors text-sm"
@@ -120,12 +120,12 @@ export default function Header() {
                   >
                     Home
                   </button>
-                  <button 
-                    onClick={() => scrollToSection('about')} 
+                  <Link 
+                    href="/about"
                     className="text-white bg-gray-700/50 px-4 py-2 rounded-full hover:bg-gray-700 transition-colors text-sm"
                   >
-                    About
-                  </button>
+                    About Us
+                  </Link>
                   <button 
                     onClick={() => scrollToSection('programs')} 
                     className="text-white bg-gray-700/50 px-4 py-2 rounded-full hover:bg-gray-700 transition-colors text-sm"

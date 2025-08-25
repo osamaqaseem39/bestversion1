@@ -10,33 +10,32 @@ const JordiPage = () => {
       {/* Header */}
       <Header />
 
-      <div className="container mx-auto px-4 pb-20 pt-8">
-        <div className="max-w-4xl mx-auto">
+      <div className="container mx-auto px-4 pb-20 pt-20">
+        <div className="max-w-6xl mx-auto">
           {/* Meet Jordi Roura Header */}
-          <div className="text-center mb-8">
-            <div className="inline-block border border-white rounded-lg px-6 py-2 mb-6">
-              <h1 className="font-poppins font-light text-white text-xl uppercase" style={{ fontWeight: 300, letterSpacing: '0%' }}>
+          <div className="text-center mb-2">
+            <div className="inline-block bg-transparent rounded-xl px-6 py-2 shadow-[0_0_30px_#4652FF69]">
+              <h1 className="font-poppins font-light text-white text-4xl uppercase drop-shadow-[0_0_20px_#4652FF69]" style={{ fontWeight: 300, letterSpacing: '0%' }}>
                 Meet Jordi Roura
               </h1>
             </div>
           </div>
 
           {/* Hero Image Section */}
-          <div className="relative mb-12">
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-blue-600 to-blue-800">
+          <div className="relative mb-10">
+            <div className="relative w-full">
               <Image
                 src="/jordi about.png"
                 alt="Jordi Roura"
-                width={800}
-                height={600}
-                className="w-full h-full object-cover object-center"
+                width={1600}
+                height={1000}
+                className="w-full h-auto object-contain"
                 quality={100}
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
             </div>
-            <div className="absolute bottom-6 left-6 text-white">
-              <h2 className="font-poppins font-light text-2xl leading-tight" style={{ fontWeight: 300, letterSpacing: '0%' }}>
+            <div className=" text-center">
+              <h2 className="font-poppins text-white" style={{ fontWeight: 275, fontSize: '30px', lineHeight: '100%', letterSpacing: '0%' }}>
                 From La Masia Graduate to Architect of a $3 Billion Football Legacy
               </h2>
             </div>
@@ -44,21 +43,21 @@ const JordiPage = () => {
 
           {/* Elite Developer Section */}
           <div className="mb-12">
-            <div className="border border-white rounded-lg p-4 mb-6">
+            <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-6">
               <h3 className="font-poppins font-medium text-white text-xl" style={{ fontWeight: 500, letterSpacing: '0%' }}>
                 Elite Developer of Football Intelligence
               </h3>
             </div>
-            <p className="font-poppins font-light text-white/90 leading-relaxed" style={{ fontWeight: 300, letterSpacing: '0%' }}>
+            <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
               Jordi Roura Sola is a world-class football professional with over 40 years of experience, 
-              known for his leadership at La Masia, FC Barcelona&apos;s iconic academy. His ability to develop 
-              players who succeed at the highest level reflects deep tactical knowledge and leadership under pressure.
+              known for his leadership at La Masia, FC Barcelona&apos;s iconic academy. His ability to 
+              <strong>develop players who succeed at the highest level</strong> reflects deep tactical knowledge and leadership under pressure.
             </p>
           </div>
 
           {/* Director of La Masia Section */}
           <div className="mb-12">
-            <div className="border border-white rounded-lg p-4 mb-6">
+            <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-6">
               <h3 className="font-poppins font-medium text-white text-xl" style={{ fontWeight: 500, letterSpacing: '0%' }}>
                 Director of La Masia (2014-2021)
               </h3>
@@ -68,60 +67,194 @@ const JordiPage = () => {
                 $3 Billion in Player Market Value Developed
               </h4>
             </div>
-            <p className="font-poppins font-light text-white/90 leading-relaxed" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-              During his 7-year tenure as Director of La Masia, Jordi oversaw the scouting and development 
-              of hundreds of young players, contributing to a talent pool valued at over $3 billion. 
-              His leadership maintained La Masia&apos;s global reputation and ensured the production of 
-              world-class players under his guidance.
+            <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              As the Director of La Masia for 7 years, Jordi oversaw the scouting and development of hundreds 
+              of young players, contributing directly to a talent pool now valued at over $3 billion. His 
+              leadership helped maintain La Masia&apos;s global reputation as the gold standard in youth development.
+            </p>
+            <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              Under his tenure, the academy produced world-class players who now lead in both domestic and international football.
             </p>
           </div>
 
           {/* From La Masia Player Section */}
           <div className="mb-12">
-            <div className="border border-white rounded-lg p-4 mb-6">
+            <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-6">
               <h3 className="font-poppins font-medium text-white text-xl" style={{ fontWeight: 500, letterSpacing: '0%' }}>
                 From La Masia Player to FC Barcelona Coach
               </h3>
             </div>
-            <p className="font-poppins font-light text-white/90 leading-relaxed" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-              Born in Llagostera, Girona, Jordi joined the original La Masia as a young player, 
-              experiencing firsthand the transformative power of elite youth development. This unique 
-              perspective, combined with his extensive coaching experience, allows him to understand 
-              both the player&apos;s journey and the coach&apos;s responsibility in nurturing talent.
+            <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              Born in Llagostera, Girona, Jordi joined the original La Masia residence at age 15 in 1982. 
+              He lived and trained alongside names like Pep Guardiola, Tito Vilanova, Guillermo Amor, and 
+              Aureli Altimira, embedding himself in the DNA of FC Barcelona&apos;s most iconic era.
+            </p>
+                            <ul className="space-y-2 text-white/90 font-poppins mt-4" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+                  <li>• Made his senior debut for FC Barcelona B in a 4-0 win over Real Madrid Castilla</li>
+                  <li>• Debuted in La Liga under Johan Cruyff in 1988</li>
+                  <li>• Played in the 1989 European Super Cup before a serious knee injury halted his trajectory</li>
+                </ul>
+            <p className="font-poppins text-white/90 mt-4" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              Despite the premature end to his playing career, Jordi&apos;s transition into coaching made an even bigger impact.
             </p>
           </div>
 
-          {/* Additional Experience Section */}
+          {/* Coaching & Tactical Expertise Section */}
           <div className="mb-12">
-            <div className="border border-white rounded-lg p-4 mb-6">
+            <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-6">
               <h3 className="font-poppins font-medium text-white text-xl" style={{ fontWeight: 500, letterSpacing: '0%' }}>
-                Professional Achievements
+                Coaching & Tactical Expertise
               </h3>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h4 className="font-poppins font-medium text-white text-lg mb-3" style={{ fontWeight: 500, letterSpacing: '0%' }}>
-                  FC Barcelona Roles
-                </h4>
-                <ul className="space-y-2 text-white/90 font-poppins font-light" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                  <li>• La Masia Director (2014-2021)</li>
-                  <li>• First Team Assistant Coach</li>
-                  <li>• Youth Development Coordinator</li>
-                  <li>• Technical Director</li>
+            <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              Jordi went on to serve FC Barcelona in multiple roles.
+            </p>
+                            <ul className="space-y-2 text-white/90 font-poppins mt-4" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+                  <li>• Tactical analyst under Pep Guardiola</li>
+                  <li>• Assistant coach under Tito Vilanova during the 2012–13 season</li>
+                  <li>• Interim head coach during Vilanova&apos;s illness, guiding Barça through a high-pressure campaign at the top level</li>
                 </ul>
-              </div>
-              <div>
-                <h4 className="font-poppins font-medium text-white text-lg mb-3" style={{ fontWeight: 500, letterSpacing: '0%' }}>
-                  Key Contributions
-                </h4>
-                <ul className="space-y-2 text-white/90 font-poppins font-light" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                  <li>• Developed world-class talents</li>
-                  <li>• 40+ years in football development</li>
-                  <li>• Expert in youth coaching methodology</li>
-                  <li>• International coaching experience</li>
-                </ul>
+            <p className="font-poppins text-white/90 mt-4" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              He also coached across all age levels at La Masia and held leadership roles in talent development, training methodology, and club identity building.
+            </p>
+          </div>
+
+          {/* A Complete Football Professional Section */}
+          <div className="mb-12">
+            <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-6">
+              <h3 className="font-poppins font-medium text-white text-xl" style={{ fontWeight: 500, letterSpacing: '0%' }}>
+                A Complete Football Professional
+              </h3>
+            </div>
+            <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '30px', lineHeight: '120%', letterSpacing: '10%' }}>
+              Jordi Roura&apos;s journey is a rare one — he has held nearly every role in football.
+            </p>
+            <div className="my-12">
+              <div className="relative">
+                {/* Timeline line */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-white/10" style={{ top: '2rem', bottom: '2rem' }}></div>
+                
+                {/* Career path items */}
+                <div className="space-y-8">
+                  {/* Youth Player */}
+                  <div className="flex items-center">
+                    <div className="w-1/2 pr-8 text-right">
+                      <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
+                        <p className="font-poppins text-white" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+                          Youth Player
+                        </p>
+                      </div>
+                    </div>
+                    <div className="w-4 h-4 bg-white/10 rounded-full border-4 border-white shadow-lg"></div>
+                    <div className="w-1/2 pl-8"></div>
+                  </div>
+
+                  {/* Professional Player */}
+                  <div className="flex items-center">
+                    <div className="w-1/2 pr-8 text-right"></div>
+                    <div className="w-4 h-4 bg-white/10 rounded-full border-4 border-white shadow-lg"></div>
+                    <div className="w-1/2 pl-8">
+                      <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
+                        <p className="font-poppins text-white" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+                          Professional Player
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Youth Coach */}
+                  <div className="flex items-center">
+                    <div className="w-1/2 pr-8 text-right">
+                      <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
+                        <p className="font-poppins text-white" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+                          Youth Coach
+                        </p>
+                      </div>
+                    </div>
+                    <div className="w-4 h-4 bg-white/10 rounded-full border-4 border-white shadow-lg"></div>
+                    <div className="w-1/2 pl-8"></div>
+                  </div>
+
+                  {/* Professional Coach */}
+                  <div className="flex items-center">
+                    <div className="w-1/2 pr-8 text-right"></div>
+                    <div className="w-4 h-4 bg-white/10 rounded-full border-4 border-white shadow-lg"></div>
+                    <div className="w-1/2 pl-8">
+                      <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
+                        <p className="font-poppins text-white" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+                          Professional Coach
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Tactical Analyst */}
+                  <div className="flex items-center">
+                    <div className="w-1/2 pr-8 text-right">
+                      <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
+                        <p className="font-poppins text-white" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+                          Tactical Analyst
+                        </p>
+                      </div>
+                    </div>
+                    <div className="w-4 h-4 bg-white/10 rounded-full border-4 border-white shadow-lg"></div>
+                    <div className="w-1/2 pl-8"></div>
+                  </div>
+
+                  {/* Scout & Recruiter */}
+                  <div className="flex items-center">
+                    <div className="w-1/2 pr-8 text-right"></div>
+                    <div className="w-4 h-4 bg-white/10 rounded-full border-4 border-white shadow-lg"></div>
+                    <div className="w-1/2 pl-8">
+                      <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
+                        <p className="font-poppins text-white" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+                          Scout & Recruiter
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Academy Director */}
+                  <div className="flex items-center">
+                    <div className="w-1/2 pr-8 text-right">
+                      <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
+                        <p className="font-poppins text-white" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+                          Academy Director
+                        </p>
+                      </div>
+                    </div>
+                    <div className="w-4 h-4 bg-white/10 rounded-full border-4 border-white shadow-lg"></div>
+                    <div className="w-1/2 pl-8"></div>
+                  </div>
+                </div>
               </div>
             </div>
+            <p className="font-poppins text-white/90 text-center" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              This full-circle perspective gives him unmatched insight into player development — from identifying talent to preparing them for elite-level competition.
+            </p>
+          </div>
+
+          {/* Why He Built Best Version 1 Section */}
+          <div className="text-center mb-12">
+            <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-6">
+              <h3 className="font-poppins font-medium text-white text-xl" style={{ fontWeight: 500, letterSpacing: '0%' }}>
+                Why He Built Best Version 1
+              </h3>
+            </div>
+            <p className="font-poppins text-white/90 mb-6" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              Jordi created BVI to bring professional-level football education to players who otherwise wouldn&apos;t have access to it.
+            </p>
+            <p className="font-poppins text-white/90 mb-8" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              Through his exclusive Football IQ course and BVI&apos;s broader platform, he shares the foundational knowledge that most players never receive, no matter how hard they train.
+            </p>
+            <div className="inline-block bg-transparent rounded-xl px-6 py-2 shadow-[0_0_30px_#4652FF69]">
+              <p className="font-poppins font-light text-white text-4xl uppercase drop-shadow-[0_0_20px_#4652FF69]" style={{ fontWeight: 300, letterSpacing: '0%' }}>
+                Jordi Roura
+              </p>
+            </div>
+            <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              Understanding the game is what separates good players from great ones.
+            </p>
           </div>
 
           {/* Quote Section */}
@@ -130,7 +263,7 @@ const JordiPage = () => {
               <svg className="w-12 h-12 text-white/50 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
               </svg>
-              <p className="font-poppins font-light text-2xl text-white mb-6 italic" style={{ fontWeight: 300, letterSpacing: '0%' }}>
+              <p className="font-poppins text-white mb-6 italic" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
                 &ldquo;Every player has the potential to become their best version. My role is to unlock that potential through dedicated coaching and personalized development.&rdquo;
               </p>
               <p className="font-poppins font-medium text-lg text-white/80" style={{ fontWeight: 500, letterSpacing: '0%' }}>

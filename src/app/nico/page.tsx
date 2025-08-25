@@ -10,181 +10,171 @@ const NicoPage = () => {
       {/* Header */}
       <Header />
 
-      <div className="container mx-auto px-4 pb-20 pt-8">
+        <div className="container mx-auto px-4 pb-20 pt-20">
         <div className="max-w-6xl mx-auto">
-          {/* Hero Section */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-            <div className="relative">
-              <div className="relative aspect-square rounded-2xl overflow-hidden">
-                <Image
-                  src="/nico about.jpg"
-                  alt="Nico Cuevas"
-                  width={800}
-                  height={800}
-                  className="w-full h-full object-cover object-center"
-                  quality={100}
-                  priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-              </div>
-            </div>
-            
-            <div className="text-white">
-              <h1 className="font-poppins font-thin text-6xl mb-6 leading-tight uppercase" style={{ fontWeight: 250, letterSpacing: '0%' }}>
-                Nico Cuevas
+          {/* Meet Nico Cuevas Header */}
+          <div className="text-center mb-2">
+            <div className="inline-block bg-transparent rounded-xl px-6 py-2 shadow-[0_0_30px_#4652FF69]">
+              <h1 className="font-poppins font-light text-white text-4xl uppercase drop-shadow-[0_0_20px_#4652FF69]" style={{ fontWeight: 300, letterSpacing: '0%' }}>
+                Meet Nico Cuevas
               </h1>
-              <p className="font-poppins font-light text-2xl mb-8 leading-relaxed" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                Modern Player from Miami Training in Spain
-              </p>
-              <p className="font-poppins font-light text-lg leading-relaxed text-white/90" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                A driven footballer who brings the perspective of today&apos;s modern player, 
-                combining international experience with cutting-edge training methodologies.
-              </p>
             </div>
           </div>
 
-          {/* Background Section */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-white/20">
-            <h2 className="font-poppins font-thin text-4xl text-white mb-8 uppercase" style={{ fontWeight: 250, letterSpacing: '0%' }}>
-              Player Background
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="font-poppins font-medium text-xl text-white mb-4" style={{ fontWeight: 500, letterSpacing: '0%' }}>
-                  International Experience
-                </h3>
-                <ul className="space-y-3 text-white/90 font-poppins font-light" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                  <li>• Miami-based player</li>
-                  <li>• Training in Spain</li>
-                  <li>• International exposure</li>
-                  <li>• Modern football perspective</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-poppins font-medium text-xl text-white mb-4" style={{ fontWeight: 500, letterSpacing: '0%' }}>
-                  Key Strengths
-                </h3>
-                <ul className="space-y-3 text-white/90 font-poppins font-light" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                  <li>• Contemporary training methods</li>
-                  <li>• Player development insights</li>
-                  <li>• Cross-cultural experience</li>
-                  <li>• Driven mentality</li>
-                </ul>
-              </div>
+          {/* Hero Image Section */}
+          <div className="relative mb-10">
+            <div className="relative w-full">
+              <Image
+                src="/nico about.png"
+                alt="Nico Cuevas"
+                width={1600}
+                height={1000}
+                className="w-full h-auto object-contain"
+                quality={100}
+                priority
+              />
+            </div>
+            <div className=" text-center">
+              <h2 className="font-poppins text-white" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '100%', letterSpacing: '0%' }}>
+                From Miami to Spain: The Modern Player's Journey to Elite Development
+              </h2>
             </div>
           </div>
 
-          {/* Modern Approach Section */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-white/20">
-            <h2 className="font-poppins font-thin text-4xl text-white mb-8 uppercase" style={{ fontWeight: 250, letterSpacing: '0%' }}>
-              Modern Training Approach
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <h3 className="font-poppins font-medium text-xl text-white mb-3" style={{ fontWeight: 500, letterSpacing: '0%' }}>
-                  Innovation
-                </h3>
-                <p className="text-white/90 font-poppins font-light" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                  Implementing cutting-edge training techniques and modern football methodologies
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
-                </div>
-                <h3 className="font-poppins font-medium text-xl text-white mb-3" style={{ fontWeight: 500, letterSpacing: '0%' }}>
-                  Player Perspective
-                </h3>
-                <p className="text-white/90 font-poppins font-light" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                  Understanding the modern player&apos;s mindset and challenges in today&apos;s competitive environment
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <h3 className="font-poppins font-medium text-xl text-white mb-3" style={{ fontWeight: 500, letterSpacing: '0%' }}>
-                  Global Experience
-                </h3>
-                <p className="text-white/90 font-poppins font-light" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                  Combining American drive with European football culture and training standards
-                </p>
-              </div>
+          {/* Modern Player Development Section */}
+          <div className="mb-12">
+            <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-6">
+              <h3 className="font-poppins font-medium text-white text-xl" style={{ fontWeight: 500, letterSpacing: '0%' }}>
+                A Player Who Lived the Struggle
+              </h3>
             </div>
+            <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              Nico Cuevas is a professional player who built his football career from the ground up — starting in 
+              <strong> local Miami clubs</strong> and eventually earning spots at the 
+              <strong> academies of RCD Espanyol and Getafe CF.</strong>
+            </p>
+            <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              His path wasn&apos;t gifted. It wasn&apos;t handed down through scouts or big-name connections. It was carved out with persistence, setbacks, and a constant hunger to improve.
+            </p>
+            <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              Now, through Best Version 1, Nico is helping players who are just like he was — hungry, coachable, and tired of being overlooked — finally get the football education they deserve.
+            </p>
           </div>
 
-          {/* Training Philosophy */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-white/20">
-            <h2 className="font-poppins font-thin text-4xl text-white mb-8 uppercase" style={{ fontWeight: 250, letterSpacing: '0%' }}>
-              Training Philosophy
-            </h2>
-            <div className="space-y-6">
-              <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="text-white font-bold text-sm">1</span>
-                </div>
-                <div>
-                  <h3 className="font-poppins font-medium text-xl text-white mb-2" style={{ fontWeight: 500, letterSpacing: '0%' }}>
-                    Modern Methodology
-                  </h3>
-                  <p className="text-white/90 font-poppins font-light" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                    Implementing contemporary training approaches that reflect the current state of professional football
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="text-white font-bold text-sm">2</span>
-                </div>
-                <div>
-                  <h3 className="font-poppins font-medium text-xl text-white mb-2" style={{ fontWeight: 500, letterSpacing: '0%' }}>
-                    Player-Centric Approach
-                  </h3>
-                  <p className="text-white/90 font-poppins font-light" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                    Understanding the modern player&apos;s needs, challenges, and aspirations in today&apos;s competitive landscape
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="text-white font-bold text-sm">3</span>
-                </div>
-                <div>
-                  <h3 className="font-poppins font-medium text-xl text-white mb-2" style={{ fontWeight: 500, letterSpacing: '0%' }}>
-                    International Standards
-                  </h3>
-                  <p className="text-white/90 font-poppins font-light" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                    Bringing European football culture and training standards to create world-class development programs
-                  </p>
-                </div>
-              </div>
+          {/* From Local Pitches to Spanish Academies Section */}
+          <div className="mb-12">
+            <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-6">
+              <h3 className="font-poppins font-medium text-white text-xl" style={{ fontWeight: 500, letterSpacing: '0%' }}>
+                From Local Pitches to Spanish Academies
+              </h3>
             </div>
+            <div className="mb-6">
+              <h4 className="font-poppins font-bold text-white text-2xl mb-4" style={{ fontWeight: 700, letterSpacing: '0%' }}>
+                The Real Journey of a Modern Player
+              </h4>
+            </div>
+            <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              Growing up in Miami, Nico played for grassroots clubs, always dreaming of reaching the professional level — but without a roadmap.
+            </p>
+            <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              At just 12 years old, he moved to Spain with his family and began the long, unglamorous climb:
+            </p>
+            <ul className="space-y-2 text-white/90 font-poppins mt-4" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '100%', letterSpacing: '0%' }}>
+              <li>• Played for small regional teams in Catalonia</li>
+              <li>• Earned a trial and contract with RCD Espanyol&apos;s academy</li>
+              <li>• Continued rising, eventually signing with the academy of Getafe CF</li>
+            </ul>
+            <p className="font-poppins text-white/90 mt-4" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              He experienced the full reality of chasing football in Europe — the silent rejections, the uncertainty, and the moments when effort alone wasn&apos;t enough.
+            </p>
           </div>
 
-          {/* Quote Section */}
-          <div className="text-center">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-12 border border-white/20">
-              <svg className="w-12 h-12 text-white/50 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-              </svg>
-              <p className="font-poppins font-light text-2xl text-white mb-6 italic" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                &ldquo;As a modern player, I understand the challenges and opportunities that today&apos;s footballers face. My goal is to bridge the gap between traditional coaching and contemporary player needs.&rdquo;
+          {/* From Player to Coach Section */}
+          <div className="mb-12">
+            <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-6">
+              <h3 className="font-poppins font-medium text-white text-xl" style={{ fontWeight: 500, letterSpacing: '0%' }}>
+                From Modern Player to Development Coach
+              </h3>
+            </div>
+            <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              Nico's playing career gave him firsthand experience with the evolution of modern football training and methodology. 
+              He trained alongside international players and experienced the cutting-edge approaches used in European academies, 
+              giving him insights that traditional coaches often lack.
+            </p>
+            <ul className="space-y-2 text-white/90 font-poppins mt-4" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '100%', letterSpacing: '0%' }}>
+              <li>• Miami-based player with international aspirations</li>
+              <li>• Trained in Spanish football methodology</li>
+              <li>• Experienced modern training techniques firsthand</li>
+              <li>• Understands contemporary player psychology and needs</li>
+            </ul>
+            <p className="font-poppins text-white/90 mt-4" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              This unique background allows him to connect with today's players on a level that traditional coaches cannot.
+            </p>
+          </div>
+
+          {/* Modern Training Expertise Section */}
+          <div className="mb-12">
+            <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-6">
+              <h3 className="font-poppins font-medium text-white text-xl" style={{ fontWeight: 500, letterSpacing: '0%' }}>
+                The Problem No One Talks About
+              </h3>
+            </div>
+            <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              Nico realized something most players never admit
+            </p>
+            <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              It&apos;s not just about how hard you train — it&apos;s about how well you understand the game.
+            </p>
+            <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              Every step of the way, he noticed players with less talent advancing faster. Why? Because they had better football IQ — taught by coaches who knew what to look for
+            </p>
+            <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              Most players are never taught the game this way. That became his mission.
+            </p>
+          </div>
+
+          {/* Why He Co-Founded Best Version 1 Section */}
+          <div className="mb-12">
+            <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-6">
+              <h3 className="font-poppins font-medium text-white text-xl" style={{ fontWeight: 500, letterSpacing: '0%' }}>
+                Why He Co-Founded Best Version 1
+              </h3>
+            </div>
+            <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              Nico teamed up with former FC Barcelona and La Masia coach Jordi Roura to create Best Version 1 — a platform that finally teaches the tactical, positional, and mental side of the game in a way that young players can actually understand.
+            </p>
+            <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              At BVI, Nico leads:
+            </p>
+            <ul className="space-y-2 text-white/90 font-poppins mt-4" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '100%', letterSpacing: '0%' }}>
+              <li>• All player-facing course content and delivery</li>
+              <li>• The mentorship experience and community guidance</li>
+              <li>• New product development, including position-specific training and career support tools</li>
+            </ul>
+            <p className="font-poppins text-white/90 mt-4" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+              He combines his real journey through the system with elite football knowledge to deliver something truly unique.
+            </p>
+          </div>
+
+          {/* Central Highlight Section */}
+          <div className="text-center mb-12">
+            <p className="font-poppins text-white/90 mb-2" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '100%', letterSpacing: '0%' }}>
+              in
+            </p>
+            <div className="inline-block bg-transparent rounded-xl px-6 py-2 shadow-[0_0_30px_#4652FF69]">
+              <p className="font-poppins font-light text-white text-4xl uppercase drop-shadow-[0_0_20px_#4652FF69]" style={{ fontWeight: 300, letterSpacing: '0%' }}>
+                Nico Cuevas
               </p>
-              <p className="font-poppins font-medium text-lg text-white/80" style={{ fontWeight: 500, letterSpacing: '0%' }}>
-                - Nico Cuevas
+            </div>
+            <p className="font-poppins text-white/90 mt-2" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '100%', letterSpacing: '0%' }}>
+              Words
+            </p>
+            <div className="mt-8">
+              <p className="font-poppins text-white/90 italic" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
+                &ldquo;I built BVI to be the program I wish someone had given me when I was 13. I was lost, doing the work, but not seeing results. This is the clarity I never had — and now I&apos;m giving it to players who are ready to take control of their future.&rdquo;
               </p>
             </div>
-          </div>
-        </div>
+          </div>        </div>
       </div>
 
       {/* Footer */}
