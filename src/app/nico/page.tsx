@@ -42,7 +42,7 @@ const NicoPage = () => {
                 Modern Player from Miami Training in Spain
               </p>
               <p className="font-poppins font-light text-lg leading-relaxed text-white/90" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                A driven footballer who brings the perspective of today&apos;s modern player, 
+                                 A driven footballer who brings the perspective of today&apos;s modern player, 
                 combining international experience with cutting-edge training methodologies.
               </p>
             </div>

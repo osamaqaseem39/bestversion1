@@ -1,21 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const JordiPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-black">
       {/* Header */}
-      <div className="container mx-auto px-4 py-8">
-        <Link href="/" className="inline-flex items-center text-white/70 hover:text-white transition-colors mb-8">
-          <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-          Back to Home
-        </Link>
-      </div>
+      <Header />
 
-      <div className="container mx-auto px-4 pb-20">
+      <div className="container mx-auto px-4 pb-20 pt-8">
         <div className="max-w-4xl mx-auto">
           {/* Meet Jordi Roura Header */}
           <div className="text-center mb-8">
@@ -145,6 +140,9 @@ const JordiPage = () => {
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

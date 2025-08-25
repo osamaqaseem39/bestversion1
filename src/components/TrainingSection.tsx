@@ -140,9 +140,9 @@ export default function TrainingSection() {
         <p className={`text-[30px] text-white font-extralight mb-16 max-w-7xl mx-auto leading-[132%] tracking-[0%] text-center transition-all duration-1000 delay-300 ${
           scrollStep >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
-                      You&apos;re Not Alone. Many Talented Players Work Hard, But Never
+                                             You&apos;re Not Alone. Many Talented Players Work Hard, But Never
           <br />
-                      Get The Right Guidance. That&apos;s Exactly Why This Program Was Created
+                                                                                             Get The Right Guidance. That&apos;s Exactly Why This Program Was Created
         </p>
 
         {/* Two Cards Stacked Vertically - Jordi and Nico */}
@@ -175,7 +175,7 @@ export default function TrainingSection() {
                 </h3>
                 <div className="space-y-4">
                   <div className="text-white text-[15px] font-extralight leading-relaxed">
-                    <span>&ldquo;I&apos;ve spent 40+ years coaching, scouting, and directing the development of players now worth over $3 billion.&rdquo;</span>
+                                         <span>&ldquo;I&apos;ve spent 40+ years coaching, scouting, and directing the development of players now worth over $3 billion.&rdquo;</span>
                   </div>
                   <div className="text-white text-[15px] font-extralight text-left">
                     – Jordi Roura, Ex-FC Barcelona Coach

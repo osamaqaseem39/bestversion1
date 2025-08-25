@@ -105,8 +105,8 @@ export default function Header() {
                 <Image
                   src="/logo.png"
                   alt="Best Version 1 Logo"
-                  width={160}
-                  height={160}
+                  width={100}
+                  height={100}
                   className="w-40 h-40"
                 />
               </div>
