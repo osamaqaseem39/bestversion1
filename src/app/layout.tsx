@@ -23,10 +23,8 @@ export default function RootLayout({
         <link rel="icon" href="/logo.svg" />
         <meta name="theme-color" content="#3B82F6" />
       </head>
-      <body className={inter.className}>
-        <div className="min-h-screen bg-black">
-          {children}
-        </div>
+      <body className={`${inter.className} bg-black min-h-screen`}>
+        {children}
       </body>
     </html>
   )

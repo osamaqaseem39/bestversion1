@@ -1,28 +1,23 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const NicoPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-black">
+    <div className="min-h-screen">
       {/* Header */}
-      <div className="container mx-auto px-4 py-8">
-        <Link href="/" className="inline-flex items-center text-white/70 hover:text-white transition-colors mb-8">
-          <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-          Back to Home
-        </Link>
-      </div>
+      <Header />
 
-      <div className="container mx-auto px-4 pb-20">
+      <div className="container mx-auto px-4 pb-20 pt-8">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="relative">
               <div className="relative aspect-square rounded-2xl overflow-hidden">
                 <Image
-                  src="/nico.jpg"
+                  src="/nico about.jpg"
                   alt="Nico Cuevas"
                   width={800}
                   height={800}
@@ -42,7 +37,7 @@ const NicoPage = () => {
                 Modern Player from Miami Training in Spain
               </p>
               <p className="font-poppins font-light text-lg leading-relaxed text-white/90" style={{ fontWeight: 300, letterSpacing: '0%' }}>
-                                 A driven footballer who brings the perspective of today&apos;s modern player, 
+                A driven footballer who brings the perspective of today&apos;s modern player, 
                 combining international experience with cutting-edge training methodologies.
               </p>
             </div>
@@ -191,6 +186,9 @@ const NicoPage = () => {
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

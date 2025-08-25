@@ -13,6 +13,11 @@ body {
   color: var(--foreground);
   background: var(--background);
   overflow-x: hidden;
+  min-height: 100vh;
+}
+
+html {
+  background: var(--background);
 }
 
 @layer base {
