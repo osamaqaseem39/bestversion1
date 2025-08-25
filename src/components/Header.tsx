@@ -68,24 +68,24 @@ export default function Header() {
                 >
                   About Us
                 </Link>
-                <button 
-                  onClick={() => scrollToSection('programs')} 
+                <Link 
+                  href="/#programs"
                   className="block w-full text-left px-4 py-2 text-white hover:bg-gray-700/50 transition-colors text-sm"
                 >
                   Programs
-                </button>
-                <button 
-                  onClick={() => scrollToSection('method')} 
+                </Link>
+                <Link 
+                  href="/#method"
                   className="block w-full text-left px-4 py-2 text-white hover:bg-gray-700/50 transition-colors text-sm"
                 >
                   Method
-                </button>
-                <button 
-                  onClick={() => scrollToSection('faq')} 
+                </Link>
+                <Link 
+                  href="/#faq"
                   className="block w-full text-left px-4 py-2 text-white hover:bg-gray-700/50 transition-colors text-sm"
                 >
                   FAQ
-                </button>
+                </Link>
               </div>
             )}
           </div>
@@ -114,36 +114,36 @@ export default function Header() {
               <nav className="hidden md:flex items-center space-x-3">
                 {/* Navigation Links Container - Dark background */}
                 <div className="bg-gray-800/60 rounded-full border border-gray-400/30 px-3 py-2 space-x-1 flex">
-                  <button 
-                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                  <Link 
+                    href="/"
                     className="text-white bg-gray-700/50 px-4 py-2 rounded-full hover:bg-gray-700 transition-colors text-sm"
                   >
                     Home
-                  </button>
+                  </Link>
                   <Link 
                     href="/about"
                     className="text-white bg-gray-700/50 px-4 py-2 rounded-full hover:bg-gray-700 transition-colors text-sm"
                   >
                     About Us
                   </Link>
-                  <button 
-                    onClick={() => scrollToSection('programs')} 
+                  <Link 
+                    href="/#programs"
                     className="text-white bg-gray-700/50 px-4 py-2 rounded-full hover:bg-gray-700 transition-colors text-sm"
                   >
                     Programs
-                  </button>
-                  <button 
-                    onClick={() => scrollToSection('method')} 
+                  </Link>
+                  <Link 
+                    href="/#method"
                     className="text-white bg-gray-700/50 px-4 py-2 rounded-full hover:bg-gray-700 transition-colors text-sm"
                   >
                     Method
-                  </button>
-                  <button 
-                    onClick={() => scrollToSection('faq')} 
+                  </Link>
+                  <Link 
+                    href="/#faq"
                     className="text-white bg-gray-700/50 px-4 py-2 rounded-full hover:bg-gray-700 transition-colors text-sm"
                   >
                     FAQ
-                  </button>
+                  </Link>
                 </div>
               </nav>
 

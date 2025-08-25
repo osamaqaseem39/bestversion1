@@ -23,8 +23,6 @@ const TestimonialsSection = () => {
   return (
     <section className="py-20 bg-transparent relative">
       {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-900/10 via-transparent to-blue-900/10"></div>
-      
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <p className="text-white font-poppins uppercase tracking-normal mb-4" style={{ fontSize: '45px', fontWeight: '300', lineHeight: '132%', letterSpacing: '0%' }}>

@@ -48,15 +48,9 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen bg-transparent flex items-center justify-center overflow-hidden">
       {/* Background with gradient effect */}
-      <div className="absolute inset-0 bg-black">
-        {/* Gradient overlay from bottom-left */}
-        <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-tr from-blue-900/20 via-transparent to-purple-900/10"></div>
-        
-
-      </div>
-
+     
       {/* Video Background - grows from center */}
       {isPlaying && (
         <div className="absolute inset-0 flex items-center justify-center">

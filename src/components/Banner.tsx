@@ -6,8 +6,7 @@ export default function Banner() {
       {/* Background with gradient effect */}
       <div className="absolute inset-0 bg-transparent">
         {/* Gradient overlay from left */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 via-transparent to-transparent"></div>
-        
+  
 
       </div>
 

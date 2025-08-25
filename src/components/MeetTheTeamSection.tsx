@@ -19,8 +19,7 @@ const MeetTheTeamSection = () => {
   return (
     <section className="py-20 bg-transparent relative overflow-hidden">
       {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 via-purple-900/10 to-transparent"></div>
-      
+       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <p className="text-white font-poppins uppercase tracking-normal mb-4" style={{ fontSize: '45px', fontWeight: '275', lineHeight: '132%', letterSpacing: '0%' }}>
