@@ -1,11 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import Image from 'next/image';
 import { useSearchParams } from 'next/navigation';
 import { getProgramById, videoAnalysisProgram } from '@/config/programs';
 
-export default function CheckoutPage() {
+function CheckoutContent() {
   const searchParams = useSearchParams();
   const courseId = searchParams.get('course') || 'video-analysis';
   const [selectedProgram, setSelectedProgram] = useState(videoAnalysisProgram);
@@ -44,9 +44,9 @@ export default function CheckoutPage() {
       {/* Header */}
       <div className="text-center py-8 border-b border-gray-800">
         <h1 className="text-4xl font-weight-700 mb-2">BEST VERSION 1</h1>
-        <p className="text-gray-300 text-lg">
-          Investing in your child's education in soccer is investing in their passion, discipline, and future.
-        </p>
+                 <p className="text-gray-300 text-lg">
+           Investing in your child&apos;s education in soccer is investing in their passion, discipline, and future.
+         </p>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 py-8">
@@ -250,5 +250,20 @@ export default function CheckoutPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function CheckoutPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-black text-white font-poppins flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto mb-4"></div>
+          <p className="text-gray-300">Loading checkout...</p>
+        </div>
+      </div>
+    }>
+      <CheckoutContent />
+    </Suspense>
   );
 } 

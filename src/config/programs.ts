@@ -11,7 +11,7 @@ export interface ProgramAnalysis {
 
 export const videoAnalysisProgram: ProgramAnalysis = {
   id: 'video-analysis',
-  title: "ONE (1) PLAYER'S VIDEO ANALYSIS",
+  title: "ONE (1) PLAYER&apos;S VIDEO ANALYSIS",
   price: 600.00,
   description: "The Best Version 1 Player Video Analysis Service is evaluated and prepared by highly experienced",
   categories: [
