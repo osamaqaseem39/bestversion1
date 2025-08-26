@@ -432,7 +432,7 @@ const NicoPage = () => {
               </div>
               <div className=" text-center">
                 <h2 className="font-poppins text-white" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '100%', letterSpacing: '0%' }}>
-                  From Miami to Spain: The Modern Player&apos;s Journey to Elite Development
+                  From Miami to Spain: The Modern Player's Journey to Elite Development
                 </h2>
               </div>
             </div>
@@ -450,7 +450,7 @@ const NicoPage = () => {
                 <strong> academies of RCD Espanyol and Getafe CF.</strong>
               </p>
               <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
-                His path wasn&apos;t gifted. It wasn&apos;t handed down through scouts or big-name connections. It was carved out with persistence, setbacks, and a constant hunger to improve.
+                His path wasn't gifted. It wasn't handed down through scouts or big-name connections. It was carved out with persistence, setbacks, and a constant hunger to improve.
               </p>
               <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
                 Now, through Best Version 1, Nico is helping players who are just like he was — hungry, coachable, and tired of being overlooked — finally get the football education they deserve.
@@ -477,11 +477,11 @@ const NicoPage = () => {
               </p>
               <ul className="space-y-2 text-white/90 font-poppins mt-4" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '100%', letterSpacing: '0%' }}>
                 <li>• Played for small regional teams in Catalonia</li>
-                <li>• Earned a trial and contract with RCD Espanyol&apos;s academy</li>
+                <li>• Earned a trial and contract with RCD Espanyol's academy</li>
                 <li>• Continued rising, eventually signing with the academy of Getafe CF</li>
               </ul>
               <p className="font-poppins text-white/90 mt-4" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
-                He experienced the full reality of chasing football in Europe — the silent rejections, the uncertainty, and the moments when effort alone wasn&apos;t enough.
+                He experienced the full reality of chasing football in Europe — the silent rejections, the uncertainty, and the moments when effort alone wasn't enough.
               </p>
             </div>
 
@@ -493,7 +493,7 @@ const NicoPage = () => {
                 </h3>
               </div>
               <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
-                Nico&apos;s playing career gave him firsthand experience with the evolution of modern football training and methodology. 
+                Nico's playing career gave him firsthand experience with the evolution of modern football training and methodology. 
                 He trained alongside international players and experienced the cutting-edge approaches used in European academies, 
                 giving him insights that traditional coaches often lack.
               </p>
@@ -504,7 +504,7 @@ const NicoPage = () => {
                 <li>• Understands contemporary player psychology and needs</li>
               </ul>
               <p className="font-poppins text-white/90 mt-4" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
-                This unique background allows him to connect with today&apos;s players on a level that traditional coaches cannot.
+                This unique background allows him to connect with today's players on a level that traditional coaches cannot.
               </p>
             </div>
 
@@ -519,7 +519,7 @@ const NicoPage = () => {
                 Nico realized something most players never admit
               </p>
               <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
-                It&apos;s not just about how hard you train — it&apos;s about how well you understand the game.
+                It's not just about how hard you train — it's about how well you understand the game.
               </p>
               <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
                 Every step of the way, he noticed players with less talent advancing faster. Why? Because they had better football IQ — taught by coaches who knew what to look for
@@ -567,7 +567,7 @@ const NicoPage = () => {
               </p>
               <div className="mt-8">
                 <p className="font-poppins text-white/90 italic" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
-                  &ldquo;I built BVI to be the program I wish someone had given me when I was 13. I was lost, doing the work, but not seeing results. This is the clarity I never had — and now I&apos;m giving it to players who are ready to take control of their future.&rdquo;
+                  &ldquo;I built BVI to be the program I wish someone had given me when I was 13. I was lost, doing the work, but not seeing results. This is the clarity I never had — and now I'm giving it to players who are ready to take control of their future.&rdquo;
                 </p>
               </div>
             </div>        </div>

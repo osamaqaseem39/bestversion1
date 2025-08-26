@@ -446,7 +446,7 @@ const JordiPage = () => {
               </div>
               <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
                 Jordi Roura Sola is a world-class football professional with over 40 years of experience, 
-                known for his leadership at La Masia, FC Barcelona&apos;s iconic academy. His ability to 
+                known for his leadership at La Masia, FC Barcelona's iconic academy. His ability to 
                 <strong>develop players who succeed at the highest level</strong> reflects deep tactical knowledge and leadership under pressure.
               </p>
             </div>
@@ -466,7 +466,7 @@ const JordiPage = () => {
               <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
                 As the Director of La Masia for 7 years, Jordi oversaw the scouting and development of hundreds 
                 of young players, contributing directly to a talent pool now valued at over $3 billion. His 
-                leadership helped maintain La Masia&apos;s global reputation as the gold standard in youth development.
+                leadership helped maintain La Masia's global reputation as the gold standard in youth development.
               </p>
               <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
                 Under his tenure, the academy produced world-class players who now lead in both domestic and international football.
@@ -483,7 +483,7 @@ const JordiPage = () => {
               <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
                 Born in Llagostera, Girona, Jordi joined the original La Masia residence at age 15 in 1982. 
                 He lived and trained alongside names like Pep Guardiola, Tito Vilanova, Guillermo Amor, and 
-                Aureli Altimira, embedding himself in the DNA of FC Barcelona&apos;s most iconic era.
+                Aureli Altimira, embedding himself in the DNA of FC Barcelona's most iconic era.
               </p>
                               <ul className="space-y-2 text-white/90 font-poppins mt-4" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
                     <li>• Made his senior debut for FC Barcelona B in a 4-0 win over Real Madrid Castilla</li>
@@ -491,7 +491,7 @@ const JordiPage = () => {
                     <li>• Played in the 1989 European Super Cup before a serious knee injury halted his trajectory</li>
                   </ul>
               <p className="font-poppins text-white/90 mt-4" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
-                Despite the premature end to his playing career, Jordi&apos;s transition into coaching made an even bigger impact.
+                Despite the premature end to his playing career, Jordi's transition into coaching made an even bigger impact.
               </p>
             </div>
 
@@ -508,7 +508,7 @@ const JordiPage = () => {
                               <ul className="space-y-2 text-white/90 font-poppins mt-4" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
                     <li>• Tactical analyst under Pep Guardiola</li>
                     <li>• Assistant coach under Tito Vilanova during the 2012–13 season</li>
-                    <li>• Interim head coach during Vilanova&apos;s illness, guiding Barça through a high-pressure campaign at the top level</li>
+                    <li>• Interim head coach during Vilanova's illness, guiding Barça through a high-pressure campaign at the top level</li>
                   </ul>
               <p className="font-poppins text-white/90 mt-4" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
                 He also coached across all age levels at La Masia and held leadership roles in talent development, training methodology, and club identity building.
@@ -523,7 +523,7 @@ const JordiPage = () => {
                 </h3>
               </div>
               <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '30px', lineHeight: '120%', letterSpacing: '10%' }}>
-                Jordi Roura&apos;s journey is a rare one — he has held nearly every role in football.
+                Jordi Roura's journey is a rare one — he has held nearly every role in football.
               </p>
               <div className="my-12">
                 <div className="relative">
@@ -638,10 +638,10 @@ const JordiPage = () => {
                 </h3>
               </div>
               <p className="font-poppins text-white/90 mb-6" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
-                Jordi created BVI to bring professional-level football education to players who otherwise wouldn&apos;t have access to it.
+                Jordi created BVI to bring professional-level football education to players who otherwise wouldn't have access to it.
               </p>
               <p className="font-poppins text-white/90 mb-8" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
-                Through his exclusive Football IQ course and BVI&apos;s broader platform, he shares the foundational knowledge that most players never receive, no matter how hard they train.
+                Through his exclusive Football IQ course and BVI's broader platform, he shares the foundational knowledge that most players never receive, no matter how hard they train.
               </p>
               <div className="inline-block bg-transparent rounded-xl px-6 py-2 shadow-[0_0_30px_#4652FF69]">
                 <p className="font-poppins font-light text-white text-4xl uppercase drop-shadow-[0_0_20px_#4652FF69]" style={{ fontWeight: 300, letterSpacing: '0%' }}>

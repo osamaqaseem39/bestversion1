@@ -45,7 +45,7 @@ function CheckoutContent() {
       <div className="text-center py-8 border-b border-gray-800">
         <h1 className="text-4xl font-weight-700 mb-2">BEST VERSION 1</h1>
                  <p className="text-gray-300 text-lg">
-           Investing in your child&apos;s education in soccer is investing in their passion, discipline, and future.
+           Investing in your child's education in soccer is investing in their passion, discipline, and future.
          </p>
       </div>
 

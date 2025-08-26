@@ -455,10 +455,10 @@ const AboutPage = () => {
                 At Best Version 1
               </h4>
               <p className="font-poppins text-white/90 mb-6" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
-                We believe that football isn&apos;t just about how hard you train — it&apos;s about how well you understand the game.
+                We believe that football isn't just about how hard you train — it's about how well you understand the game.
               </p>
               <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
-                Most players are working nonstop. But few are ever taught how to think the game. How to scan. How to position. How to make better decisions. These are the foundations that separate professionals from everyone else — and they&apos;re rarely taught outside elite academies.
+                Most players are working nonstop. But few are ever taught how to think the game. How to scan. How to position. How to make better decisions. These are the foundations that separate professionals from everyone else — and they're rarely taught outside elite academies.
               </p>
             </div>
 
@@ -475,7 +475,7 @@ const AboutPage = () => {
               Jordi Roura
             </h4>
             <p className="font-poppins text-white/90 mb-12" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
-              A former FC Barcelona first-team coach and Director of La Masia, Jordi Roura is one of the most respected figures in youth development. He helped scout and develop talents now worth over $3 billion — including Gavi, Yamal, Cubarsí, and Balde. He&apos;s seen the game at every level — and now he&apos;s bringing that knowledge to players everywhere.
+              A former FC Barcelona first-team coach and Director of La Masia, Jordi Roura is one of the most respected figures in youth development. He helped scout and develop talents now worth over $3 billion — including Gavi, Yamal, Cubarsí, and Balde. He's seen the game at every level — and now he's bringing that knowledge to players everywhere.
             </p>
           </div>
           
@@ -554,7 +554,7 @@ const AboutPage = () => {
               Born in Miami and raised in Spain, Nico built his career from the bottom — starting at small regional teams and earning spots at the academies of RCD Espanyol and Getafe CF. After years of training without clear guidance, he realized what most players were missing, Football IQ
             </p>
             <p className="font-poppins text-white/90 mb-12" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
-              Now, he leads BV1&apos;s player education and mentorship content — translating elite concepts into clear, relatable lessons for the next generation.
+              Now, he leads BV1's player education and mentorship content — translating elite concepts into clear, relatable lessons for the next generation.
             </p>
           </div>
           
@@ -629,7 +629,7 @@ const AboutPage = () => {
               Why We Built This
             </h3>
             <p className="font-poppins text-white/90 " style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
-              We didn&apos;t create Best Version 1 to be another course. We built it because we saw a gap that needed to be filled.
+              We didn't create Best Version 1 to be another course. We built it because we saw a gap that needed to be filled.
             </p>
           </div>
           
