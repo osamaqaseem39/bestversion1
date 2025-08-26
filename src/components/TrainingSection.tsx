@@ -167,6 +167,8 @@ export default function TrainingSection() {
                   <div className="text-white text-[15px] font-extralight leading-relaxed">
                                          <span>&ldquo;I've spent 40+ years coaching, scouting, and directing the development of players now worth over $3 billion.&rdquo;</span>
                   </div>
+
+                  
                   <div className="text-white text-[15px] font-extralight text-left">
                     – Jordi Roura, Ex-FC Barcelona Coach
                   </div>
