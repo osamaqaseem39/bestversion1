@@ -62,9 +62,9 @@ export default function Features() {
   // The useEffect is removed for better performance
 
   return (
-    <section className="relative max-w-6xl mx-auto overflow-hidden bg-transparent py-20">
+    <section className="relative w-full overflow-hidden bg-transparent py-20">
       {/* Features Grid - Two Intersecting Rows */}
-      <div className="relative z-10 max-w-6xl mx-auto w-full">
+      <div className="relative z-10 w-full">
         {/* Top Row */}
         <div className="flex justify-center items-center gap-2 mb-0 w-full transform rotate-[-8deg] relative z-20 overflow-hidden">
           <div className="flex gap-2 animate-scroll" style={{ width: 'max-content' }}>
