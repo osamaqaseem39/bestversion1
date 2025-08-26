@@ -150,7 +150,7 @@ export default function TrainingSection() {
               {/* Profile Image */}
               <div className="flex-shrink-0">
                 <Image
-                  src="/coach.png"
+                  src="/jordi.jpg"
                   alt="Jordi Roura"
                   width={120}
                   height={120}
@@ -187,7 +187,7 @@ export default function TrainingSection() {
               {/* Profile Image */}
               <div className="flex-shrink-0">
                 <Image
-                  src="/coach.png"
+                  src="/nico.jpg"
                   alt="Nico Cuevas"
                   width={120}
                   height={120}
