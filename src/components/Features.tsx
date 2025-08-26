@@ -62,17 +62,17 @@ export default function Features() {
   // The useEffect is removed for better performance
 
   return (
-    <section className="relative max-w-8xl mx-auto overflow-hidden bg-transparent">
-      {/* Features Grid - Two Parallel Rows */}
-      <div className="relative z-10 max-w-8xl mx-auto w-full">
+    <section className="relative max-w-6xl mx-auto overflow-hidden bg-transparent py-20">
+      {/* Features Grid - Two Intersecting Rows */}
+      <div className="relative z-10 max-w-6xl mx-auto w-full">
         {/* Top Row */}
-        <div className="flex justify-between items-center gap-0 mb-0 w-full transform rotate-[-5deg] relative z-20 overflow-hidden">
-          <div className="flex gap-0 animate-scroll" style={{ width: 'max-content' }}>
+        <div className="flex justify-center items-center gap-2 mb-0 w-full transform rotate-[-8deg] relative z-20 overflow-hidden">
+          <div className="flex gap-2 animate-scroll" style={{ width: 'max-content' }}>
             {duplicatedFeatures.map((feature, index) => (
               <div
                 key={index}
-                className="bg-transparent hover:scale-105 transition-all duration-300 flex-shrink-0"
-                style={{ width: '350px' }}
+                className="bg-transparent hover:scale-110 transition-all duration-300 flex-shrink-0"
+                style={{ width: '120px' }}
               >
                 {/* Card Content */}
                 <div className="relative">
@@ -80,9 +80,9 @@ export default function Features() {
                   <Image
                     src={feature.image}
                     alt={feature.text}
-                    width={350}
-                    height={250}
-                    className="object-contain drop-shadow-2xl"
+                    width={120}
+                    height={80}
+                    className="object-contain drop-shadow-lg"
                   />
                 </div>
               </div>
@@ -91,13 +91,13 @@ export default function Features() {
         </div>
 
         {/* Bottom Row */}
-        <div className="flex justify-between items-center gap-0 w-full transform rotate-[5deg] relative z-10 -mt-56 overflow-hidden">
-          <div className="flex gap-0 animate-scroll-reverse" style={{ width: 'max-content' }}>
+        <div className="flex justify-center items-center gap-2 w-full transform rotate-[8deg] relative z-10 -mt-8 overflow-hidden">
+          <div className="flex gap-2 animate-scroll-reverse" style={{ width: 'max-content' }}>
             {duplicatedFeatures.map((feature, index) => (
               <div
                 key={index}
-                className="bg-transparent hover:scale-105 transition-all duration-300 flex-shrink-0"
-                style={{ width: '350px' }}
+                className="bg-transparent hover:scale-110 transition-all duration-300 flex-shrink-0"
+                style={{ width: '120px' }}
               >
                 {/* Card Content */}
                 <div className="relative">
@@ -105,9 +105,9 @@ export default function Features() {
                   <Image
                     src={feature.image}
                     alt={feature.text}
-                    width={350}
-                    height={250}
-                    className="object-contain drop-shadow-2xl"
+                    width={120}
+                    height={80}
+                    className="object-contain drop-shadow-lg"
                   />
                 </div>
               </div>

@@ -99,7 +99,7 @@ export default function ProgramsSection() {
 
           {/* Right Section - Product Cards */}
           <div className="relative flex justify-center items-center">
-            <div className={`flex gap-0 transition-all duration-700 ease-in-out ${isHovered ? '-ml-0' : '-ml-32'}`}>
+            <div className={`flex gap-0 transition-all duration-700 ease-in-out ${isHovered ? 'transform -translate-x-1/2' : '-ml-32'}`}>
               {products.map((product, index) => (
                 <div
                   key={index}
