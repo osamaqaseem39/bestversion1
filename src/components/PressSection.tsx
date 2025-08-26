@@ -38,7 +38,7 @@ const PressSection = () => {
       logo: "/goal.png"
     },
     {
-      quote: "La Masia methods now accessible to players worldwide through BVI.",
+      quote: "La Masia methods now accessible to players worldwide through BV1.",
       source: "Sport",
       logo: "/espn.png"
     },
@@ -53,7 +53,7 @@ const PressSection = () => {
       logo: "/espn.png"
     },
     {
-      quote: "From La Masia to the world: How BVI is democratizing elite football training.",
+      quote: "From La Masia to the world: How BV1 is democratizing elite football training.",
       source: "BBC Sport",
       logo: "/goal.png"
     },

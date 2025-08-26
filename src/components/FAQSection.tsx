@@ -24,8 +24,8 @@ const FAQSection = () => {
       answer: "Yes! Parents can purchase our programs for their children. We offer family-friendly payment options and our content is designed to be accessible and engaging for young players while maintaining the same high-quality coaching standards."
     },
     {
-      question: "What makes BVI different from other training?",
-      answer: "BVI combines 40+ years of La Masia methodology with modern player insights. We provide the same elite academy education that's typically only available to top academy players, making professional-level training accessible to serious players worldwide."
+      question: "What makes BV1 different from other training?",
+      answer: "BV1 combines 40+ years of La Masia methodology with modern player insights. We provide the same elite academy education that's typically only available to top academy players, making professional-level training accessible to serious players worldwide."
     },
     {
       question: "Do I get access to everything at once?",

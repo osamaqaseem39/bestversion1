@@ -83,7 +83,7 @@ export default function ProgramsSection() {
                 </h3>
                 
                 <h4 className="font-poppins font-normal text-[30px] text-white mb-8 tracking-[0%] leading-[132%] uppercase">
-                  BVI PRO + 14 INSTRUCTIONAL FOOTBALL VIDEO TUTORIALS BY JORDI ROURA
+                  BV1 PRO + 14 INSTRUCTIONAL FOOTBALL VIDEO TUTORIALS BY JORDI ROURA
                 </h4>
                 
                 <p className="text-white/80 text-[13px] leading-[150%] max-w-[460px]">

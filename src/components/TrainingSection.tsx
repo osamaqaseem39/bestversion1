@@ -168,7 +168,7 @@ export default function TrainingSection() {
                                          <span>&ldquo;I've spent 40+ years coaching, scouting, and directing the development of players now worth over $3 billion.&rdquo;</span>
                   </div>
 
-                  
+        
                   <div className="text-white text-[15px] font-extralight text-left">
                     – Jordi Roura, Ex-FC Barcelona Coach
                   </div>
@@ -219,7 +219,7 @@ export default function TrainingSection() {
         <p className={`text-[25px] text-white font-light leading-relaxed transition-all duration-1000 delay-900 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
-          Together, They Created BVI - A Step-By-Step Roadmap Based On What Actually Works
+          Together, They Created BV1 - A Step-By-Step Roadmap Based On What Actually Works
         </p>
       </div>
 

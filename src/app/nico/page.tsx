@@ -540,7 +540,7 @@ const NicoPage = () => {
                 Nico teamed up with former FC Barcelona and La Masia coach Jordi Roura to create Best Version 1 — a platform that finally teaches the tactical, positional, and mental side of the game in a way that young players can actually understand.
               </p>
               <p className="font-poppins text-white/90" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
-                At BVI, Nico leads:
+                At BV1, Nico leads:
               </p>
               <ul className="space-y-2 text-white/90 font-poppins mt-4" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '100%', letterSpacing: '0%' }}>
                 <li>• All player-facing course content and delivery</li>
@@ -567,7 +567,7 @@ const NicoPage = () => {
               </p>
               <div className="mt-8">
                 <p className="font-poppins text-white/90 italic" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
-                  &ldquo;I built BVI to be the program I wish someone had given me when I was 13. I was lost, doing the work, but not seeing results. This is the clarity I never had — and now I'm giving it to players who are ready to take control of their future.&rdquo;
+                  &ldquo;I built BV1 to be the program I wish someone had given me when I was 13. I was lost, doing the work, but not seeing results. This is the clarity I never had — and now I'm giving it to players who are ready to take control of their future.&rdquo;
                 </p>
               </div>
             </div>        </div>

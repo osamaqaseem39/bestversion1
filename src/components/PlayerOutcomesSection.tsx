@@ -42,7 +42,7 @@ const PlayerOutcomesSection = () => {
             PLAYER OUTCOMES
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            How BVI Helps Serious Players Succeed
+            How BV1 Helps Serious Players Succeed
           </h2>
         </div>
 

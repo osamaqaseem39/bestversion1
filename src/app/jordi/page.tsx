@@ -638,10 +638,10 @@ const JordiPage = () => {
                 </h3>
               </div>
               <p className="font-poppins text-white/90 mb-6" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
-                Jordi created BVI to bring professional-level football education to players who otherwise wouldn't have access to it.
+                Jordi created BV1 to bring professional-level football education to players who otherwise wouldn't have access to it.
               </p>
               <p className="font-poppins text-white/90 mb-8" style={{ fontWeight: 275, fontSize: '25px', lineHeight: '120%', letterSpacing: '0%' }}>
-                Through his exclusive Football IQ course and BVI's broader platform, he shares the foundational knowledge that most players never receive, no matter how hard they train.
+                Through his exclusive Football IQ course and BV1's broader platform, he shares the foundational knowledge that most players never receive, no matter how hard they train.
               </p>
               <div className="inline-block bg-transparent rounded-xl px-6 py-2 shadow-[0_0_30px_#4652FF69]">
                 <p className="font-poppins font-light text-white text-4xl uppercase drop-shadow-[0_0_20px_#4652FF69]" style={{ fontWeight: 300, letterSpacing: '0%' }}>

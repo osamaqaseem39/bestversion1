@@ -4,7 +4,7 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       role: "PARENT",
-      quote: "BVI FINALLY GAVE MY SON THE CLARITY AND CONFIDENCE TO PLAY HIS BEST"
+      quote: "BV1 FINALLY GAVE MY SON THE CLARITY AND CONFIDENCE TO PLAY HIS BEST"
     },
     {
       role: "COACH",
@@ -16,7 +16,7 @@ const TestimonialsSection = () => {
     },
     {
       role: "JORDI",
-      quote: "WE BUILT BVI TO GIVE EVERY PLAYER ACCESS TO THE EDUCATION THEY DESERVE."
+      quote: "WE BUILT BV1 TO GIVE EVERY PLAYER ACCESS TO THE EDUCATION THEY DESERVE."
     }
   ];
 
