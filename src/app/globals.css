@@ -144,9 +144,9 @@ html {
 }
 
 .animate-scroll {
-  animation: scroll 30s linear infinite;
+  animation: scroll 60s linear infinite;
 }
 
 .animate-scroll-reverse {
-  animation: scroll-reverse 30s linear infinite;
+  animation: scroll-reverse 60s linear infinite;
 } 

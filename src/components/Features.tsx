@@ -62,26 +62,26 @@ export default function Features() {
   // The useEffect is removed for better performance
 
   return (
-    <section className="relative max-w-8xl mx-auto overflow-hidden bg-transparent py-16">
-      {/* Top Row Carousel */}
-      <div className="relative z-20 mb-8 transform rotate-[-5deg]">
-        <div className="overflow-hidden">
-          <div 
-            className="flex gap-8 animate-scroll"
-            style={{ width: 'max-content' }}
-          >
+    <section className="relative max-w-8xl mx-auto overflow-hidden bg-transparent">
+      {/* Features Grid - Two Parallel Rows */}
+      <div className="relative z-10 max-w-8xl mx-auto w-full">
+        {/* Top Row */}
+        <div className="flex justify-between items-center gap-0 mb-0 w-full transform rotate-[-5deg] relative z-20 overflow-hidden">
+          <div className="flex gap-0 animate-scroll" style={{ width: 'max-content' }}>
             {duplicatedFeatures.map((feature, index) => (
               <div
                 key={index}
                 className="bg-transparent hover:scale-105 transition-all duration-300 flex-shrink-0"
-                style={{ width: '200px' }}
+                style={{ width: '350px' }}
               >
+                {/* Card Content */}
                 <div className="relative">
+                  {/* Tag Image */}
                   <Image
                     src={feature.image}
                     alt={feature.text}
-                    width={200}
-                    height={150}
+                    width={350}
+                    height={250}
                     className="object-contain drop-shadow-2xl"
                   />
                 </div>
@@ -89,27 +89,24 @@ export default function Features() {
             ))}
           </div>
         </div>
-      </div>
 
-      {/* Bottom Row Carousel */}
-      <div className="relative z-10 transform rotate-[5deg]">
-        <div className="overflow-hidden">
-          <div 
-            className="flex gap-8 animate-scroll-reverse"
-            style={{ width: 'max-content' }}
-          >
+        {/* Bottom Row */}
+        <div className="flex justify-between items-center gap-0 w-full transform rotate-[5deg] relative z-10 -mt-56 overflow-hidden">
+          <div className="flex gap-0 animate-scroll-reverse" style={{ width: 'max-content' }}>
             {duplicatedFeatures.map((feature, index) => (
               <div
                 key={index}
                 className="bg-transparent hover:scale-105 transition-all duration-300 flex-shrink-0"
-                style={{ width: '200px' }}
+                style={{ width: '350px' }}
               >
+                {/* Card Content */}
                 <div className="relative">
+                  {/* Tag Image */}
                   <Image
                     src={feature.image}
                     alt={feature.text}
-                    width={200}
-                    height={150}
+                    width={350}
+                    height={250}
                     className="object-contain drop-shadow-2xl"
                   />
                 </div>

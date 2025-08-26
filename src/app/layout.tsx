@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: 'Best Version 1 - Discover Your Best Version',
   description: 'Transform your life and discover your best version with our innovative programs and methods.',
   icons: {
-    icon: '/logo.svg',
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/bv1icon.png',
   },
 }
 
@@ -20,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/logo.svg" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/bv1icon.png" />
         <meta name="theme-color" content="#3B82F6" />
       </head>
       <body className={`${inter.className} bg-black min-h-screen`}>

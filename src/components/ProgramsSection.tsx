@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 export default function ProgramsSection() {
   const [currentCardIndex, setCurrentCardIndex] = useState(0)
+  const [isHovered, setIsHovered] = useState(false)
 
   const products = [
     {
@@ -38,9 +39,12 @@ export default function ProgramsSection() {
   }
 
   return (
-    <section id="programs" className="relative py-20 px-4 sm:px-6 lg:pl-8 lg:pr-0 overflow-hidden bg-transparent min-h-screen">
-
-
+    <section 
+      id="programs" 
+      className="relative py-20 px-4 sm:px-6 lg:pl-8 lg:pr-0 overflow-hidden bg-transparent min-h-screen"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       {/* Content */}
       <div className="relative z-10 w-full max-w-[1600px] mx-auto px-8">
         {/* Header */}
@@ -53,7 +57,7 @@ export default function ProgramsSection() {
         {/* Main Content */}
         <div className="grid lg:grid-cols-[519px_1fr] gap-0 items-center relative">
           {/* Left Panel - Products Information */}
-          <div className="relative w-full ">
+          <div className={`relative w-full transition-all duration-700 ${isHovered ? 'blur-sm' : ''}`}>
             {/* Panel Content */}
             <div className="relative rounded-2xl overflow-hidden w-[519px] h-[661px]">
               {/* Background image */}
@@ -95,7 +99,7 @@ export default function ProgramsSection() {
 
           {/* Right Section - Product Cards */}
           <div className="relative flex justify-center items-center">
-            <div className="flex gap-0 -ml-32">
+            <div className={`flex gap-0 transition-all duration-700 ease-in-out ${isHovered ? '-ml-0' : '-ml-32'}`}>
               {products.map((product, index) => (
                 <div
                   key={index}
