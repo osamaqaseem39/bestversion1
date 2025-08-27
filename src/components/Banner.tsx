@@ -23,7 +23,7 @@ export default function Banner() {
         </div>
 
         {/* Body Text */}
-        <p className="font-poppins font-weight-275 text-[8px] sm:text-[12px] md:text-[10px] leading-[120%] tracking-[0.45em] text-center uppercase text-white max-w-4xl mx-auto">
+        <p className="font-poppins font-weight-275 text-[18px] sm:text-[12px] md:text-[15px] leading-[120%] tracking-[0.45em] text-center uppercase text-white max-w-7xl mx-auto">
           BEST VERSION IS THE ELITE FOOTBALL EDUCATION PLATFORM FOR SERIOUS PLAYERS WHO WANT TO MASTER THE GAME ON A DEEPER LEVEL. BUILT BY FORMER FC BARCELONA COACH JORDI ROURA, BV1 HELPS YOU DEVELOP THE TACTICAL IQ, DECISION-MAKING, AND AWARENESS USED AT THE HIGHEST LEVELS OF FOOTBALL.
         </p>
       </div>
