@@ -61,24 +61,23 @@ export default function WhyBV1Section() {
   }, [currentSlide, nextSlide])
 
   return (
-    <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-transparent min-h-screen">
-
+    <section className="relative py-6 sm:py-8 md:py-12 lg:py-20 px-3 sm:px-4 md:px-6 lg:px-8 overflow-hidden bg-transparent min-h-screen">
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
-        <div className="flex justify-between items-center mb-16">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-6 sm:mb-8 md:mb-12 lg:mb-16 gap-4 lg:gap-0">
           <div className="flex-1 max-w-6xl">
-            <h3 className="font-poppins font-extralight text-[45px] text-white uppercase tracking-wider mb-4 leading-[132%]">
+            <h3 className="font-poppins font-extralight text-[18px] sm:text-[22px] md:text-[28px] lg:text-[36px] xl:text-[45px] text-white uppercase tracking-wider mb-2 sm:mb-3 md:mb-4 leading-[132%]">
               WHY BEST VERSION 1 IS DIFFERENT
             </h3>
-            <h2 className="font-poppins font-semibold text-[64px] text-white leading-[132%] max-w-5xl">
+            <h2 className="font-poppins font-semibold text-[20px] sm:text-[24px] md:text-[32px] lg:text-[48px] xl:text-[64px] text-white leading-[132%] max-w-5xl">
               Why Most Players Train<br/> Wrong — and How BV1 Fixes It
             </h2>
           </div>
           
           {/* Buy Now Button */}
-          <button className="text-white bg-gray-700/50 px-5 py-2.5 rounded-full hover:bg-gray-700 transition-colors text-base ml-8">
+          <button className="text-white bg-gray-700/50 px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 rounded-full hover:bg-gray-700 transition-colors text-xs sm:text-sm md:text-base lg:ml-8 w-full sm:w-auto">
             Buy Now
           </button>
         </div>
@@ -86,15 +85,15 @@ export default function WhyBV1Section() {
         {/* Features Section */}
         <div className="relative">
           {/* Carousel Controls */}
-          <div className="absolute -top-20 right-0 flex items-center space-x-3">
+          <div className="absolute -top-12 sm:-top-16 md:-top-20 right-0 flex items-center space-x-2 sm:space-x-3">
             {/* Navigation Arrows */}
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-1 sm:space-x-2">
               {/* Back Arrow */}
               <button 
                 onClick={prevSlide}
-                className="p-3 hover:bg-white/10 rounded-lg transition-all duration-300 hover:scale-110 active:scale-95"
+                className="p-1.5 sm:p-2 md:p-3 hover:bg-white/10 rounded-lg transition-all duration-300 hover:scale-110 active:scale-95"
               >
-                <svg className="w-6 h-6 text-white transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
@@ -102,9 +101,9 @@ export default function WhyBV1Section() {
               {/* Forward Arrow */}
               <button 
                 onClick={nextSlide}
-                className="p-3 hover:bg-white/10 rounded-lg transition-all duration-300 hover:scale-110 active:scale-95"
+                className="p-1.5 sm:p-2 md:p-3 hover:bg-white/10 rounded-lg transition-all duration-300 hover:scale-110 active:scale-95"
               >
-                <svg className="w-6 h-6 text-white transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
@@ -112,14 +111,14 @@ export default function WhyBV1Section() {
           </div>
 
           {/* Features Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 transition-all duration-500 ease-in-out">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 transition-all duration-500 ease-in-out">
           {Array.from({ length: cardsPerView }, (_, i) => {
             const featureIndex = (currentSlide * cardsPerView + i) % features.length;
             const feature = features[featureIndex];
             return (
                          <div 
                key={`${currentSlide}-${i}`}
-               className="p-6 transition-all duration-300 ease-out bg-gray-700/30 backdrop-blur-sm shadow-[0_8px_25px_-5px_rgba(0,0,0,0.6)] hover:bg-gray-700/50 hover:shadow-[0_25px_50px_-15px_rgba(0,0,0,0.8)] hover:scale-105 hover:-translate-y-2 cursor-pointer group relative overflow-hidden animate-slide-in"
+               className="p-3 sm:p-4 md:p-6 transition-all duration-300 ease-out bg-gray-700/30 backdrop-blur-sm shadow-[0_8px_25px_-5px_rgba(0,0,0,0.6)] hover:bg-gray-700/50 hover:shadow-[0_25px_50px_-15px_rgba(0,0,0,0.8)] hover:scale-105 hover:-translate-y-2 cursor-pointer group relative overflow-hidden animate-slide-in"
                style={{
                  animationDelay: `${i * 150}ms`,
                  opacity: 0
@@ -134,16 +133,16 @@ export default function WhyBV1Section() {
               {/* Content */}
               <div className="relative z-10">
                 <h3 
-                  className="font-poppins font-normal text-[26px] text-white mb-3 leading-[132%]"
+                  className="font-poppins font-normal text-[14px] sm:text-[16px] md:text-[20px] lg:text-[24px] xl:text-[26px] text-white mb-2 sm:mb-3 leading-[132%]"
                   dangerouslySetInnerHTML={{ __html: feature.title }}
                 ></h3>
                 
                 {/* Dashed circular icon - visible on hover */}
-                <div className="mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="w-8 h-8 border-2 border-white/60 border-dashed rounded-full"></div>
+                <div className="mb-2 sm:mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 border-2 border-white/60 border-dashed rounded-full"></div>
                 </div>
                 
-                <p className="font-poppins font-normal text-[20px] text-white/80 leading-[132%]">
+                <p className="font-poppins font-normal text-[11px] sm:text-[13px] md:text-[16px] lg:text-[18px] xl:text-[20px] text-white/80 leading-[132%]">
                   {feature.description}
                 </p>
               </div>

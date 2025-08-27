@@ -48,18 +48,17 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen bg-transparent flex items-center justify-center overflow-hidden">
+    <section className="relative bg-transparent overflow-hidden px-0 sm:px-4 md:px-6 lg:px-8" style={{ aspectRatio: '16/9' }}>
       {/* Background with gradient effect */}
      
       {/* Video Background - grows from center */}
       {isPlaying && (
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
           <video
             ref={videoRef}
             className="object-cover transition-all duration-1000 ease-in-out"
             style={{
-              width: `${videoSize}vw`,
-              height: `${videoSize}vh`,
+              width: '100%',
               borderRadius: videoSize < 100 ? '50%' : '0%'
             }}
             autoPlay
@@ -83,8 +82,8 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-br from-blue-900/25 via-black/20 to-purple-900/30"></div>
             
             {/* Top and bottom fade */}
-            <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black/80 to-transparent"></div>
-            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/80 to-transparent"></div>
+            <div className="absolute top-0 left-0 right-0 h-16 sm:h-24 md:h-32 bg-gradient-to-b from-black/80 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 right-0 h-16 sm:h-24 md:h-32 bg-gradient-to-t from-black/80 to-transparent"></div>
             
             {/* Additional dark overlay for overall darkness */}
             <div className="absolute inset-0 bg-black/30"></div>
@@ -96,13 +95,13 @@ export default function Hero() {
       )}
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
+      <div className="absolute inset-0 flex items-center justify-center z-10 text-center px-0 sm:px-4 md:px-6 lg:px-8">
         {/* Main Play Button using image from public folder */}
         <button
           onClick={handlePlayClick}
           className={`group relative flex items-center justify-center transition-all duration-1000 ease-in-out shadow-2xl ${
             buttonVisible 
-              ? 'w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 opacity-100' 
+              ? 'w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 opacity-100' 
               : 'w-0 h-0 opacity-0'
           }`}
         >

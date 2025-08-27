@@ -33,38 +33,37 @@ export default function WhoThisIsForSection() {
   ]
 
   return (
-    <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-transparent min-h-screen">
-
+    <section className="relative py-6 sm:py-8 md:py-12 lg:py-20 px-3 sm:px-4 md:px-6 lg:px-8 overflow-hidden bg-transparent min-h-screen">
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
           {/* Centered text */}
-          <div className="flex justify-center mb-6">
-            <h3 className="font-poppins font-extralight text-[45px] text-white leading-[132%] text-center uppercase" style={{ fontWeight: 275, letterSpacing: '0%' }}>
+          <div className="flex justify-center mb-3 sm:mb-4 md:mb-6">
+            <h3 className="font-poppins font-extralight text-[18px] sm:text-[22px] md:text-[28px] lg:text-[36px] xl:text-[45px] text-white leading-[132%] text-center uppercase" style={{ fontWeight: 275, letterSpacing: '0%' }}>
               WHO THIS IS FOR
             </h3>
           </div>
-          <h2 className="font-poppins font-semibold text-[45px] text-white leading-[132%] text-center whitespace-nowrap mb-8" style={{ fontWeight: 600, letterSpacing: '0%' }}>
+          <h2 className="font-poppins font-semibold text-[18px] sm:text-[22px] md:text-[28px] lg:text-[36px] xl:text-[45px] text-white leading-[132%] text-center mb-4 sm:mb-6 md:mb-8" style={{ fontWeight: 600, letterSpacing: '0%' }}>
             Built For Players Who Want More
           </h2>
           
           {/* Navigation Controls - positioned below headings on the right */}
-          <div className="flex justify-end gap-4">
+          <div className="flex justify-center sm:justify-end gap-2 sm:gap-3 md:gap-4">
             <button 
               onClick={prevSlide}
-              className="w-12 h-12 border-2 border-white/30 rounded-full flex items-center justify-center hover:border-white/60 transition-colors"
+              className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border-2 border-white/30 rounded-full flex items-center justify-center hover:border-white/60 transition-colors"
             >
-              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
             <button 
               onClick={nextSlide}
-              className="w-12 h-12 border-2 border-white/30 rounded-full flex items-center justify-center hover:border-white/60 transition-colors"
+              className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border-2 border-white/30 rounded-full flex items-center justify-center hover:border-white/60 transition-colors"
             >
-              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
@@ -72,14 +71,14 @@ export default function WhoThisIsForSection() {
         </div>
 
         {/* Player Category Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
           {playerCategories.map((category, index) => (
             <div 
               key={index}
               className="relative group cursor-pointer"
             >
               {/* Card with actual image */}
-              <div className="w-full min-h-[470px] rounded-2xl relative overflow-hidden">
+              <div className="w-full min-h-[200px] sm:min-h-[250px] md:min-h-[300px] lg:min-h-[400px] xl:min-h-[470px] rounded-2xl relative overflow-hidden">
                 {/* Background image */}
                 <Image 
                   src={category.image} 
@@ -88,21 +87,21 @@ export default function WhoThisIsForSection() {
                   className="object-cover"
                 />
                 
-                                 {/* Category Tag with Action Icon */}
-                 <div className="absolute bottom-6 left-6 bg-black/30 backdrop-blur-sm text-white px-6 py-3 rounded-full text-base font-medium flex items-center gap-3 cursor-pointer group/tag hover:bg-black/50 transition-colors">
-                   <span>{category.category}</span>
-                   <svg className="w-5 h-5 text-white transition-transform duration-300 group-hover/tag:rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m7 17 9.2-9.2M17 17V7H7" />
-                   </svg>
-                 </div>
+                {/* Category Tag with Action Icon */}
+                <div className="absolute bottom-3 sm:bottom-4 md:bottom-6 left-3 sm:left-4 md:left-6 bg-black/30 backdrop-blur-sm text-white px-3 py-1.5 sm:px-4 sm:py-2 md:px-6 md:py-3 rounded-full text-xs sm:text-sm md:text-base font-medium flex items-center gap-1.5 sm:gap-2 md:gap-3 cursor-pointer group/tag hover:bg-black/50 transition-colors">
+                  <span>{category.category}</span>
+                  <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white transition-transform duration-300 group-hover/tag:rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m7 17 9.2-9.2M17 17V7H7" />
+                  </svg>
+                </div>
               </div>
               
               {/* Description and CTA */}
-              <div className="mt-2 flex items-center justify-between p-4 bg-white/10 backdrop-blur-sm rounded-2xl shadow-lg">
-                <p className="font-poppins font-normal text-[18px] text-white leading-[132%]">
+              <div className="mt-2 flex items-center justify-between p-2 sm:p-3 md:p-4 bg-white/10 backdrop-blur-sm rounded-2xl shadow-lg">
+                <p className="font-poppins font-normal text-[11px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] text-white leading-[132%]">
                   {category.description}
                 </p>
-                <button className="font-poppins font-normal text-[18px] text-white leading-[132%] hover:text-blue-400 transition-colors underline">
+                <button className="font-poppins font-normal text-[11px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] text-white leading-[132%] hover:text-blue-400 transition-colors underline">
                   See
                 </button>
               </div>

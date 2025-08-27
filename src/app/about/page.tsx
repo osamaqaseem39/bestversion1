@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import CallToActionSection from '@/components/CallToActionSection';
+import CallToActionSectionAbout from '@/components/CallToActionSectionAbout';
 
 const AboutPage = () => {
   return (
@@ -682,7 +682,7 @@ const AboutPage = () => {
         </div>
 
         {/* Call to Action Section */}
-        <CallToActionSection />
+        <CallToActionSectionAbout />
 
         {/* Footer */}
         <Footer />

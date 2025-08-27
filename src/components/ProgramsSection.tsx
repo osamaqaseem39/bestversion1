@@ -41,32 +41,30 @@ export default function ProgramsSection() {
   return (
     <section 
       id="programs" 
-      className="relative py-20 px-4 sm:px-6 lg:pl-8 lg:pr-0 overflow-hidden bg-transparent min-h-screen"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      className="relative py-6 sm:py-8 md:py-12 lg:py-20 px-3 sm:px-4 md:px-6 lg:pl-8 lg:pr-0 overflow-hidden bg-transparent min-h-screen"
     >
       {/* Content */}
-      <div className="relative z-10 w-full max-w-[1600px] mx-auto px-8">
+      <div className="relative z-10 w-full max-w-[1600px] mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
         {/* Header */}
-        <div className="flex justify-between items-center mb-16">
-          <h2 className="font-poppins font-light text-6xl text-white uppercase tracking-wider">
+        <div className="flex justify-between items-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+          <h2 className="font-poppins font-light text-[24px] sm:text-[32px] md:text-[40px] lg:text-6xl text-white uppercase tracking-wider">
             PROGRAMS
           </h2>
         </div>
 
         {/* Main Content */}
-        <div className="grid lg:grid-cols-[519px_1fr] gap-0 items-center relative">
+        <div className="grid grid-cols-1 lg:grid-cols-[519px_1fr] gap-6 sm:gap-8 lg:gap-0 items-center relative">
           {/* Left Panel - Products Information */}
-          <div className={`relative w-full transition-all duration-700 ${isHovered ? 'blur-sm' : ''}`}>
+          <div className={`relative w-full transition-all duration-700 ${isHovered ? 'lg:blur-sm' : ''}`}>
             {/* Panel Content */}
-            <div className="relative rounded-2xl overflow-hidden w-[519px] h-[661px]">
+            <div className="relative rounded-2xl overflow-hidden w-full max-w-[519px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[661px] mx-auto lg:mx-0">
               {/* Background image */}
               <Image
                 src="/Subtract.png"
                 alt="Background Image"
                 width={519}
                 height={661}
-                className="absolute inset-0  object-contain"
+                className="absolute inset-0 object-contain"
                 priority
               />
               
@@ -76,21 +74,21 @@ export default function ProgramsSection() {
                 alt="Curved Lines"
                 width={519}
                 height={661}
-                className="absolute inset-0  object-contain"
+                className="absolute inset-0 object-contain"
                 priority
               />
               
               {/* Content */}
-              <div className="relative z-20 flex flex-col justify-center h-full px-16 pr-32">
-                <h3 className="font-poppins font-bold text-[30px] text-white uppercase mb-8 tracking-[2%] leading-[132%]">
+              <div className="relative z-20 flex flex-col justify-center h-full px-4 sm:px-6 md:px-12 lg:px-16 pr-4 sm:pr-8 md:pr-16 lg:pr-32">
+                <h3 className="font-poppins font-bold text-[16px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-white uppercase mb-3 sm:mb-4 md:mb-6 lg:mb-8 tracking-[2%] leading-[132%]">
                   PRODUCTS
                 </h3>
                 
-                <h4 className="font-poppins font-normal text-[30px] text-white mb-8 tracking-[0%] leading-[132%] uppercase">
+                <h4 className="font-poppins font-normal text-[14px] sm:text-[18px] md:text-[24px] lg:text-[30px] text-white mb-3 sm:mb-4 md:mb-6 lg:mb-8 tracking-[0%] leading-[132%] uppercase">
                   BV1 PRO + 14 INSTRUCTIONAL FOOTBALL VIDEO TUTORIALS BY JORDI ROURA
                 </h4>
                 
-                <p className="text-white/80 text-[13px] leading-[150%] max-w-[460px]">
+                <p className="text-white/80 text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] leading-[150%] max-w-[460px]">
                   Best Version 1 Pro is a set of premium instructional football video content that Jordi has been implementing successfully throughout his career in La Masia, it is a set of fundamental concepts that worked to shape the football game of hundreds of pro players in the best leagues throughout the world.
                 </p>
               </div>
@@ -98,16 +96,20 @@ export default function ProgramsSection() {
           </div>
 
           {/* Right Section - Product Cards */}
-          <div className="relative flex justify-center items-center">
-            <div className={`flex gap-0 transition-all duration-700 ease-in-out ${isHovered ? 'transform -translate-x-1/2' : '-ml-32'}`}>
+          <div 
+            className="relative flex justify-center items-center w-full mt-6 sm:mt-8 lg:mt-0"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <div className={`flex flex-col sm:flex-row lg:flex-row gap-4 sm:gap-6 lg:gap-0 transition-all duration-700 ease-in-out ${isHovered ? 'lg:transform lg:-translate-x-[28%]' : 'relative lg:-ml-32'}`}>
               {products.map((product, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0"
+                  className="flex-shrink-0 flex justify-center"
                 >
                   {/* Product Card using front and back images */}
                   <div 
-                    className="relative w-[400px] h-[600px] cursor-pointer perspective-1000" 
+                    className="relative w-[200px] h-[300px] sm:w-[240px] sm:h-[360px] md:w-[280px] md:h-[420px] lg:w-[400px] lg:h-[600px] cursor-pointer perspective-1000" 
                     onMouseEnter={() => setFlippedCards(prev => {
                       const newFlipped = [...prev]
                       newFlipped[index] = true

@@ -39,7 +39,7 @@ const TestimonialsSection = () => {
               className="bg-transparent rounded-xl p-8 border border-gray-700/30 hover:border-gray-600/50 transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-xl"
               style={{ width: '480px', height: '380px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)' }}
             >
-              <div className="h-full flex flex-col justify-center text-left">
+              <div className="h-full flex flex-col justify-center text-center">
                 <h3 className="font-poppins text-white mb-4 uppercase" style={{ fontSize: '35px', fontWeight: '400', lineHeight: '100%', letterSpacing: '0%' }}>
                   {testimonial.role}
                 </h3>

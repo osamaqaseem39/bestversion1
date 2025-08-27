@@ -112,13 +112,12 @@ export default function TrainingSection() {
   }
 
   return (
-    <section ref={sectionRef} id="method" className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-transparent min-h-screen flex items-center justify-center">
-
+    <section ref={sectionRef} id="method" className="relative py-6 sm:py-8 md:py-12 lg:py-20 px-3 sm:px-4 md:px-6 lg:px-8 overflow-hidden bg-transparent min-h-screen flex items-center justify-center">
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto text-center">
         {/* Main Headline */}
-        <h2 className={`font-poppins font-light text-[45px] leading-[132%] tracking-[0%] text-center capitalize text-white mb-8 transition-all duration-1000 ${
+        <h2 className={`font-poppins font-light text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] xl:text-[45px] leading-[132%] tracking-[0%] text-center capitalize text-white mb-4 sm:mb-6 md:mb-8 transition-all duration-1000 ${
           scrollStep >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
           Are You Training Hard...
@@ -127,49 +126,49 @@ export default function TrainingSection() {
         </h2>
 
         {/* Explanatory Text */}
-        <p className={`text-[30px] text-white font-extralight mb-16 max-w-7xl mx-auto leading-[132%] tracking-[0%] text-center transition-all duration-1000 delay-300 ${
+        <p className={`text-[14px] sm:text-[16px] md:text-[18px] lg:text-[24px] xl:text-[30px] text-white font-extralight mb-8 sm:mb-10 md:mb-12 lg:mb-16 max-w-7xl mx-auto leading-[132%] tracking-[0%] text-center transition-all duration-1000 delay-300 ${
           scrollStep >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
-                                             You're Not Alone. Many Talented Players Work Hard, But Never
+          You're Not Alone. Many Talented Players Work Hard, But Never
           <br />
-                                                                                             Get The Right Guidance. That's Exactly Why This Program Was Created
+          Get The Right Guidance. That's Exactly Why This Program Was Created
         </p>
 
         {/* Two Cards Stacked Vertically - Jordi and Nico */}
-        <div className="flex flex-col gap-8 mb-16 max-w-6xl mx-auto">
+        <div className="flex flex-col gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-10 md:mb-12 lg:mb-16 max-w-6xl mx-auto">
           {/* Jordi's Card */}
           <div 
             ref={cardRef1}
-            className={`bg-white/5 backdrop-blur-md rounded-[32px] p-6 md:p-8 shadow-2xl w-[700px] mx-auto cursor-pointer ${
+            className={`bg-white/5 backdrop-blur-md rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] p-3 sm:p-4 md:p-6 lg:p-8 shadow-2xl w-full max-w-[700px] mx-auto cursor-pointer ${
               isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 translate-y-20'
             }`}
             onMouseMove={(e) => handleMouseMove(e, cardRef1)}
             onMouseLeave={() => handleMouseLeave(cardRef1)}
           >
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-3 sm:gap-4 md:gap-6 lg:gap-8">
               {/* Profile Image */}
               <div className="flex-shrink-0">
                 <Image
                   src="/jordi.jpg"
                   alt="Jordi Roura"
-                  width={120}
-                  height={120}
-                  className="w-28 h-28 md:w-32 md:h-32 rounded-full object-cover"
+                  width={256}
+                  height={256}
+                  className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 rounded-full object-cover"
+                  quality={95}
                 />
               </div>
               
               {/* Content */}
               <div className="text-left flex-1">
-                <h3 className="font-poppins font-light text-[25px] leading-[132%] tracking-[0%] text-white mb-4 text-left">
+                <h3 className="font-poppins font-light text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[25px] leading-[132%] tracking-[0%] text-white mb-2 sm:mb-3 md:mb-4 text-left">
                   Jordi
                 </h3>
-                <div className="space-y-4">
-                  <div className="text-white text-[15px] font-extralight leading-relaxed">
-                                         <span>&ldquo;I've spent 40+ years coaching, scouting, and directing the development of players now worth over $3 billion.&rdquo;</span>
+                <div className="space-y-2 sm:space-y-3 md:space-y-4">
+                  <div className="text-white text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] font-extralight leading-relaxed">
+                    <span>&ldquo;I've spent 40+ years coaching, scouting, and directing the development of players now worth over $3 billion.&rdquo;</span>
                   </div>
 
-        
-                  <div className="text-white text-[15px] font-extralight text-left">
+                  <div className="text-white text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] font-extralight text-left">
                     – Jordi Roura, Ex-FC Barcelona Coach
                   </div>
                 </div>
@@ -179,34 +178,35 @@ export default function TrainingSection() {
 
           {/* Nico's Card */}
           <div ref={cardRef2}
-            className={`bg-white/5 backdrop-blur-md rounded-[32px] p-6 md:p-8 shadow-2xl w-[700px] mx-auto cursor-pointer ${
+            className={`bg-white/5 backdrop-blur-md rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] p-3 sm:p-4 md:p-6 lg:p-8 shadow-2xl w-full max-w-[700px] mx-auto cursor-pointer ${
               isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 translate-y-20'
             }`}
             onMouseMove={(e) => handleMouseMove(e, cardRef2)}
             onMouseLeave={() => handleMouseLeave(cardRef2)}
           >
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-3 sm:gap-4 md:gap-6 lg:gap-8">
               {/* Profile Image */}
               <div className="flex-shrink-0">
                 <Image
                   src="/nico.jpg"
                   alt="Nico Cuevas"
-                  width={120}
-                  height={120}
-                  className="w-28 h-28 md:w-32 md:h-32 rounded-full object-cover"
+                  width={256}
+                  height={256}
+                  className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 rounded-full object-cover"
+                  quality={95}
                 />
               </div>
               
               {/* Content */}
               <div className="text-left flex-1">
-                <h3 className="font-poppins font-light text-[25px] leading-[132%] tracking-[0%] text-white mb-4 text-left">
+                <h3 className="font-poppins font-light text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[25px] leading-[132%] tracking-[0%] text-white mb-2 sm:mb-3 md:mb-4 text-left">
                   Nico
                 </h3>
-                <div className="space-y-4">
-                  <div className="text-white text-[15px] font-extralight leading-relaxed">
+                <div className="space-y-2 sm:space-y-3 md:space-y-4">
+                  <div className="text-white text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] font-extralight leading-relaxed">
                     <span>&ldquo;I moved from Miami to Spain at 12, fought my way up to Getafe CF, and saw first-hand what most players miss.&rdquo;</span>
                   </div>
-                  <div className="text-white text-[15px] font-extralight text-left">
+                  <div className="text-white text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] font-extralight text-left">
                     – Nico Cuevas, Pro Player & Co-Founder
                   </div>
                 </div>
@@ -216,13 +216,12 @@ export default function TrainingSection() {
         </div>
 
         {/* Concluding Statement */}
-        <p className={`text-[25px] text-white font-light leading-relaxed transition-all duration-1000 delay-900 ${
+        <p className={`text-[14px] sm:text-[16px] md:text-[18px] lg:text-[22px] xl:text-[25px] text-white font-light leading-relaxed transition-all duration-1000 delay-900 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
           Together, They Created BV1 - A Step-By-Step Roadmap Based On What Actually Works
         </p>
       </div>
-
 
     </section>
   )
