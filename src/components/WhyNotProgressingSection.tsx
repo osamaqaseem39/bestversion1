@@ -16,7 +16,7 @@ export default function WhyNotProgressingSection() {
         <Image src="/wpn2.png" alt="Coach Expectations" width={80} height={80} className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20" />
       ),
       title: "YOU DON'T KNOW WHAT COACHES REALLY LOOK FOR",
-      description: "YOU'RE WORKING HARD, BUT NOT ON THE THINGS THAT MATTER MOST. COACHES WANT INTELLIGENT PLAYERS WHO READ THE GAME, REACT FAST, AND STAY COMPOSED UNDER PRESSURE NOT JUST FLASHY SKILLS."
+      description: "You’re training hard… but not on the things that matter. Coaches look for players who read the game, react with intelligence, and make smart choices — not just those with flashy skills or speed."
     },
     {
       icon: (
