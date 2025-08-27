@@ -107,11 +107,11 @@ const TacticalFoundationSection = () => {
           </div>
 
           {/* Third row: 2 items */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 justify-items-center">
             {foundations.slice(6, 8).map((foundation, index) => (
               <div
                 key={index + 6}
-                className={`bg-gradient-to-r from-gray-800/80 to-gray-900/80 rounded-full px-3 py-3 sm:px-6 sm:py-4 md:px-8 md:py-6 backdrop-blur-sm transition-all duration-300 hover:shadow-[0_0_25px_rgba(59,130,246,0.4)] h-20 sm:h-24 md:h-28 w-full min-w-0 flex-shrink-0 ${index === 0 ? 'md:col-start-1' : 'md:col-start-3'}`}
+                className="bg-gradient-to-r from-gray-800/80 to-gray-900/80 rounded-full px-3 py-3 sm:px-6 sm:py-4 md:px-8 md:py-6 backdrop-blur-sm transition-all duration-300 hover:shadow-[0_0_25px_rgba(59,130,246,0.4)] h-20 sm:h-24 md:h-28 w-full min-w-0 flex-shrink-0 md:w-4/5 lg:w-3/4"
               >
                 <div className="flex items-center justify-center space-x-2 sm:space-x-3 md:space-x-4 h-full">
                   <div className="flex-shrink-0">
