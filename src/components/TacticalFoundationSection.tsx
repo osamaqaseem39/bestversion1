@@ -38,7 +38,7 @@ const TacticalFoundationSection = () => {
   ];
 
   return (
-    <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-transparent">
+    <section id='method' className="py-8 sm:py-12 md:py-16 lg:py-20 bg-transparent">
       <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-12 md:mb-16">
           <p className="text-white font-poppins uppercase tracking-normal mb-3 sm:mb-4" style={{ fontSize: 'clamp(20px, 4vw, 45px)', fontWeight: '275', lineHeight: '132%', letterSpacing: '0%' }}>

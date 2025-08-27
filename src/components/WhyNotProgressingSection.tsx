@@ -22,7 +22,7 @@ export default function WhyNotProgressingSection() {
       icon: (
         <Image src="/wpn3.png" alt="Real Guidance" width={80} height={80} className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20" />
       ),
-      title: "YOU'RE TRYING TO IMPROVE WITHOUT REAL GUIDANCE",
+      title: "You’re Lacking Structure and Expert Direction",
       description: "Without a clear roadmap, most players waste time on things that don’t move them forward. Real growth happens when you train with purpose — guided by someone who’s been at the top level and knows what it actually takes."
     }
   ]
