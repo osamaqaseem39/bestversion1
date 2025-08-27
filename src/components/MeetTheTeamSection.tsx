@@ -26,7 +26,7 @@ const MeetTheTeamSection = () => {
             MEET THE TEAM
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            MEET THE COACHES BEHIND BEST VERSION 1
+            MEET THE TEAM BEHIND BEST VERSION 1
           </h2>
           <p className="font-poppins font-light text-[24px] text-white leading-[100%] text-center uppercase max-w-4xl mx-auto" style={{ fontWeight: 300, letterSpacing: '0%' }}>
             AT BEST VERSION 1, WE BELIEVE EVERY PLAYER DESERVES ACCESS TO ELITE FOOTBALL EDUCATION - 

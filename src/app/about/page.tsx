@@ -593,7 +593,7 @@ const AboutPage = () => {
                   <div className="absolute inset-0 rounded-2xl shadow-[0_0_50px_#4652FF69] pointer-events-none"></div>
                 </div>
                 <p className="font-poppins text-white/90 text-sm" style={{ fontWeight: 275, letterSpacing: '0%' }}>
-                  Nico training alone on pitch
+                  Nico playing against the Real Madrid Academy 
                 </p>
               </div>
 

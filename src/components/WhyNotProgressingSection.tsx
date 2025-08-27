@@ -9,7 +9,7 @@ export default function WhyNotProgressingSection() {
         <Image src="/wnp1.png" alt="Football IQ" width={80} height={80} className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20" />
       ),
       title: "YOU'VE NEVER BEEN TAUGHT FOOTBALL IQ",
-      description: "MOST PLAYERS ARE ONLY SHOWN DRILLS NOT HOW TO SCAN, POSITION, OR MAKE BETTER DECISIONS ON THE PITCH. WITHOUT UNDERSTANDING THE WHY, YOUR PROGRESS HITS A CEILING."
+      description: "Most players are only shown drills — not how to scan, position, or make better decisions on the pitch. Without understanding the why, your progress hits a ceiling."
     },
     {
       icon: (
@@ -23,7 +23,7 @@ export default function WhyNotProgressingSection() {
         <Image src="/wpn3.png" alt="Real Guidance" width={80} height={80} className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20" />
       ),
       title: "YOU'RE TRYING TO IMPROVE WITHOUT REAL GUIDANCE",
-      description: "YOU'RE TRAINING HARD — BUT WITHOUT EXPERT DIRECTION, YOU'RE GUESSING. MOST PLAYERS FOCUS ON THE WRONG THINGS AND NEVER DEVELOP REAL FOOTBALL INTELLIGENCE. WITHOUT SOMEONE SHOWING YOU WHAT ACTUALLY MATTERS, PROGRESS STAYS SLOW"
+      description: "You’re training hard… but not on the things that matter. Coaches look for players who read the game, react with intelligence, and make smart choices — not just those with flashy skills or speed."
     }
   ]
 
