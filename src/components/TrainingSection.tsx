@@ -139,8 +139,8 @@ export default function TrainingSection() {
           {/* Jordi's Card */}
           <div 
             ref={cardRef1}
-            className={`bg-white/5 backdrop-blur-md rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] p-3 sm:p-4 md:p-6 lg:p-8 shadow-2xl w-full max-w-[700px] mx-auto cursor-pointer ${
-              isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 translate-y-20'
+            className={`bg-white/5 backdrop-blur-md rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] p-3 sm:p-4 md:p-6 lg:p-8 shadow-2xl w-full max-w-[700px] mx-auto cursor-pointer transform hover:scale-105 transition-transform duration-300 ${
+              isVisible ? 'opacity-100 scale-110 translate-y-0' : 'opacity-0 scale-95 translate-y-20'
             }`}
             onMouseMove={(e) => handleMouseMove(e, cardRef1)}
             onMouseLeave={() => handleMouseLeave(cardRef1)}
@@ -178,8 +178,8 @@ export default function TrainingSection() {
 
           {/* Nico's Card */}
           <div ref={cardRef2}
-            className={`bg-white/5 backdrop-blur-md rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] p-3 sm:p-4 md:p-6 lg:p-8 shadow-2xl w-full max-w-[700px] mx-auto cursor-pointer ${
-              isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 translate-y-20'
+            className={`bg-white/5 backdrop-blur-md rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] p-3 sm:p-4 md:p-6 lg:p-8 shadow-2xl w-full max-w-[700px] mx-auto cursor-pointer transform hover:scale-105 transition-transform duration-300 ${
+              isVisible ? 'opacity-100 scale-110 translate-y-0' : 'opacity-0 scale-95 translate-y-20'
             }`}
             onMouseMove={(e) => handleMouseMove(e, cardRef2)}
             onMouseLeave={() => handleMouseLeave(cardRef2)}

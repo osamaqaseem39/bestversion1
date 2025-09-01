@@ -24,13 +24,13 @@ export default function Coach() {
               alt="Jordi Roura Sola"
               width={800}
               height={1050}
-              className="w-[200px] h-[262px] sm:w-[300px] sm:h-[393px] md:w-[500px] md:h-[656px] lg:w-[700px] lg:h-[918px] xl:w-[800px] xl:h-[1050px] object-contain"
+              className="w-[150px] h-[197px] sm:w-[200px] sm:h-[262px] md:w-[350px] md:h-[459px] lg:w-[500px] lg:h-[656px] xl:w-[600px] xl:h-[787px] object-contain"
             />
           </div>
         </div>
 
         {/* Top Divider Line */}
-        <div className="w-[150px] sm:w-[250px] md:w-[400px] lg:w-[500px] xl:w-[700px] h-px bg-white mx-auto mb-2 sm:mb-3 md:mb-4"></div>
+        <div className="w-[100px] sm:w-[150px] md:w-[250px] lg:w-[300px] xl:w-[400px] h-px bg-white mx-auto mb-2 sm:mb-3 md:mb-4"></div>
 
         {/* Coach Name */}
         <h2 className="font-poppins font-black text-[24px] sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[45px] leading-[132%] tracking-[0%] text-center capitalize text-white mb-2 sm:mb-3 md:mb-4">
@@ -38,7 +38,7 @@ export default function Coach() {
         </h2>
 
         {/* Bottom Divider Line */}
-        <div className="w-[100px] sm:w-[150px] md:w-[250px] lg:w-[300px] xl:w-[400px] h-px bg-white mx-auto mb-4 sm:mb-6 md:mb-8"></div>
+        <div className="w-[75px] sm:w-[100px] md:w-[150px] lg:w-[200px] xl:w-[250px] h-px bg-white mx-auto mb-4 sm:mb-6 md:mb-8"></div>
 
         {/* Coach Description */}
         

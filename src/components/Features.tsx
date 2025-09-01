@@ -49,6 +49,7 @@ export default function Features() {
       image: "/Tag 11.png",
       text: "IMPROVE KICK UPS"
     },
+    
     {
       image: "/Tag 12.png",
       text: "BETTER BALL CONTROL"

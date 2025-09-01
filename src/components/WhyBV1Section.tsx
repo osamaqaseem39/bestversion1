@@ -40,8 +40,8 @@ export default function WhyBV1Section() {
     }
   ]
 
-  const cardsPerView = 2 // Show 2 cards at a time on desktop
-  const totalSlides = Math.ceil(features.length / cardsPerView) // Move all 2 cards at once
+  const cardsPerView = 4 // Show 4 cards at a time on desktop
+  const totalSlides = Math.ceil(features.length / cardsPerView) // Move all 4 cards at once
   
   const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev + 1) % totalSlides)
@@ -85,7 +85,7 @@ export default function WhyBV1Section() {
         {/* Features Section */}
         <div className="relative">
           {/* Carousel Controls */}
-          <div className="absolute -top-12 sm:-top-16 md:-top-20 right-0 hidden lg:flex items-center space-x-2 sm:space-x-3">
+          <div className="flex justify-end items-center space-x-2 sm:space-x-3 mb-6 sm:mb-8">
             {/* Navigation Arrows */}
             <div className="flex items-center space-x-1 sm:space-x-2">
               {/* Back Arrow */}
@@ -111,7 +111,7 @@ export default function WhyBV1Section() {
           </div>
 
           {/* Features Grid - Mobile: All cards, Desktop: Carousel */}
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-3 sm:gap-4 md:gap-6 transition-all duration-500 ease-in-out">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 transition-all duration-500 ease-in-out">
             {/* Mobile: Show all features */}
             <div className="lg:hidden grid grid-cols-2 gap-3 sm:gap-4 md:gap-6">
               {features.map((feature, index) => (
