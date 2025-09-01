@@ -88,12 +88,6 @@ export default function Header() {
                   Programs
                 </Link>
                 <Link 
-                  href="/video-analysis"
-                  className="block w-full text-left px-2 py-1.5 sm:px-3 sm:py-2 md:px-4 text-white hover:bg-gray-700/50 transition-colors text-[10px] sm:text-xs md:text-sm"
-                >
-                  Video Analysis
-                </Link>
-                <Link 
                   href="/#method"
                   className="block w-full text-left px-2 py-1.5 sm:px-3 sm:py-2 md:px-4 text-white hover:bg-gray-700/50 transition-colors text-[10px] sm:text-xs md:text-sm"
                 >
@@ -164,12 +158,6 @@ export default function Header() {
                   >
                     Programs
                   </Link>
-                                  <Link 
-                  href="/video-analysis"
-                  className="text-white bg-gray-700/50 px-2 py-1.5 lg:px-3 lg:py-2 rounded-full hover:bg-gray-700 transition-colors text-xs lg:text-sm"
-                >
-                  Video Analysis
-                </Link>
                   <Link 
                     href="/#method"
                     className="text-white bg-gray-700/50 px-2 py-1.5 lg:px-3 lg:py-2 rounded-full hover:bg-gray-700 transition-colors text-xs lg:text-sm"
@@ -244,27 +232,24 @@ export default function Header() {
                 >
                   About Us
                 </Link>
-                <Link 
-                  href="/#programs"
+                <button 
+                  onClick={() => scrollToSection('programs')}
                   className="text-white text-xl sm:text-2xl font-medium hover:text-blue-400 transition-colors w-full text-center py-3 sm:py-4 border-b border-white/20"
-                  onClick={() => setIsMenuOpen(false)}
                 >
                   Programs
-                </Link>
-                <Link 
-                  href="/#method"
+                </button>
+                <button 
+                  onClick={() => scrollToSection('method')}
                   className="text-white text-xl sm:text-2xl font-medium hover:text-blue-400 transition-colors w-full text-center py-3 sm:py-4 border-b border-white/20"
-                  onClick={() => setIsMenuOpen(false)}
                 >
                   Method
-                </Link>
-                <Link 
-                  href="/#faq"
+                </button>
+                <button 
+                  onClick={() => scrollToSection('faq')}
                   className="text-white text-xl sm:text-2xl font-medium hover:text-blue-400 transition-colors w-full text-center py-3 sm:py-4 border-b border-white/20"
-                  onClick={() => setIsMenuOpen(false)}
                 >
                   FAQ
-                </Link>
+                </button>
               </div>
 
               {/* Mobile Menu Footer - Login */}
