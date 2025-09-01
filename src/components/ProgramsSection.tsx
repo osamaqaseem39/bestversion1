@@ -157,15 +157,15 @@ export default function ProgramsSection() {
           >
             {/* Mobile Grid Layout - 2 cards per row, back sides only */}
             <div className="lg:hidden w-full px-4 py-8">
-              <div className="grid grid-cols-2 gap-3 sm:gap-4 w-full max-w-sm mx-auto">
+              <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6 w-full max-w-md md:max-w-lg mx-auto">
                 {products.map((product, index) => (
                   <div
                     key={`mobile-${index}`}
                     className="flex justify-center"
                   >
-                    {/* Mobile Card - Back side only, smaller size */}
+                    {/* Mobile Card - Back side only, responsive size */}
                     <div 
-                      className="relative w-[140px] h-[210px] sm:w-[160px] sm:h-[240px] cursor-pointer transition-all duration-300 hover:scale-105 shadow-lg"
+                      className="relative w-[140px] h-[210px] sm:w-[160px] sm:h-[240px] md:w-[180px] md:h-[270px] cursor-pointer transition-all duration-300 hover:scale-105 shadow-lg"
                       onClick={() => {
                         if (product.title === "FULL COURSE") {
                           window.open("https://bv1pro.com/bestversion1", "_blank");
@@ -177,8 +177,8 @@ export default function ProgramsSection() {
                       <Image
                         src={product.backImage}
                         alt={`${product.title} - Back`}
-                        width={160}
-                        height={240}
+                        width={180}
+                        height={270}
                         className="w-full h-full object-contain"
                         priority
                         onError={(e) => {

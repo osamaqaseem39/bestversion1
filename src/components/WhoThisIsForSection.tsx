@@ -49,26 +49,7 @@ export default function WhoThisIsForSection() {
             Built For Players Who Want More
           </h2>
           
-          {/* Navigation Controls - positioned below headings on the right */}
-          <div className="flex justify-center sm:justify-end gap-2 sm:gap-3 md:gap-4">
-            <button 
-              onClick={prevSlide}
-              className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border-2 border-white/30 rounded-full flex items-center justify-center hover:border-white/60 transition-colors"
-            >
-              <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            <button 
-              onClick={nextSlide}
-              className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border-2 border-white/30 rounded-full flex items-center justify-center hover:border-white/60 transition-colors"
-            >
-              <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-        </div>
+                </div>
 
         {/* Player Category Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
