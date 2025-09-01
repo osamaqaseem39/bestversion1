@@ -18,7 +18,7 @@ export default function Banner() {
             Elite Tactical Education for Ambitious Players
           </h1>
           <h2 className="font-poppins font-extrabold text-[24px] sm:text-[32px] md:text-[40px] lg:text-[50px] leading-[120%] tracking-[0.05em] text-center uppercase text-white leading-tight">
-            The Only Football Program Built With a Barça Coach 
+          Transform Your Football IQ with La Masia's Proven System
           </h2>
         </div>
 
