@@ -94,23 +94,23 @@ export default function ProgramsSection() {
   return (
     <section 
       id="programs" 
-      className="relative py-4 sm:py-6 md:py-8 lg:py-12 px-3 sm:px-4 md:px-6 lg:pl-8 lg:pr-0 overflow-hidden bg-transparent min-h-screen lg:h-screen"
+      className="relative py-4 sm:py-6 md:py-8 lg:py-12 px-2 sm:px-3 md:px-6 lg:pl-8 lg:pr-0 overflow-hidden bg-transparent min-h-[100vh] sm:min-h-[100vh] md:min-h-[100vh] lg:h-screen"
     >
       {/* Content */}
-      <div className="relative z-10 w-full max-w-[1600px] mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+      <div className="relative z-10 w-full max-w-[1600px] mx-auto px-2 sm:px-3 md:px-6 lg:px-8">
         {/* Header */}
-        <div className="flex justify-between items-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
-          <h2 className="font-poppins font-light text-[24px] sm:text-[32px] md:text-[40px] lg:text-6xl text-white uppercase tracking-wider">
+        <div className="flex justify-between items-center mb-4 sm:mb-6 md:mb-8 lg:mb-16">
+          <h2 className="font-poppins font-light text-[20px] sm:text-[24px] md:text-[32px] lg:text-6xl text-white uppercase tracking-wider">
             PROGRAMS
           </h2>
         </div>
 
         {/* Main Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-[519px_1fr] gap-6 sm:gap-8 lg:gap-0 items-center relative">
+        <div className="grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-4 sm:gap-6 md:gap-8 lg:gap-0 items-center relative">
           {/* Left Panel - Products Information */}
           <div className={`relative w-full transition-all duration-700 ${isHovered ? 'lg:blur-sm' : ''}`}>
             {/* Panel Content */}
-            <div className="relative rounded-2xl overflow-hidden w-full max-w-[519px] h-[320px] sm:h-[400px] md:h-[480px] lg:h-[580px] mx-auto lg:mx-0">
+            <div className="relative rounded-2xl overflow-hidden w-full max-w-[400px] h-[250px] sm:h-[300px] md:h-[380px] lg:h-[500px] mx-auto lg:mx-0">
               {/* Background image */}
               <Image
                 src="/Subtract.png"
@@ -132,16 +132,16 @@ export default function ProgramsSection() {
               />
               
               {/* Content */}
-              <div className="relative z-20 flex flex-col justify-center h-full px-4 sm:px-6 md:px-12 lg:px-16 pr-4 sm:pr-8 md:pr-16 lg:pr-32">
-                <h3 className="font-poppins font-bold text-[16px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-white uppercase mb-3 sm:mb-4 md:mb-6 lg:mb-8 tracking-[2%] leading-[132%]">
+              <div className="relative z-20 flex flex-col justify-center h-full px-3 sm:px-4 md:px-6 lg:px-16 pr-3 sm:pr-4 md:pr-8 lg:pr-32">
+                <h3 className="font-poppins font-bold text-[12px] sm:text-[14px] md:text-[16px] lg:text-[24px] text-white uppercase mb-1 sm:mb-2 md:mb-3 lg:mb-6 tracking-[2%] leading-[132%]">
                   PRODUCTS
                 </h3>
                 
-                <h4 className="font-poppins font-normal text-[14px] sm:text-[18px] md:text-[24px] lg:text-[30px] text-white mb-3 sm:mb-4 md:mb-6 lg:mb-8 tracking-[0%] leading-[132%] uppercase">
+                <h4 className="font-poppins font-normal text-[10px] sm:text-[12px] md:text-[14px] lg:text-[20px] text-white mb-1 sm:mb-2 md:mb-3 lg:mb-6 tracking-[0%] leading-[132%] uppercase">
                   BV1 PRO + 14 INSTRUCTIONAL FOOTBALL VIDEO TUTORIALS BY JORDI ROURA
                 </h4>
                 
-                <p className="text-white/80 text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] leading-[150%] max-w-[460px]">
+                <p className="text-white/80 text-[8px] sm:text-[9px] md:text-[10px] lg:text-[12px] leading-[150%] max-w-[460px]">
                   Best Version 1 Pro is a set of premium instructional football video content that Jordi has been implementing successfully throughout his career in La Masia, it is a set of fundamental concepts that worked to shape the football game of hundreds of pro players in the best leagues throughout the world.
                 </p>
               </div>
@@ -156,16 +156,16 @@ export default function ProgramsSection() {
             onMouseMove={handleMouseMove}
           >
             {/* Mobile Grid Layout - 2 cards per row, back sides only */}
-            <div className="lg:hidden w-full px-4 py-8">
-              <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6 w-full max-w-md md:max-w-lg mx-auto">
+            <div className="lg:hidden w-full px-2 sm:px-4 py-4 sm:py-6 md:py-8">
+              <div className="grid grid-cols-2 gap-2 sm:gap-3 md:gap-4 lg:gap-6 w-full max-w-sm sm:max-w-md md:max-w-lg mx-auto">
                 {products.map((product, index) => (
                   <div
                     key={`mobile-${index}`}
                     className="flex justify-center"
                   >
-                    {/* Mobile Card - Back side only, responsive size */}
+                    {/* Mobile Card - Back side only, fully responsive size */}
                     <div 
-                      className="relative w-[140px] h-[210px] sm:w-[160px] sm:h-[240px] md:w-[180px] md:h-[270px] cursor-pointer transition-all duration-300 hover:scale-105 shadow-lg"
+                      className="relative w-full max-w-[100px] sm:max-w-[120px] md:max-w-[140px] lg:max-w-[150px] aspect-[2/3] cursor-pointer transition-all duration-300 hover:scale-105 shadow-lg"
                       onClick={() => {
                         if (product.title === "FULL COURSE") {
                           window.open("https://bv1pro.com/bestversion1", "_blank");
@@ -189,8 +189,6 @@ export default function ProgramsSection() {
                   </div>
                 ))}
               </div>
-              {/* Debug info - remove this later */}
-             
             </div>
 
             {/* Desktop Carousel Layout - Original flip functionality */}
@@ -202,7 +200,7 @@ export default function ProgramsSection() {
                 >
                   {/* Product Card using front and back images */}
                   <div 
-                    className={`relative w-[360px] h-[540px] cursor-pointer perspective-1000 transition-all duration-500 ${flippedCards[index] ? 'transform scale-110 -translate-y-4 shadow-2xl' : 'transform scale-100 shadow-lg'}`}
+                    className={`relative w-[300px] h-[450px] cursor-pointer perspective-1000 transition-all duration-500 ${flippedCards[index] ? 'transform scale-110 -translate-y-4 shadow-2xl' : 'transform scale-100 shadow-lg'}`}
                     style={{
                       filter: flippedCards[index] ? 'drop-shadow(0 25px 50px rgba(0, 0, 0, 0.5))' : 'none'
                     }}

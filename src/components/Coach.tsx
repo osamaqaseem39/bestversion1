@@ -24,7 +24,7 @@ export default function Coach() {
               alt="Jordi Roura Sola"
               width={800}
               height={1050}
-              className="w-[150px] h-[197px] sm:w-[200px] sm:h-[262px] md:w-[350px] md:h-[459px] lg:w-[500px] lg:h-[656px] xl:w-[600px] xl:h-[787px] object-contain"
+              className="w-[150px] h-[197px] sm:w-[200px] sm:h-[262px] md:w-[250px] md:h-[328px] lg:w-[300px] lg:h-[394px] xl:w-[350px] xl:h-[459px] object-contain"
             />
           </div>
         </div>

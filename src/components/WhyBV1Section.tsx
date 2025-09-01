@@ -88,9 +88,11 @@ export default function WhyBV1Section() {
           </div>
           
           {/* Buy Now Button */}
-          <button className="text-white bg-gray-700/50 px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 rounded-full hover:bg-gray-700 transition-colors text-xs sm:text-sm md:text-base lg:ml-8 w-full sm:w-auto">
-            Buy Now
-          </button>
+          <a href="/checkout" className="inline-block">
+            <button className="text-white bg-gray-700/50 px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 rounded-full hover:bg-gray-700 transition-colors text-xs sm:text-sm md:text-base lg:ml-8 w-full sm:w-auto">
+              Buy Now
+            </button>
+          </a>
         </div>
 
         {/* Features Section */}

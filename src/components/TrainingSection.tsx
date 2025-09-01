@@ -84,8 +84,10 @@ export default function TrainingSection() {
     // Add smooth transition for mouse move
     cardRef.current.style.transition = 'transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
     
-    // Apply the transform
-    cardRef.current.style.transform = `perspective(1000px) rotateX(${clampedRotateX}deg) rotateY(${clampedRotateY}deg)`
+    // Apply the transform with scale preserved from hover state
+    const isHovered = cardRef.current.matches(':hover')
+    const scale = isHovered ? 'scale(1.1)' : 'scale(1)'
+    cardRef.current.style.transform = `perspective(1000px) rotateX(${clampedRotateX}deg) rotateY(${clampedRotateY}deg) ${scale}`
     
     // Update cursor position for tracking
     setCursorPosition({
@@ -99,7 +101,7 @@ export default function TrainingSection() {
     if (cardRef.current) {
       // Add smooth transition for mouse leave
       cardRef.current.style.transition = 'transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
-      cardRef.current.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)'
+      cardRef.current.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)'
       
       // Remove transition after animation completes to keep mouse move responsive
       setTimeout(() => {
@@ -139,8 +141,8 @@ export default function TrainingSection() {
           {/* Jordi's Card */}
           <div 
             ref={cardRef1}
-            className={`bg-white/5 backdrop-blur-md rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] p-3 sm:p-4 md:p-6 lg:p-8 shadow-2xl w-full max-w-[700px] mx-auto cursor-pointer transform hover:scale-110 transition-transform duration-300 ${
-              isVisible ? 'opacity-100 scale-110 translate-y-0' : 'opacity-0 scale-95 translate-y-20'
+            className={`bg-white/5 backdrop-blur-md rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] p-3 sm:p-4 md:p-6 lg:p-8 shadow-2xl w-full max-w-[700px] mx-auto cursor-pointer transform transition-all duration-500 ease-out hover:scale-125 hover:z-10 ${
+              isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 translate-y-20'
             }`}
             onMouseMove={(e) => handleMouseMove(e, cardRef1)}
             onMouseLeave={() => handleMouseLeave(cardRef1)}
@@ -178,8 +180,8 @@ export default function TrainingSection() {
 
           {/* Nico's Card */}
           <div ref={cardRef2}
-            className={`bg-white/5 backdrop-blur-md rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] p-3 sm:p-4 md:p-6 lg:p-8 shadow-2xl w-full max-w-[700px] mx-auto cursor-pointer transform hover:scale-110 transition-transform duration-300 ${
-              isVisible ? 'opacity-100 scale-110 translate-y-0' : 'opacity-0 scale-95 translate-y-20'
+            className={`bg-white/5 backdrop-blur-md rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] p-3 sm:p-4 md:p-6 lg:p-8 shadow-2xl w-full max-w-[700px] mx-auto cursor-pointer transform transition-all duration-500 ease-out hover:scale-125 hover:z-10 ${
+              isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 translate-y-20'
             }`}
             onMouseMove={(e) => handleMouseMove(e, cardRef2)}
             onMouseLeave={() => handleMouseLeave(cardRef2)}

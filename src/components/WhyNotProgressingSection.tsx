@@ -85,17 +85,19 @@ export default function WhyNotProgressingSection() {
 
         {/* Call to Action Button */}
         <div className="text-center">
-          <button className="bg-gray-800 text-white px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-full font-semibold hover:bg-gray-700 transition-all duration-300 group flex items-center gap-2 sm:gap-3 mx-auto text-sm sm:text-base">
-            <span>START NOW</span>
-            <svg 
-              className="w-4 h-4 sm:w-5 sm:h-5 transform group-hover:translate-x-1 transition-transform duration-300" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+          <a href="/checkout" className="inline-block">
+            <button className="bg-gray-800 text-white px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-full font-semibold hover:bg-gray-700 transition-all duration-300 group flex items-center gap-2 sm:gap-3 mx-auto text-sm sm:text-base">
+              <span>START NOW</span>
+              <svg 
+                className="w-4 h-4 sm:w-5 sm:h-5 transform group-hover:translate-x-1 transition-transform duration-300" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </a>
         </div>
       </div>
     </section>
