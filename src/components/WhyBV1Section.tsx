@@ -95,8 +95,8 @@ export default function WhyBV1Section() {
 
         {/* Features Section */}
         <div className="relative">
-          {/* Carousel Controls */}
-          <div className="flex justify-end items-center space-x-2 sm:space-x-3 mb-6 sm:mb-8">
+          {/* Desktop Carousel Controls - Only visible on large screens */}
+          <div className="hidden lg:flex justify-end items-center space-x-2 sm:space-x-3 mb-6 sm:mb-8">
             {/* Navigation Arrows */}
             <div className="flex items-center space-x-1 sm:space-x-2">
               {/* Back Arrow */}
@@ -125,27 +125,6 @@ export default function WhyBV1Section() {
           <div className="w-full">
             {/* Mobile: Show 2 cards at a time in carousel */}
             <div className="lg:hidden w-full">
-              {/* Mobile Navigation Buttons */}
-              <div className="flex justify-center items-center space-x-2 sm:space-x-3 mb-4 sm:mb-6">
-                <button 
-                  onClick={prevMobileSlide}
-                  className="p-2 sm:p-3 hover:bg-white/10 rounded-lg transition-all duration-300 hover:scale-110 active:scale-95"
-                >
-                  <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                  </svg>
-                </button>
-                
-                <button 
-                  onClick={nextMobileSlide}
-                  className="p-2 sm:p-3 hover:bg-white/10 rounded-lg transition-all duration-300 hover:scale-110 active:scale-95"
-                >
-                  <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
-              </div>
-              
               <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6 w-full">
                 {Array.from({ length: mobileCardsPerView }, (_, i) => {
                   const featureIndex = (currentSlide * mobileCardsPerView + i) % features.length;
@@ -173,13 +152,34 @@ export default function WhyBV1Section() {
                           <div className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 border-2 border-white/60 border-dashed rounded-full"></div>
                         </div>
                         
-                        <p className="font-poppins font-normal text-[13px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] text-white/80 leading-[132%]">
+                        <p className="font-poppins font-normal text-[15px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[20px] text-white/80 leading-[140%] sm:leading-[132%]">
                           {feature.description}
                         </p>
                       </div>
                     </div>
                   );
                 })}
+              </div>
+              
+              {/* Mobile Navigation Buttons - Below the cards */}
+              <div className="flex justify-center items-center space-x-2 sm:space-x-3 mt-4 sm:mt-6">
+                <button 
+                  onClick={prevMobileSlide}
+                  className="p-2 sm:p-3 hover:bg-white/10 rounded-lg transition-all duration-300 hover:scale-110 active:scale-95"
+                >
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                
+                <button 
+                  onClick={nextMobileSlide}
+                  className="p-2 sm:p-3 hover:bg-white/10 rounded-lg transition-all duration-300 hover:scale-110 active:scale-95"
+                >
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
               </div>
             </div>
 
@@ -211,7 +211,7 @@ export default function WhyBV1Section() {
                         <div className="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 border-2 border-white/60 border-dashed rounded-full"></div>
                       </div>
                       
-                      <p className="font-poppins font-normal text-[11px] sm:text-[13px] md:text-[16px] lg:text-[18px] xl:text-[20px] text-white/80 leading-[132%]">
+                      <p className="font-poppins font-normal text-[13px] sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[20px] text-white/80 leading-[140%] sm:leading-[132%]">
                         {feature.description}
                       </p>
                     </div>

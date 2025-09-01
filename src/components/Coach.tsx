@@ -1,13 +1,13 @@
 'use client'
 
 import Image from 'next/image'
-import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 
 export default function Coach() {
-  const [showMore, setShowMore] = useState(false)
+  const router = useRouter();
 
-  const toggleShowMore = () => {
-    setShowMore(!showMore)
+  const goToJordiPage = () => {
+    router.push('/jordi')
   }
 
   return (
@@ -45,12 +45,12 @@ export default function Coach() {
         {/* Show More Button */}
         <div className="text-center mt-8 sm:mt-10 md:mt-12 lg:mt-16">
           <button 
-            onClick={toggleShowMore}
+            onClick={goToJordiPage}
             className="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white font-poppins text-sm sm:text-base hover:bg-white/20 transition-all duration-300"
           >
-            {showMore ? 'Show Less' : 'Show More'}
+            Show More
             <svg 
-              className={`ml-2 w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 ${showMore ? 'rotate-180' : ''}`} 
+              className={`ml-2 w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 rotate-180`} 
               fill="none" 
               stroke="currentColor" 
               viewBox="0 0 24 24"

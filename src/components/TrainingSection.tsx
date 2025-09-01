@@ -65,17 +65,17 @@ export default function TrainingSection() {
     const centerX = rect.width / 2
     const centerY = rect.height / 2
     
-    // Calculate distance from center for magnetic repulsion effect
+    // Calculate distance from center for magnetic attraction effect
     const distanceX = x - centerX
     const distanceY = y - centerY
     
-    // Magnetic repulsion: tilt away from cursor (like magnets repelling)
-    const repulsionStrength = 4.0 // Increased for more dramatic tilt effect
+    // Magnetic attraction: tilt toward cursor (like magnets attracting)
+    const attractionStrength = 4.0 // Increased for more dramatic tilt effect
     
     // Calculate rotation based on cursor position relative to center
-    // The further from center, the more the card tilts away
-    const rotateX = -(distanceY / centerY) * repulsionStrength
-    const rotateY = (distanceX / centerX) * repulsionStrength
+    // The further from center, the more the card tilts toward the cursor
+    const rotateX = (distanceY / centerY) * attractionStrength
+    const rotateY = -(distanceX / centerX) * attractionStrength
     
     // Clamp rotation values to prevent extreme tilting
     const clampedRotateX = Math.max(-25, Math.min(25, rotateX))
