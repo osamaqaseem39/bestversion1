@@ -75,20 +75,12 @@ export default function ProgramsSection() {
     }
   };
 
-  // Calculate translation based on mouse position for better card visibility
+  // Single translation to center of screen
   const getTranslationClass = () => {
     if (!isHovered) return 'relative lg:-ml-20';
     
-    // Check if mouse is on the left or right half
-    const isOnRightHalf = mousePosition.x > (mousePosition.x / 2);
-    
-    // Left half: less translation
-    if (!isOnRightHalf) {
-      return 'lg:transform lg:-translate-x-[25%]';
-    }
-    
-    // Right half: more translation
-    return 'lg:transform lg:-translate-x-[40%]';
+    // Single translation to center
+    return 'lg:transform lg:-translate-x-[30%]';
   };
 
   return (
