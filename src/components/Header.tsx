@@ -88,6 +88,12 @@ export default function Header() {
                   Programs
                 </Link>
                 <Link 
+                  href="/video-analysis"
+                  className="block w-full text-left px-2 py-1.5 sm:px-3 sm:py-2 md:px-4 text-white hover:bg-gray-700/50 transition-colors text-[10px] sm:text-xs md:text-sm"
+                >
+                  Video Analysis
+                </Link>
+                <Link 
                   href="/#method"
                   className="block w-full text-left px-2 py-1.5 sm:px-3 sm:py-2 md:px-4 text-white hover:bg-gray-700/50 transition-colors text-[10px] sm:text-xs md:text-sm"
                 >
@@ -158,6 +164,12 @@ export default function Header() {
                   >
                     Programs
                   </Link>
+                                  <Link 
+                  href="/video-analysis"
+                  className="text-white bg-gray-700/50 px-2 py-1.5 lg:px-3 lg:py-2 rounded-full hover:bg-gray-700 transition-colors text-xs lg:text-sm"
+                >
+                  Video Analysis
+                </Link>
                   <Link 
                     href="/#method"
                     className="text-white bg-gray-700/50 px-2 py-1.5 lg:px-3 lg:py-2 rounded-full hover:bg-gray-700 transition-colors text-xs lg:text-sm"

@@ -1,57 +1,218 @@
-import React from 'react';
+"use client";
+
+import React, { useEffect, useRef, useState } from 'react';
 
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      role: "PARENT",
-      quote: "BV1 FINALLY GAVE MY SON THE CLARITY AND CONFIDENCE TO PLAY HIS BEST"
+      role: "Parent",
+      quote: "BV1 finally gave my son the clarity and confidence to play his best",
+      image: "/card1.png",
+      stars: 5
     },
     {
-      role: "COACH",
-      quote: "THESE ARE THE SAME PRINCIPLES I USE AT THE PROFESSIONAL LEVEL"
+      role: "Coach",
+      quote: "These are the same principles I use at the professional level",
+      image: "/card2.png",
+      stars: 5
     },
     {
-      role: "PLAYER",
-      quote: "I STARTED APPLYING WHAT I LEARNED AND IMMEDIATELY GOT NOTICED"
+      role: "Player",
+      quote: "I started applying what I learned and immediately got noticed",
+      image: "/card3.png",
+      stars: 5
     },
     {
-      role: "JORDI",
-      quote: "WE BUILT BV1 TO GIVE EVERY PLAYER ACCESS TO THE EDUCATION THEY DESERVE."
+      role: "Jordi",
+      quote: "We built BV1 to give every player access to the education they deserve.",
+      image: "/jordi.jpg",
+      stars: 5
+    },
+    {
+      role: "Former Pro",
+      quote: "This training program transformed my understanding of the game completely",
+      image: "/card4.png",
+      stars: 5
+    },
+    {
+      role: "Youth Coach",
+      quote: "I've seen incredible improvements in my team since implementing these methods",
+      image: "/card1.png",
+      stars: 5
+    },
+    {
+      role: "Student Athlete",
+      quote: "The tactical knowledge I gained here is unmatched by any other program",
+      image: "/card2.png",
+      stars: 5
+    },
+    {
+      role: "Club Director",
+      quote: "Best Version 1 has become our go-to resource for player development",
+      image: "/card3.png",
+      stars: 5
     }
   ];
 
+  const marqueeRef = useRef<HTMLDivElement>(null);
+  const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() => {
+    const marquee = marqueeRef.current;
+    if (!marquee) return;
+
+    let animationId: number;
+    let scrollPosition = 0;
+    const normalSpeed = 0.6; // Slower normal speed
+    const hoverSpeed = 0.2; // Even slower on hover
+
+    const animate = () => {
+      const currentSpeed = isHovered ? hoverSpeed : normalSpeed;
+      scrollPosition += currentSpeed;
+      if (marquee) {
+        marquee.style.transform = `translateY(-${scrollPosition}px)`;
+      }
+      animationId = requestAnimationFrame(animate);
+    };
+
+    animationId = requestAnimationFrame(animate);
+
+    return () => {
+      if (animationId) {
+        cancelAnimationFrame(animationId);
+      }
+    };
+  }, [isHovered]);
+
+  const renderStars = (count: number) => {
+    return Array.from({ length: count }, (_, i) => (
+      <svg
+        key={i}
+        className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-yellow-400 fill-current"
+        viewBox="0 0 20 20"
+      >
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+      </svg>
+    ));
+  };
+
+  // Create pairs of testimonials for two-column layout
+  const testimonialPairs = [];
+  for (let i = 0; i < testimonials.length; i += 2) {
+    testimonialPairs.push([
+      testimonials[i],
+      testimonials[i + 1] || null
+    ]);
+  }
+
+  // Duplicate pairs for seamless loop
+  const duplicatedPairs = [...testimonialPairs, ...testimonialPairs];
+
   return (
-    <section className="py-20 bg-transparent relative">
+    <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-transparent relative">
       {/* Background gradient overlay */}
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <p className="text-white font-poppins uppercase tracking-normal mb-4" style={{ fontSize: '45px', fontWeight: '300', lineHeight: '132%', letterSpacing: '0%' }}>
-          WHY COACHES, PARENTS, AND PLAYERS
-          <span className="block">TRUST BEST VERSION 1</span>
+      <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <p className="text-white font-poppins tracking-normal mb-3 sm:mb-4" style={{ fontSize: 'clamp(20px, 4vw, 45px)', fontWeight: '300', lineHeight: '132%', letterSpacing: '0%' }}>
+            Why Coaches, Parents, and Players
+            <span className="block">Trust Best Version 1</span>
           </p>
-        
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-transparent rounded-xl p-8 border border-gray-700/30 hover:border-gray-600/50 transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-xl"
-              style={{ width: '480px', height: '380px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)' }}
+        <div className="max-w-5xl mx-auto relative">
+          {/* Marquee Container */}
+          <div 
+            className="relative overflow-hidden h-[800px] w-full"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            {/* Bottom Fade Gradient */}
+            <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black via-black/60 via-black/40 to-transparent z-20" />
+
+            <div 
+              ref={marqueeRef}
+              className="w-full"
+              style={{ 
+                willChange: 'transform'
+              }}
             >
-              <div className="h-full flex flex-col justify-center text-center">
-                <h3 className="font-poppins text-white mb-4 uppercase" style={{ fontSize: '35px', fontWeight: '400', lineHeight: '100%', letterSpacing: '0%' }}>
-                  {testimonial.role}
-                </h3>
-                <p className="font-poppins text-white" style={{ fontSize: '30px', fontWeight: '400', lineHeight: '100%', letterSpacing: '0%' }}>
-                  {testimonial.quote}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+              {duplicatedPairs.map((pair, pairIndex) => (
+                <div 
+                  key={pairIndex}
+                  className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12 md:mb-16"
+                >
+                  {/* First testimonial in pair */}
+                  <div
+                    className="bg-transparent rounded-xl p-4 sm:p-6 md:p-8 border border-gray-700/30 hover:border-gray-600/50 transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-xl min-h-[250px] sm:min-h-[300px] md:min-h-[350px] lg:min-h-[400px] w-full"
+                    style={{ boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)' }}
+                  >
+                    <div className="h-full flex flex-col justify-center text-center">
+                      {/* Images Section */}
+                      <div className="mb-4 sm:mb-6 flex justify-center">
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-gray-600/50">
+                          <img
+                            src={pair[0].image}
+                            alt={pair[0].role}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </div>
 
-       
+                      {/* Stars Section */}
+                      <div className="mb-3 sm:mb-4 flex justify-center">
+                        <div className="flex space-x-1">
+                          {renderStars(pair[0].stars)}
+                        </div>
+                      </div>
+
+                      <h3 className="font-poppins text-white mb-3 sm:mb-4" style={{ fontSize: 'clamp(16px, 3vw, 35px)', fontWeight: '400', lineHeight: '100%', letterSpacing: '0%' }}>
+                        {pair[0].role}
+                      </h3>
+                      <p className="font-poppins text-white" style={{ fontSize: 'clamp(14px, 2.5vw, 30px)', fontWeight: '400', lineHeight: '120%', letterSpacing: '0%' }}>
+                        {pair[0].quote}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Second testimonial in pair (if exists) */}
+                  {pair[1] && (
+                    <div
+                      className="bg-transparent rounded-xl p-4 sm:p-6 md:p-8 border border-gray-700/30 hover:border-gray-600/50 transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-xl min-h-[250px] sm:min-h-[300px] md:min-h-[350px] lg:min-h-[400px] w-full"
+                      style={{ boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)' }}
+                    >
+                      <div className="h-full flex flex-col justify-center text-center">
+                        {/* Images Section */}
+                        <div className="mb-4 sm:mb-6 flex justify-center">
+                          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-gray-600/50">
+                            <img
+                              src={pair[1].image}
+                              alt={pair[1].role}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        </div>
+
+                        {/* Stars Section */}
+                        <div className="mb-3 sm:mb-4 flex justify-center">
+                          <div className="flex space-x-1">
+                            {renderStars(pair[1].stars)}
+                          </div>
+                        </div>
+
+                        <h3 className="font-poppins text-white mb-3 sm:mb-4" style={{ fontSize: 'clamp(16px, 3vw, 35px)', fontWeight: '400', lineHeight: '100%', letterSpacing: '0%' }}>
+                          {pair[1].role}
+                        </h3>
+                        <p className="font-poppins text-white" style={{ fontSize: 'clamp(14px, 2.5vw, 30px)', fontWeight: '400', lineHeight: '120%', letterSpacing: '0%' }}>
+                          {pair[1].quote}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

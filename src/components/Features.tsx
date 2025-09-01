@@ -66,7 +66,7 @@ export default function Features() {
       {/* Features Grid - Two Intersecting Rows */}
       <div className="relative z-10 w-full">
         {/* Top Row */}
-        <div className="flex justify-center items-center gap-0 mb-0 w-full transform rotate-[-5deg] relative z-10 overflow-hidden" style={{ marginTop: '0px' }}>
+        <div className="flex justify-center items-center gap-0 mb-0 w-full transform rotate-[-5deg] relative z-10 overflow-hidden mt-0 sm:mt-0 md:mt-0 lg:mt-0 xl:mt-0">
           <div className="flex gap-0 animate-scroll" style={{ width: 'max-content' }}>
             {duplicatedFeatures.map((feature, index) => (
               <div
@@ -91,7 +91,7 @@ export default function Features() {
 
 
         {/* Bottom Row */}
-        <div className="flex justify-center items-center gap-0 w-full transform rotate-[5deg] relative z-20 mt-0 overflow-hidden" style={{ marginTop: '-140px' }}>
+        <div className="flex justify-center items-center gap-0 w-full transform rotate-[5deg] relative z-20 overflow-hidden -mt-20 sm:-mt-24 md:-mt-28 lg:-mt-32 xl:-mt-36">
           <div className="flex gap-0 animate-scroll-reverse" style={{ width: 'max-content' }}>
             {duplicatedFeatures.map((feature, index) => (
               <div

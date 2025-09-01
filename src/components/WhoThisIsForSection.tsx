@@ -87,23 +87,17 @@ export default function WhoThisIsForSection() {
                   className="object-cover"
                 />
                 
-                {/* Category Tag with Action Icon */}
-                <div className="absolute bottom-3 sm:bottom-4 md:bottom-6 left-3 sm:left-4 md:left-6 bg-black/30 backdrop-blur-sm text-white px-3 py-1.5 sm:px-4 sm:py-2 md:px-6 md:py-3 rounded-full text-xs sm:text-sm md:text-base font-medium flex items-center gap-1.5 sm:gap-2 md:gap-3 cursor-pointer group/tag hover:bg-black/50 transition-colors">
-                  <span>{category.category}</span>
-                  <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white transition-transform duration-300 group-hover/tag:rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m7 17 9.2-9.2M17 17V7H7" />
-                  </svg>
+                {/* Category Tag */}
+                <div className="absolute bottom-3 sm:bottom-4 md:bottom-6 left-3 sm:left-4 md:left-6 bg-black/30 backdrop-blur-sm text-white px-3 py-1.5 sm:px-4 sm:py-2 md:px-6 md:py-3 rounded-full text-xs sm:text-sm md:text-base font-medium">
+                  {category.category}
                 </div>
               </div>
               
-              {/* Description and CTA */}
-              <div className="mt-2 flex items-center justify-between p-2 sm:p-3 md:p-4 bg-white/10 backdrop-blur-sm rounded-2xl shadow-lg">
+              {/* Description */}
+              <div className="mt-2 p-2 sm:p-3 md:p-4 bg-white/10 backdrop-blur-sm rounded-2xl shadow-lg">
                 <p className="font-poppins font-normal text-[11px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] text-white leading-[132%]">
                   {category.description}
                 </p>
-                <button className="font-poppins font-normal text-[11px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] text-white leading-[132%] hover:text-blue-400 transition-colors underline">
-                  See
-                </button>
               </div>
             </div>
           ))}

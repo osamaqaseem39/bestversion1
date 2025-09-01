@@ -35,13 +35,13 @@ const CallToActionSection = () => {
           </div>
 
           {/* Heading and subheading in bottom left */}
-          <div className="absolute bottom-6 left-6 space-y-4 max-w-4xl">
+          <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 space-y-2 sm:space-y-4 max-w-4xl">
             <h2 
               className="text-white"
               style={{
                 fontFamily: 'Poppins',
                 fontWeight: 275,
-                fontSize: '50px',
+                fontSize: 'clamp(24px, 6vw, 50px)',
                 lineHeight: '100%',
                 letterSpacing: '0%'
               }}
@@ -53,24 +53,24 @@ const CallToActionSection = () => {
               style={{
                 fontFamily: 'Poppins',
                 fontWeight: 400,
-                fontSize: '25px',
+                fontSize: 'clamp(14px, 3vw, 25px)',
                 lineHeight: '124%',
                 letterSpacing: '0%'
               }}
             >
-              Choose your program, develop your Football IQ, and <br/> start becoming the player coaches remember.
+              Choose your program, develop your Football IQ, and <span className="hidden sm:inline"><br/></span> start becoming the player coaches remember.
             </p>
           </div>
 
           {/* Text links in bottom right */}
-          <div className="absolute bottom-6 right-6 space-y-2 text-right">
+          <div className="absolute bottom-4 sm:bottom-6 right-4 sm:right-6 space-y-2 text-right">
             <a 
               href="#" 
               className="block text-white font-semibold transition-all duration-300 hover:text-blue-200"
               style={{
                 fontFamily: 'Poppins',
                 fontWeight: 400,
-                fontSize: '25px',
+                fontSize: 'clamp(14px, 3vw, 25px)',
                 lineHeight: '124%',
                 letterSpacing: '0%'
               }}
@@ -83,7 +83,7 @@ const CallToActionSection = () => {
               style={{
                 fontFamily: 'Poppins',
                 fontWeight: 400,
-                fontSize: '25px',
+                fontSize: 'clamp(14px, 3vw, 25px)',
                 lineHeight: '124%',
                 letterSpacing: '0%'
               }}

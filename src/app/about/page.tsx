@@ -532,7 +532,7 @@ const AboutPage = () => {
                   <div className="absolute inset-0 rounded-2xl shadow-[0_0_50px_#4652FF69] pointer-events-none"></div>
                 </div>
                 <p className="font-poppins text-white/90 text-sm" style={{ fontWeight: 275, letterSpacing: '0%' }}>
-                  La Masia youth training session
+                FC Barcelona first team training session
                 </p>
               </div>
             </div>
@@ -575,7 +575,7 @@ const AboutPage = () => {
                   <div className="absolute inset-0 rounded-2xl shadow-[0_0_50px_#4652FF69] pointer-events-none"></div>
                 </div>
                 <p className="font-poppins text-white/90 text-sm" style={{ fontWeight: 275, letterSpacing: '0%' }}>
-                  Nico in action at Getafe training
+                Nico playing a match for RCD Espanyol
                 </p>
               </div>
 

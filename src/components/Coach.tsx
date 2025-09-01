@@ -1,8 +1,15 @@
 'use client'
 
 import Image from 'next/image'
+import { useState } from 'react'
 
 export default function Coach() {
+  const [showMore, setShowMore] = useState(false)
+
+  const toggleShowMore = () => {
+    setShowMore(!showMore)
+  }
+
   return (
     <section id="about" className="relative h-auto px-3 sm:px-4 md:px-6 lg:px-8 overflow-hidden bg-transparent flex items-center justify-center py-4 sm:py-6 md:py-8 lg:py-12">
 
@@ -34,24 +41,39 @@ export default function Coach() {
         <div className="w-[100px] sm:w-[150px] md:w-[250px] lg:w-[300px] xl:w-[400px] h-px bg-white mx-auto mb-4 sm:mb-6 md:mb-8"></div>
 
         {/* Coach Description */}
-        <div className="max-w-4xl mx-auto mb-6 sm:mb-8 md:mb-10 lg:mb-12 px-3 sm:px-4 md:px-6 lg:px-8 flex justify-center">
-          <p className="font-poppins font-weight-275 text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] leading-[120%] tracking-[0.45em] text-center uppercase text-white max-w-4xl">
-            For over 40 years, Jordi Roura worked inside one of the most prestigious academies in world football — scouting, coaching, and developing players now worth over $3B. As Sporting Director of La Masia, he was directly responsible for signing top talents like Lamine Yamal, Gavi, and Pau Cubarsí. Earlier in his career, he coached legends like Messi, Xavi, Iniesta, and Neymar, giving him a rare perspective on what separates the good from the great. Best Version 1 distills these principles into a modern program accessible to players everywhere.
-          </p>
+        
+        {/* Show More Button */}
+        <div className="text-center mt-8 sm:mt-10 md:mt-12 lg:mt-16">
+          <button 
+            onClick={toggleShowMore}
+            className="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white font-poppins text-sm sm:text-base hover:bg-white/20 transition-all duration-300"
+          >
+            {showMore ? 'Show Less' : 'Show More'}
+            <svg 
+              className={`ml-2 w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 ${showMore ? 'rotate-180' : ''}`} 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
         </div>
 
-        {/* Show More Button */}
-        <button className="bg-black border border-white text-white px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-full font-semibold hover:bg-white hover:text-black transition-all duration-300 group flex items-center gap-2 sm:gap-3 mx-auto text-sm sm:text-base">
-          <span>Show More</span>
-          <svg 
-            className="w-4 h-4 sm:w-5 sm:h-5 transform group-hover:translate-x-1 transition-transform duration-300" 
-            fill="none" 
-            stroke="currentColor" 
-            viewBox="0 0 24 24"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
+        {/* La Masia Principles Section */}
+        <div className="mt-12 sm:mt-16 md:mt-20 lg:mt-24">
+          <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
+            <h3 className="font-poppins font-bold text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 sm:mb-6 leading-tight" style={{ fontWeight: 700 }}>
+              Built on the La Masia Principles — For Players Everywhere
+            </h3>
+          </div>
+          
+          <div className="max-w-4xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+            <p className="font-poppins font-light text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] leading-[140%] text-justify sm:text-center text-white/70">
+              For over 40 years, Jordi Roura worked inside one of the most prestigious academies in world football — scouting, coaching, and developing players now worth over $3B. As Sporting Director of La Masia, he was directly responsible for signing top talents like Lamine Yamal, Gavi, and Pau Cubarsí. Earlier in his career, he coached legends like Messi, Xavi, Iniesta, and Neymar, giving him a rare perspective on what separates the good from the great. Best Version 1 distills these principles into a modern program accessible to players everywhere.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   )

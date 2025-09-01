@@ -35,13 +35,13 @@ const CallToActionSectionAbout = () => {
           </div>
 
           {/* Heading and subheading in bottom left */}
-          <div className="absolute bottom-6 left-6 space-y-4 max-w-4xl">
+          <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 space-y-2 sm:space-y-4 max-w-4xl">
             <h2 
               className="text-white"
               style={{
                 fontFamily: 'Poppins',
                 fontWeight: 275,
-                fontSize: '50px',
+                fontSize: 'clamp(24px, 6vw, 50px)',
                 lineHeight: '100%',
                 letterSpacing: '0%'
               }}
@@ -52,14 +52,12 @@ const CallToActionSectionAbout = () => {
               style={{
                 fontFamily: 'Poppins',
                 fontWeight: 400,
-                fontSize: '25px',
+                fontSize: 'clamp(14px, 3vw, 25px)',
                 lineHeight: '124%',
                 letterSpacing: '0%'
               }}
             >
              Best Version 1 is for players who are done guessing.
-
-
             </p>
           </div>
 
