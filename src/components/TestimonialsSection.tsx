@@ -32,7 +32,7 @@ const TestimonialsSection = () => {
       role: "Former Pro",
       quote: "This training program transformed my understanding of the game completely",
       image: "/card4.png",
-      stars: 5
+      stars: 4.5
     },
     {
       role: "Youth Coach",
@@ -44,7 +44,7 @@ const TestimonialsSection = () => {
       role: "Student Athlete",
       quote: "The tactical knowledge I gained here is unmatched by any other program",
       image: "/card2.png",
-      stars: 5
+      stars: 4
     },
     {
       role: "Club Director",
@@ -55,6 +55,7 @@ const TestimonialsSection = () => {
   ];
 
   const marqueeRef = useRef<HTMLDivElement>(null);
+  const isHoveredRef = useRef(false);
   const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
@@ -67,8 +68,15 @@ const TestimonialsSection = () => {
     const hoverSpeed = 0.2; // Even slower on hover
 
     const animate = () => {
-      const currentSpeed = isHovered ? hoverSpeed : normalSpeed;
+      const currentSpeed = isHoveredRef.current ? hoverSpeed : normalSpeed;
       scrollPosition += currentSpeed;
+      
+      // Reset position when it reaches the end to create seamless loop
+      const marqueeHeight = marquee.scrollHeight / 2; // Since we duplicated the content
+      if (scrollPosition >= marqueeHeight) {
+        scrollPosition = 0;
+      }
+      
       if (marquee) {
         marquee.style.transform = `translateY(-${scrollPosition}px)`;
       }
@@ -82,6 +90,11 @@ const TestimonialsSection = () => {
         cancelAnimationFrame(animationId);
       }
     };
+  }, []); // Remove isHovered dependency to prevent resets
+
+  // Update ref when state changes
+  useEffect(() => {
+    isHoveredRef.current = isHovered;
   }, [isHovered]);
 
   const renderStars = (count: number) => {
@@ -111,7 +124,10 @@ const TestimonialsSection = () => {
   return (
     <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-transparent relative">
       {/* Background gradient overlay */}
-      <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8 relative z-10">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-transparent via-transparent to-black/60 z-5" />
+      <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-t from-black via-black/95 via-black/85 via-black/70 via-black/50 via-black/30 to-transparent z-5" />
+      <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-black via-black/80 to-transparent z-5" />
+      <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8 relative z-20">
         <div className="text-center mb-8 sm:mb-12 md:mb-16">
           <p className="text-white font-poppins tracking-normal mb-3 sm:mb-4" style={{ fontSize: 'clamp(20px, 4vw, 45px)', fontWeight: '300', lineHeight: '132%', letterSpacing: '0%' }}>
             Why Coaches, Parents, and Players
@@ -126,8 +142,6 @@ const TestimonialsSection = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            {/* Bottom Fade Gradient */}
-            <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black via-black/60 via-black/40 to-transparent z-20" />
 
             <div 
               ref={marqueeRef}
@@ -143,8 +157,7 @@ const TestimonialsSection = () => {
                 >
                   {/* First testimonial in pair */}
                   <div
-                    className="bg-transparent rounded-xl p-4 sm:p-6 md:p-8 border border-gray-700/30 hover:border-gray-600/50 transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-xl min-h-[250px] sm:min-h-[300px] md:min-h-[350px] lg:min-h-[400px] w-full"
-                    style={{ boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)' }}
+                    className="bg-transparent rounded-xl p-4 sm:p-6 md:p-8 border border-gray-700/30 transition-all duration-300 min-h-[250px] sm:min-h-[300px] md:min-h-[350px] lg:min-h-[400px] w-full"
                   >
                     <div className="h-full flex flex-col justify-center text-center">
                       {/* Images Section */}
@@ -177,8 +190,7 @@ const TestimonialsSection = () => {
                   {/* Second testimonial in pair (if exists) */}
                   {pair[1] && (
                     <div
-                      className="bg-transparent rounded-xl p-4 sm:p-6 md:p-8 border border-gray-700/30 hover:border-gray-600/50 transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-xl min-h-[250px] sm:min-h-[300px] md:min-h-[350px] lg:min-h-[400px] w-full"
-                      style={{ boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)' }}
+                      className="bg-transparent rounded-xl p-4 sm:p-6 md:p-8 border border-gray-700/30 transition-all duration-300 min-h-[250px] sm:min-h-[300px] md:min-h-[350px] lg:min-h-[400px] w-full"
                     >
                       <div className="h-full flex flex-col justify-center text-center">
                         {/* Images Section */}
