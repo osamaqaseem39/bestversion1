@@ -186,15 +186,17 @@ export default function Header() {
               {/* Right Section - Login - Hidden on mobile, shown on md+ */}
               <div className="hidden md:flex items-center space-x-1.5 sm:space-x-2 md:space-x-3">
                 {/* Login Button - WHITE background */}
-                <button 
-                  onClick={() => alert('Login functionality coming soon!')}
+                <a 
+                  href="https://portal.bestversion1.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-white text-black px-1.5 py-1 sm:px-2 sm:py-1.5 md:px-4 md:py-2 rounded-full flex items-center space-x-1 sm:space-x-1.5 md:space-x-2 hover:bg-gray-100 transition-colors text-[10px] sm:text-xs md:text-sm"
                 >
                   <span>Login</span>
                   <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-4 md:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -256,18 +258,18 @@ export default function Header() {
               <div className="p-4 sm:p-6 border-t border-white/20">
                 {/* Login Button */}
                 <div className="flex justify-center">
-                  <button 
-                    onClick={() => {
-                      alert('Login functionality coming soon!')
-                      setIsMenuOpen(false)
-                    }}
+                  <a 
+                    href="https://portal.bestversion1.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsMenuOpen(false)}
                     className="bg-white text-black px-6 py-3 sm:px-8 sm:py-4 rounded-full flex items-center space-x-2 sm:space-x-3 hover:bg-gray-100 transition-colors text-base sm:text-lg font-medium"
                   >
                     <span>Login</span>
                     <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
