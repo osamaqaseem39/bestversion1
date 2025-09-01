@@ -146,18 +146,14 @@ export default function WhyBV1Section() {
             </div>
 
             {/* Desktop: Carousel with 4 cards */}
-            <div className="hidden lg:block">
+            <div className="hidden lg:grid lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
               {Array.from({ length: cardsPerView }, (_, i) => {
                 const featureIndex = (currentSlide * cardsPerView + i) % features.length;
                 const feature = features[featureIndex];
                 return (
                   <div 
                     key={`${currentSlide}-${i}`}
-                    className="p-3 sm:p-4 md:p-6 transition-all duration-300 ease-out bg-gray-700/30 backdrop-blur-sm shadow-[0_8px_25px_-5px_rgba(0,0,0,0.6)] hover:bg-gray-700/50 hover:shadow-[0_25px_50px_-15px_rgba(0,0,0,0.8)] hover:scale-105 hover:-translate-y-2 cursor-pointer group relative overflow-hidden animate-slide-in"
-                    style={{
-                      animationDelay: `${i * 150}ms`,
-                      opacity: 0
-                    }}
+                    className="p-3 sm:p-4 md:p-6 transition-all duration-300 ease-out bg-gray-700/30 backdrop-blur-sm shadow-[0_8px_25px_-5px_rgba(0,0,0,0.6)] hover:bg-gray-700/50 hover:shadow-[0_25px_50px_-15px_rgba(0,0,0,0.8)] hover:scale-105 hover:-translate-y-2 cursor-pointer group relative overflow-hidden"
                   >
                     {/* First background overlay layer */}
                     <div className="absolute inset-0 bg-gradient-to-br from-gray-800/30 to-gray-700/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
