@@ -8,7 +8,6 @@ export default function ProgramsSection() {
   const router = useRouter();
   const [currentCardIndex, setCurrentCardIndex] = useState(0)
   const [isHovered, setIsHovered] = useState(false)
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isScrolling, setIsScrolling] = useState(false);
 
   const products = [
@@ -57,9 +56,6 @@ export default function ProgramsSection() {
   const handleMouseMove = (e: React.MouseEvent) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    
-    setMousePosition({ x, y });
     
     // Calculate scroll based on mouse position
     const containerWidth = rect.width;
@@ -145,7 +141,6 @@ export default function ProgramsSection() {
             className="relative flex justify-center items-start lg:items-center w-full mt-2 sm:mt-4 lg:mt-0 h-auto lg:h-full overflow-visible"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            onMouseMove={handleMouseMove}
           >
             {/* Mobile Grid Layout - 2 cards per row, back sides only */}
             <div className="lg:hidden w-full px-2 sm:px-4 py-4 sm:py-6 md:py-8">
