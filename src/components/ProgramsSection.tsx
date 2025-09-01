@@ -155,30 +155,6 @@ export default function ProgramsSection() {
             onMouseLeave={() => setIsHovered(false)}
             onMouseMove={handleMouseMove}
           >
-            {/* Navigation Buttons - Always visible but enhanced on hover */}
-            <div className="absolute top-4 right-4 z-30 flex gap-2">
-              <button
-                onClick={prevCard}
-                className={`${isHovered ? 'bg-white/30 scale-110' : 'bg-white/10'} text-white rounded-full p-3 backdrop-blur-sm transition-all duration-300 hover:scale-125 hover:bg-white/40`}
-                aria-label="Previous program"
-              >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-              <button
-                onClick={nextCard}
-                className={`${isHovered ? 'bg-white/30 scale-110' : 'bg-white/10'} text-white rounded-full p-3 backdrop-blur-sm transition-all duration-300 hover:scale-125 hover:bg-white/40`}
-                aria-label="Next program"
-              >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-              
-
-            </div>
-            
             {/* Mobile Grid Layout - 2 cards per row, back sides only */}
             <div className="lg:hidden w-full px-4 py-8">
               <div className="grid grid-cols-2 gap-3 sm:gap-4 w-full max-w-sm mx-auto">
