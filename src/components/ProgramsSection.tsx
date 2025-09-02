@@ -111,17 +111,17 @@ export default function ProgramsSection() {
         </div>
 
         {/* Main Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-[519px_1fr] gap-4 sm:gap-6 md:gap-8 lg:gap-0 items-center relative">
+        <div className="grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-4 sm:gap-6 md:gap-8 lg:gap-0 items-center relative">
           {/* Left Panel - Products Information */}
           <div className={`relative w-full transition-all duration-700 ${isHovered ? 'lg:blur-sm' : ''}`}>
             {/* Panel Content */}
-            <div className="relative rounded-2xl overflow-hidden w-full max-w-[519px] h-[280px] sm:h-[320px] md:h-[400px] lg:h-[580px] mx-auto lg:mx-0">
+            <div className="relative rounded-2xl overflow-hidden w-full max-w-[400px] h-[200px] sm:h-[240px] md:h-[300px] lg:h-[450px] mx-auto lg:mx-0">
               {/* Background image */}
               <Image
                 src="/Subtract.png"
                 alt="Background Image"
-                width={519}
-                height={661}
+                width={400}
+                height={450}
                 className="absolute inset-0 object-contain"
                 priority
               />
@@ -130,23 +130,23 @@ export default function ProgramsSection() {
               <Image
                 src="/Vector 59.png"
                 alt="Curved Lines"
-                width={519}
-                height={661}
+                width={400}
+                height={450}
                 className="absolute inset-0 object-contain"
                 priority
               />
               
               {/* Content */}
-              <div className="relative z-20 flex flex-col justify-center h-full px-3 sm:px-4 md:px-6 lg:px-16 pr-3 sm:pr-4 md:pr-8 lg:pr-32">
-                <h3 className="font-poppins font-bold text-[14px] sm:text-[16px] md:text-[20px] lg:text-[30px] text-white uppercase mb-2 sm:mb-3 md:mb-4 lg:mb-8 tracking-[2%] leading-[132%]">
+              <div className="relative z-20 flex flex-col justify-center h-full px-2 sm:px-3 md:px-4 lg:px-12 pr-2 sm:pr-3 md:pr-6 lg:pr-24">
+                <h3 className="font-poppins font-bold text-[12px] sm:text-[14px] md:text-[16px] lg:text-[24px] text-white uppercase mb-1 sm:mb-2 md:mb-3 lg:mb-6 tracking-[2%] leading-[132%]">
                   PRODUCTS
                 </h3>
                 
-                <h4 className="font-poppins font-normal text-[12px] sm:text-[14px] md:text-[18px] lg:text-[30px] text-white mb-2 sm:mb-3 md:mb-4 lg:mb-8 tracking-[0%] leading-[132%] uppercase">
+                <h4 className="font-poppins font-normal text-[10px] sm:text-[12px] md:text-[14px] lg:text-[24px] text-white mb-1 sm:mb-2 md:mb-3 lg:mb-6 tracking-[0%] leading-[132%] uppercase">
                   BV1 PRO + 14 INSTRUCTIONAL FOOTBALL VIDEO TUTORIALS BY JORDI ROURA
                 </h4>
                 
-                <p className="text-white/80 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[13px] leading-[150%] max-w-[460px]">
+                <p className="text-white/80 text-[8px] sm:text-[9px] md:text-[10px] lg:text-[12px] leading-[150%] max-w-[350px]">
                   Best Version 1 Pro is a set of premium instructional football video content that Jordi has been implementing successfully throughout his career in La Masia, it is a set of fundamental concepts that worked to shape the football game of hundreds of pro players in the best leagues throughout the world.
                 </p>
               </div>
@@ -161,8 +161,8 @@ export default function ProgramsSection() {
             onMouseMove={handleMouseMove}
           >
             {/* Mobile Grid Layout - 2 cards per row, back sides only */}
-            <div className="lg:hidden w-full px-2 sm:px-4 py-4 sm:py-6 md:py-8">
-              <div className="grid grid-cols-2 gap-2 sm:gap-3 md:gap-4 lg:gap-6 w-full max-w-sm sm:max-w-md md:max-w-lg mx-auto">
+            <div className="lg:hidden w-full px-2 sm:px-3 md:px-4 py-3 sm:py-4 md:py-6">
+              <div className="grid grid-cols-2 gap-1 sm:gap-2 md:gap-3 w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto">
                 {products.map((product, index) => (
                   <div
                     key={`mobile-${index}`}
@@ -170,7 +170,7 @@ export default function ProgramsSection() {
                   >
                     {/* Mobile Card - Back side only, fully responsive size */}
                     <div 
-                      className="relative w-full max-w-[120px] sm:max-w-[140px] md:max-w-[160px] lg:max-w-[180px] aspect-[2/3] cursor-pointer transition-all duration-300 hover:scale-105 shadow-lg"
+                      className="relative w-full max-w-[80px] sm:max-w-[100px] md:max-w-[120px] aspect-[2/3] cursor-pointer transition-all duration-300 hover:scale-105 shadow-lg"
                       onClick={() => {
                         if (product.title === "FULL COURSE") {
                           window.open("https://bv1pro.com/bestversion1", "_blank");
@@ -182,8 +182,8 @@ export default function ProgramsSection() {
                       <Image
                         src={product.backImage}
                         alt={`${product.title} - Back`}
-                        width={180}
-                        height={270}
+                        width={120}
+                        height={180}
                         className="w-full h-full object-contain"
                         priority
                         onError={(e) => {
@@ -205,7 +205,7 @@ export default function ProgramsSection() {
                 >
                   {/* Product Card using front and back images */}
                   <div 
-                    className={`relative w-[360px] h-[540px] cursor-pointer perspective-1000 transition-all duration-500 ${flippedCards[index] ? 'transform scale-110 -translate-y-4 shadow-2xl' : 'transform scale-100 shadow-lg'}`}
+                    className={`relative w-[300px] h-[450px] cursor-pointer perspective-1000 transition-all duration-500 ${flippedCards[index] ? 'transform scale-110 -translate-y-4 shadow-2xl' : 'transform scale-100 shadow-lg'}`}
                     style={{
                       filter: flippedCards[index] ? 'drop-shadow(0 25px 50px rgba(0, 0, 0, 0.5))' : 'none'
                     }}
@@ -238,8 +238,8 @@ export default function ProgramsSection() {
                       <Image
                         src={product.frontImage}
                         alt={`${product.title} - Front`}
-                        width={400}
-                        height={600}
+                        width={300}
+                        height={450}
                         className="w-full h-full object-contain"
                         priority
                         onError={(e) => {
@@ -259,8 +259,8 @@ export default function ProgramsSection() {
                       <Image
                         src={product.backImage}
                         alt={`${product.title} - Back`}
-                        width={400}
-                        height={600}
+                        width={300}
+                        height={450}
                         className="w-full h-full object-contain"
                         priority
                         onError={(e) => {

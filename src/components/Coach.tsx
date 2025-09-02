@@ -64,7 +64,7 @@ export default function Coach() {
         <div className="mt-12 sm:mt-16 md:mt-20 lg:mt-24">
           <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
             <h3 className="font-poppins font-bold text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 sm:mb-6 leading-tight" style={{ fontWeight: 700 }}>
-              Built on the La Masia Principles — For Players Everywhere
+            La Masia Methods Made Accessible to Every Player
             </h3>
           </div>
           

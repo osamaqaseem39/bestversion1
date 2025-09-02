@@ -17,8 +17,8 @@ const PlayerOutcomesSection = () => {
       { title: "Leadership Skills", image: "/card6.png" },
       { title: "Game Intelligence", image: "/card7.png" },
       { title: "Professional Mindset", image: "/card8.png" },
-      { title: "Mental Strength", image: "/card9.png" },
-      { title: "Tactical Mastery", image: "/card10.png" }
+      { title: "Mental Strength", image: "/card8.png" },
+      { title: "Tactical Mastery", image: "/card9.png" }
     ]
   ];
 
