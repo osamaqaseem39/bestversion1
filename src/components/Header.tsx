@@ -113,27 +113,31 @@ export default function Header() {
             <div className="flex items-center justify-between h-10 sm:h-12 md:h-16 px-2 sm:px-3 md:px-6">
               
               {/* Left Section - Logo only - Hidden on mobile, shown on md+ */}
-              <div className="hidden md:flex items-center">
-                {/* Logo from public folder - responsive size */}
-                <Image
-                  src="/logo.png"
-                  alt="Best Version 1 Logo"
-                  width={80}
-                  height={80}
-                  className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
-                />
+              <div className="hidden md:flex items-center pl-4 sm:pl-6 md:pl-8 lg:pl-12">
+                {/* Logo from public folder - responsive size with home link */}
+                <Link href="/" className="hover:opacity-80 transition-opacity duration-200">
+                  <Image
+                    src="/logo.png"
+                    alt="Best Version 1 Logo"
+                    width={80}
+                    height={80}
+                    className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
+                  />
+                </Link>
               </div>
 
               {/* Center Section - Logo on mobile, Navigation on md+ */}
               <div className="flex md:hidden items-center justify-center flex-1">
-                {/* Logo centered on mobile */}
-                <Image
-                  src="/logo.png"
-                  alt="Best Version 1 Logo"
-                  width={80}
-                  height={80}
-                  className="w-12 h-12 sm:w-16 sm:h-16"
-                />
+                {/* Logo centered on mobile with home link */}
+                <Link href="/" className="hover:opacity-80 transition-opacity duration-200">
+                  <Image
+                    src="/logo.png"
+                    alt="Best Version 1 Logo"
+                    width={80}
+                    height={80}
+                    className="w-12 h-12 sm:w-16 sm:h-16"
+                  />
+                </Link>
               </div>
 
               {/* Center Section - Navigation Bar - Hidden on mobile, shown on md+ */}
