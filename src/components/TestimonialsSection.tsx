@@ -13,7 +13,7 @@ const TestimonialsSection = () => {
     {
       role: "Alessandro Rodriguez, Midfielder",
       quote: "Having played at the professional level for 8 years, I thought I knew everything about football intelligence. Jordi's methods opened my eyes to details I'd been missing my entire career. The positional awareness techniques and decision-making frameworks are exactly what separated Barcelona's golden generation from everyone else. I wish I'd had access to this 15 years ago.",
-      image: "/orangeplayer.jpg",
+      image: "/orangeplayer.png",
       stars: 5
     },
     {
@@ -31,13 +31,13 @@ const TestimonialsSection = () => {
     {
       role: "David Martinez, Youth Coach",
       quote: "I've been coaching youth football for 12 years, and I thought I understood tactics until I experienced BV1. Jordi's approach to teaching positional play and game reading is completely different from anything else out there. My players are now asking better questions, making smarter runs, and understanding the 'why' behind every movement. It's not just improved their play - it's made me a better coach.",
-      image: "/coach.png",
+      image: "/manager.png",
       stars: 5
     },
     {
       role: "Emma Rodriguez, Youth Player",
       quote: "I used to get frustrated because I had good skills but never got picked for trials. BV1 taught me it's not about fancy tricks - it's about making smart decisions and reading the game. Now scouts are calling my coach asking about me.",
-      image: "/juniorplayer.jpg",
+      image: "/female.png",
       stars: 5
     },
     {
