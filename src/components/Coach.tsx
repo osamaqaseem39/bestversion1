@@ -14,7 +14,7 @@ export default function Coach() {
     <section id="about" className="relative h-auto px-3 sm:px-4 md:px-6 lg:px-8 overflow-hidden bg-transparent flex items-center justify-center py-4 sm:py-6 md:py-8 lg:py-12">
 
       {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto text-center">
+      <div className="relative z-10 max-w-7xl mx-auto text-center">
         {/* Coach Portrait */}
         <div className="relative mb-0 flex justify-center">
           <div className="mx-auto flex justify-center">
