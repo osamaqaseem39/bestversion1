@@ -109,19 +109,17 @@ const TestimonialsSection = () => {
     ));
   };
 
-  // Create groups of four testimonials for four-column layout
-  const testimonialGroups = [];
-  for (let i = 0; i < testimonials.length; i += 4) {
-    testimonialGroups.push([
+  // Create pairs of testimonials for two-column layout
+  const testimonialPairs = [];
+  for (let i = 0; i < testimonials.length; i += 2) {
+    testimonialPairs.push([
       testimonials[i],
-      testimonials[i + 1] || null,
-      testimonials[i + 2] || null,
-      testimonials[i + 3] || null
+      testimonials[i + 1] || null
     ]);
   }
 
-  // Duplicate groups for seamless loop
-  const duplicatedGroups = [...testimonialGroups, ...testimonialGroups];
+  // Duplicate pairs for seamless loop
+  const duplicatedPairs = [...testimonialPairs, ...testimonialPairs];
 
   return (
     <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-transparent relative">
@@ -152,12 +150,12 @@ const TestimonialsSection = () => {
                 willChange: 'transform'
               }}
             >
-              {duplicatedGroups.map((group, groupIndex) => (
+              {duplicatedPairs.map((pair, pairIndex) => (
                 <div 
-                  key={groupIndex}
-                  className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12 md:mb-16"
+                  key={pairIndex}
+                  className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12 md:mb-16"
                 >
-                  {/* First testimonial in group */}
+                  {/* First testimonial in pair */}
                   <div
                     className="bg-transparent rounded-xl p-4 sm:p-6 md:p-8 border border-gray-700/30 transition-all duration-300 min-h-[250px] sm:min-h-[300px] md:min-h-[350px] lg:min-h-[400px] w-full"
                   >
@@ -166,8 +164,8 @@ const TestimonialsSection = () => {
                       <div className="mb-4 sm:mb-6 flex justify-center">
                         <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-gray-600/50">
                           <img
-                            src={group[0]?.image}
-                            alt={group[0]?.role}
+                            src={pair[0]?.image}
+                            alt={pair[0]?.role}
                             className="w-full h-full object-cover"
                           />
                         </div>
@@ -176,21 +174,21 @@ const TestimonialsSection = () => {
                       {/* Stars Section */}
                       <div className="mb-3 sm:mb-4 flex justify-center">
                         <div className="flex space-x-1">
-                          {renderStars(group[0]?.stars || 0)}
+                          {renderStars(pair[0]?.stars || 0)}
                         </div>
                       </div>
 
                       <h3 className="font-poppins text-white mb-3 sm:mb-4" style={{ fontSize: 'clamp(16px, 3vw, 35px)', fontWeight: '400', lineHeight: '100%', letterSpacing: '0%' }}>
-                        {group[0]?.role}
+                        {pair[0]?.role}
                       </h3>
-                      <p className="font-poppins text-white" style={{ fontSize: 'clamp(14px, 2.5vw, 30px)', fontWeight: '400', lineHeight: '120%', letterSpacing: '0%' }}>
-                        {group[0]?.quote}
+                      <p className="font-poppins text-white text-sm" style={{ fontWeight: '400', lineHeight: '120%', letterSpacing: '0%' }}>
+                        {pair[0]?.quote}
                       </p>
                     </div>
                   </div>
 
-                  {/* Second testimonial in group (if exists) */}
-                  {group[1] && (
+                  {/* Second testimonial in pair (if exists) */}
+                  {pair[1] && (
                     <div
                       className="bg-transparent rounded-xl p-4 sm:p-6 md:p-8 border border-gray-700/30 transition-all duration-300 min-h-[250px] sm:min-h-[300px] md:min-h-[350px] lg:min-h-[400px] w-full"
                     >
@@ -199,8 +197,8 @@ const TestimonialsSection = () => {
                         <div className="mb-4 sm:mb-6 flex justify-center">
                           <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-gray-600/50">
                             <img
-                              src={group[1]?.image}
-                              alt={group[1]?.role}
+                              src={pair[1]?.image}
+                              alt={pair[1]?.role}
                               className="w-full h-full object-cover"
                             />
                           </div>
@@ -209,83 +207,15 @@ const TestimonialsSection = () => {
                         {/* Stars Section */}
                         <div className="mb-3 sm:mb-4 flex justify-center">
                           <div className="flex space-x-1">
-                            {renderStars(group[1]?.stars || 0)}
+                            {renderStars(pair[1]?.stars || 0)}
                           </div>
                         </div>
 
                         <h3 className="font-poppins text-white mb-3 sm:mb-4" style={{ fontSize: 'clamp(16px, 3vw, 35px)', fontWeight: '400', lineHeight: '100%', letterSpacing: '0%' }}>
-                          {group[1]?.role}
+                          {pair[1]?.role}
                         </h3>
-                        <p className="font-poppins text-white" style={{ fontSize: 'clamp(14px, 2.5vw, 30px)', fontWeight: '400', lineHeight: '120%', letterSpacing: '0%' }}>
-                          {group[1]?.quote}
-                        </p>
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Third testimonial in group (if exists) */}
-                  {group[2] && (
-                    <div
-                      className="bg-transparent rounded-xl p-4 sm:p-6 md:p-8 border border-gray-700/30 transition-all duration-300 min-h-[250px] sm:min-h-[300px] md:min-h-[350px] lg:min-h-[400px] w-full"
-                    >
-                      <div className="h-full flex flex-col justify-center text-center">
-                        {/* Images Section */}
-                        <div className="mb-4 sm:mb-6 flex justify-center">
-                          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-gray-600/50">
-                            <img
-                              src={group[2]?.image}
-                              alt={group[2]?.role}
-                              className="w-full h-full object-cover"
-                            />
-                          </div>
-                        </div>
-
-                        {/* Stars Section */}
-                        <div className="mb-3 sm:mb-4 flex justify-center">
-                          <div className="flex space-x-1">
-                            {renderStars(group[2]?.stars || 0)}
-                          </div>
-                        </div>
-
-                        <h3 className="font-poppins text-white mb-3 sm:mb-4" style={{ fontSize: 'clamp(16px, 3vw, 35px)', fontWeight: '400', lineHeight: '100%', letterSpacing: '0%' }}>
-                          {group[2]?.role}
-                        </h3>
-                        <p className="font-poppins text-white" style={{ fontSize: 'clamp(14px, 2.5vw, 30px)', fontWeight: '400', lineHeight: '120%', letterSpacing: '0%' }}>
-                          {group[2]?.quote}
-                        </p>
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Fourth testimonial in group (if exists) */}
-                  {group[3] && (
-                    <div
-                      className="bg-transparent rounded-xl p-4 sm:p-6 md:p-8 border border-gray-700/30 transition-all duration-300 min-h-[250px] sm:min-h-[300px] md:min-h-[350px] lg:min-h-[400px] w-full"
-                    >
-                      <div className="h-full flex flex-col justify-center text-center">
-                        {/* Images Section */}
-                        <div className="mb-4 sm:mb-6 flex justify-center">
-                          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-gray-600/50">
-                            <img
-                              src={group[3]?.image}
-                              alt={group[3]?.role}
-                              className="w-full h-full object-cover"
-                            />
-                          </div>
-                        </div>
-
-                        {/* Stars Section */}
-                        <div className="mb-3 sm:mb-4 flex justify-center">
-                          <div className="flex space-x-1">
-                            {renderStars(group[3]?.stars || 0)}
-                          </div>
-                        </div>
-
-                        <h3 className="font-poppins text-white mb-3 sm:mb-4" style={{ fontSize: 'clamp(16px, 3vw, 35px)', fontWeight: '400', lineHeight: '100%', letterSpacing: '0%' }}>
-                          {group[3]?.role}
-                        </h3>
-                        <p className="font-poppins text-white" style={{ fontSize: 'clamp(14px, 2.5vw, 30px)', fontWeight: '400', lineHeight: '120%', letterSpacing: '0%' }}>
-                          {group[3]?.quote}
+                        <p className="font-poppins text-white text-sm" style={{ fontWeight: '400', lineHeight: '120%', letterSpacing: '0%' }}>
+                          {pair[1]?.quote}
                         </p>
                       </div>
                     </div>
