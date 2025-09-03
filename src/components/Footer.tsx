@@ -152,9 +152,12 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Left Side - Terms & Privacy */}
-          <div className="text-[#D9D9D9]">
-            <a href="#" className="hover:text-white transition-colors duration-300 text-base font-normal leading-none tracking-normal">
-              Terms & Privacy Policy
+          <div className="text-[#D9D9D9] flex gap-6">
+            <a href="/terms" className="hover:text-white transition-colors duration-300 text-base font-normal leading-none tracking-normal">
+              Terms
+            </a>
+            <a href="/privacy" className="hover:text-white transition-colors duration-300 text-base font-normal leading-none tracking-normal">
+              Privacy Policy
             </a>
           </div>
 

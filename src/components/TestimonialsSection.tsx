@@ -7,7 +7,7 @@ const TestimonialsSection = () => {
     {
       role: "Marcus Chen, Academy Player",
       quote: "Before BV1, I was just running around the pitch hoping something would happen. Now I see the game completely differently - I know where to look, when to move, and how to position myself like the pros do. My coach says I went from being reactive to being two steps ahead of everyone else. The scanning drills alone changed my entire game.",
-      image: "/proplayer.jpg",
+      image: "/chen.jpg",
       stars: 5
     },
     {
@@ -36,8 +36,8 @@ const TestimonialsSection = () => {
     },
     {
       role: "Emma Rodriguez, Youth Player",
-      quote: "I used to get frustrated because I had good skills but never got picked for trials. BV1 taught me it's not about fancy tricks - it's about making smart decisions and reading the game. Now scouts are calling my coach asking about me.",
-      image: "/female.png",
+      quote: "As a female player, I always felt overlooked compared to the boys. BV1 gave me the confidence and knowledge to play smarter, not just harder. Now I’m consistently one of the most reliable players on the pitch, and my coach trusts me in key moments.",
+      image: "/femaleplayer.png",
       stars: 5
     },
     {
@@ -49,7 +49,7 @@ const TestimonialsSection = () => {
     {
       role: "Michael O'Connor, Academy Director",
       quote: "We've tried many development programs, but nothing comes close to the depth and authenticity of what BV1 offers. Having La Masia's actual methods taught by someone who lived it is invaluable for serious player development.",
-      image: "/young.jpeg",
+      image: "/director2.png",
       stars: 5
     }
   ];
