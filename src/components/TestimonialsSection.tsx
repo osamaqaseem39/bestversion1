@@ -7,7 +7,7 @@ const TestimonialsSection = () => {
     {
       role: "Marcus Chen, Academy Player, Manchester",
       quote: "Before BV1, I was just running around the pitch hoping something would happen. Now I see the game completely differently - I know where to look, when to move, and how to position myself like the pros do. My coach says I went from being reactive to being two steps ahead of everyone else. The scanning drills alone changed my entire game.",
-      image: "/proplayer.png",
+      image: "/proplayer.jpg",
       stars: 5
     },
     {
@@ -37,7 +37,7 @@ const TestimonialsSection = () => {
     {
       role: "Emma Rodriguez, Youth Player, Barcelona Academy",
       quote: "I used to get frustrated because I had good skills but never got picked for trials. BV1 taught me it's not about fancy tricks - it's about making smart decisions and reading the game. Now scouts are calling my coach asking about me.",
-      image: "/juniorplayer.png",
+      image: "/juniorplayer.jpg",
       stars: 5
     },
     {
