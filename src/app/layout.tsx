@@ -21,16 +21,10 @@ export const metadata: Metadata = {
     description: 'Transform Your Football IQ with La Masia\'s Proven System. Elite football education platform built by former FC Barcelona coach Jordi Roura.',
     images: [
       {
-        url: '/bv1icon.png',
+        url: '/metadata.png',
         width: 1200,
         height: 630,
         alt: 'Best Version 1 - Elite Tactical Education for Ambitious Players',
-      },
-      {
-        url: '/logo.png',
-        width: 800,
-        height: 600,
-        alt: 'Best Version 1 Logo',
       }
     ],
   },
@@ -40,7 +34,7 @@ export const metadata: Metadata = {
     creator: '@bestversion1',
     title: 'Elite Tactical Education for Ambitious Players',
     description: 'Transform Your Football IQ with La Masia\'s Proven System. Elite football education platform built by former FC Barcelona coach Jordi Roura.',
-    images: ['/bv1icon.png'],
+    images: ['/metadata.png'],
   },
   icons: {
     icon: '/favicon.ico',
