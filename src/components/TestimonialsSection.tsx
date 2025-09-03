@@ -5,49 +5,49 @@ import React, { useEffect, useRef, useState } from 'react';
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      role: "Marcus Chen, Academy Player, Manchester",
+      role: "Marcus Chen, Academy Player",
       quote: "Before BV1, I was just running around the pitch hoping something would happen. Now I see the game completely differently - I know where to look, when to move, and how to position myself like the pros do. My coach says I went from being reactive to being two steps ahead of everyone else. The scanning drills alone changed my entire game.",
       image: "/proplayer.jpg",
       stars: 5
     },
     {
-      role: "Alessandro Rodriguez, Former Serie A Midfielder & Current BV1 Student",
+      role: "Alessandro Rodriguez, Midfielder",
       quote: "Having played at the professional level for 8 years, I thought I knew everything about football intelligence. Jordi's methods opened my eyes to details I'd been missing my entire career. The positional awareness techniques and decision-making frameworks are exactly what separated Barcelona's golden generation from everyone else. I wish I'd had access to this 15 years ago.",
       image: "/semiproplayer.jpg",
       stars: 5
     },
     {
-      role: "James McKenna, Director of Youth Development, Celtic FC Academy",
+      role: "James McKenna, Director",
       quote: "We've implemented several concepts from the BV1 program across our academy, and the transformation in our players' tactical understanding has been remarkable. What Jordi teaches isn't just theory - it's the exact methodology that produced Messi, Xavi, and the greatest generation of footballers we've ever seen. Our coaches are learning alongside the players, and everyone's game IQ has elevated dramatically.",
       image: "/manager.png",
       stars: 5
     },
     {
-      role: "John Thompson, Father of Academy Player, London",
+      role: "John Thompson, Father of Academy Player",
       quote: "As a parent, you're always looking for programs that actually deliver results, not just empty promises. Within 3 months of my son starting BV1, his club coach pulled me aside to ask what had changed - his game awareness and decision-making had improved dramatically. When I told him about Jordi's program, he said 'That explains everything - your son is now playing with La Masia intelligence.' Worth every penny.",
       image: "/parent.png",
       stars: 5
     },
     {
-      role: "David Martinez, Youth Coach, Real Salt Lake Academy",
+      role: "David Martinez, Youth Coach",
       quote: "I've been coaching youth football for 12 years, and I thought I understood tactics until I experienced BV1. Jordi's approach to teaching positional play and game reading is completely different from anything else out there. My players are now asking better questions, making smarter runs, and understanding the 'why' behind every movement. It's not just improved their play - it's made me a better coach.",
       image: "/coach.png",
       stars: 5
     },
     {
-      role: "Emma Rodriguez, Youth Player, Barcelona Academy",
+      role: "Emma Rodriguez, Youth Player",
       quote: "I used to get frustrated because I had good skills but never got picked for trials. BV1 taught me it's not about fancy tricks - it's about making smart decisions and reading the game. Now scouts are calling my coach asking about me.",
       image: "/juniorplayer.jpg",
       stars: 5
     },
     {
-      role: "Carlos Mendez, Professional Midfielder, La Liga",
+      role: "Carlos Mendez, Professional Midfielder",
       quote: "The mental side of Jordi's training is incredible. Learning how Barcelona's legends think about the game has made me a more complete player even at 28. My positioning and timing have improved more in 6 months than in my previous 3 seasons.",
       image: "/proplayer1.png",
       stars: 5
     },
     {
-      role: "Michael O'Connor, Academy Director, Arsenal Youth",
+      role: "Michael O'Connor, Academy Director",
       quote: "We've tried many development programs, but nothing comes close to the depth and authenticity of what BV1 offers. Having La Masia's actual methods taught by someone who lived it is invaluable for serious player development.",
       image: "/young.jpeg",
       stars: 5
