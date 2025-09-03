@@ -74,7 +74,7 @@ const Footer = () => {
                    </svg>
                  </div>
                  <span className="text-[#D9D9D9] text-sm font-medium hover:text-white transition-colors duration-300">
-                   @bestversion__1
+                 
                  </span>
                </a>
 
@@ -95,7 +95,7 @@ const Footer = () => {
                    </svg>
                  </div>
                  <span className="text-[#D9D9D9] text-sm font-medium hover:text-white transition-colors duration-300">
-                   @bestversion__1
+                  
                  </span>
                </a>
 
@@ -116,7 +116,7 @@ const Footer = () => {
                    </svg>
                  </div>
                  <span className="text-[#D9D9D9] text-sm font-medium hover:text-white transition-colors duration-300">
-                   Best Version 1
+                 
                  </span>
                </a>
              </div>
