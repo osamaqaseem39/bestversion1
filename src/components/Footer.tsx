@@ -64,9 +64,9 @@ const Footer = () => {
                  rel="noopener noreferrer"
                  className="flex items-center gap-2 hover:scale-110 transition-transform duration-300"
                >
-                 <div className="w-8 h-8 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-full flex items-center justify-center">
+                 <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
                    <svg 
-                     className="w-5 h-5 text-white" 
+                     className="w-5 h-5 text-black" 
                      fill="currentColor" 
                      viewBox="0 0 24 24"
                    >
@@ -85,9 +85,9 @@ const Footer = () => {
                  rel="noopener noreferrer"
                  className="flex items-center gap-2 hover:scale-110 transition-transform duration-300"
                >
-                 <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center">
+                 <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
                    <svg 
-                     className="w-5 h-5 text-white" 
+                     className="w-5 h-5 text-black" 
                      fill="currentColor" 
                      viewBox="0 0 24 24"
                    >
@@ -106,9 +106,9 @@ const Footer = () => {
                  rel="noopener noreferrer"
                  className="flex items-center gap-2 hover:scale-110 transition-transform duration-300"
                >
-                 <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center border border-white/20">
+                 <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
                    <svg 
-                     className="w-5 h-5 text-white" 
+                     className="w-5 h-5 text-black" 
                      fill="currentColor" 
                      viewBox="0 0 24 24"
                    >
@@ -127,9 +127,9 @@ const Footer = () => {
                  rel="noopener noreferrer"
                  className="flex items-center gap-2 hover:scale-110 transition-transform duration-300"
                >
-                 <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                 <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
                    <svg 
-                     className="w-5 h-5 text-white" 
+                     className="w-5 h-5 text-black" 
                      fill="currentColor" 
                      viewBox="0 0 24 24"
                    >

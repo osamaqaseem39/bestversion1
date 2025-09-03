@@ -13,13 +13,13 @@ const TestimonialsSection = () => {
     {
       role: "Alessandro Rodriguez, Midfielder",
       quote: "Having played at the professional level for 8 years, I thought I knew everything about football intelligence. Jordi's methods opened my eyes to details I'd been missing my entire career. The positional awareness techniques and decision-making frameworks are exactly what separated Barcelona's golden generation from everyone else. I wish I'd had access to this 15 years ago.",
-      image: "/semiproplayer.jpg",
+      image: "/orangeplayer.jpg",
       stars: 5
     },
     {
       role: "James McKenna, Director",
       quote: "We've implemented several concepts from the BV1 program across our academy, and the transformation in our players' tactical understanding has been remarkable. What Jordi teaches isn't just theory - it's the exact methodology that produced Messi, Xavi, and the greatest generation of footballers we've ever seen. Our coaches are learning alongside the players, and everyone's game IQ has elevated dramatically.",
-      image: "/manager.png",
+      image: "/director.png",
       stars: 5
     },
     {
@@ -43,7 +43,7 @@ const TestimonialsSection = () => {
     {
       role: "Carlos Mendez, Professional Midfielder",
       quote: "The mental side of Jordi's training is incredible. Learning how Barcelona's legends think about the game has made me a more complete player even at 28. My positioning and timing have improved more in 6 months than in my previous 3 seasons.",
-      image: "/proplayer1.png",
+      image: "/clubplayer.png",
       stars: 5
     },
     {
