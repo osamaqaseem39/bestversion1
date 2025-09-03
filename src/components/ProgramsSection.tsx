@@ -89,11 +89,11 @@ export default function ProgramsSection() {
     
     // Left half: less translation
     if (!isOnRightHalf) {
-      return 'lg:transform lg:-translate-x-[25%]';
+      return 'lg:transform lg:-translate-x-[25%] xl:-translate-x-[30%] 2xl:-translate-x-[35%] 4xl:-translate-x-[40%]';
     }
     
     // Right half: more translation
-    return 'lg:transform lg:-translate-x-[40%]';
+    return 'lg:transform lg:-translate-x-[40%] xl:-translate-x-[45%] 2xl:-translate-x-[50%] 4xl:-translate-x-[55%]';
   };
 
   return (
@@ -111,17 +111,17 @@ export default function ProgramsSection() {
         </div>
 
         {/* Main Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-[500px_1fr] 2xl:grid-cols-[625px_1fr] 4xl:grid-cols-[750px_1fr] gap-4 sm:gap-6 md:gap-8 lg:gap-0 items-center relative">
+        <div className="grid grid-cols-1 lg:grid-cols-[450px_1fr] 2xl:grid-cols-[562px_1fr] 4xl:grid-cols-[675px_1fr] gap-4 sm:gap-6 md:gap-8 lg:gap-0 items-center relative">
           {/* Left Panel - Products Information */}
           <div className={`relative w-full transition-all duration-700 ${isHovered ? 'lg:blur-sm' : ''}`}>
             {/* Panel Content */}
-            <div className="relative rounded-2xl overflow-hidden w-full max-w-[500px] 2xl:max-w-[625px] 4xl:max-w-[750px] h-[250px] sm:h-[300px] md:h-[375px] lg:h-[562px] 2xl:h-[703px] 4xl:h-[844px] mx-auto lg:mx-0">
+            <div className="relative rounded-2xl overflow-hidden w-full max-w-[450px] 2xl:max-w-[562px] 4xl:max-w-[675px] h-[225px] sm:h-[270px] md:h-[338px] lg:h-[506px] 2xl:h-[633px] 4xl:h-[760px] mx-auto lg:mx-0">
               {/* Background image */}
               <Image
                 src="/Subtract.png"
                 alt="Background Image"
-                width={750}
-                height={844}
+                width={675}
+                height={760}
                 className="absolute inset-0 object-contain"
                 priority
               />
@@ -130,23 +130,23 @@ export default function ProgramsSection() {
               <Image
                 src="/Vector 59.png"
                 alt="Curved Lines"
-                width={750}
-                height={844}
+                width={675}
+                height={760}
                 className="absolute inset-0 object-contain"
                 priority
               />
               
               {/* Content */}
-              <div className="relative z-20 flex flex-col justify-center h-full px-3 sm:px-4 md:px-5 lg:px-15 2xl:px-20 4xl:px-24 pr-3 sm:pr-4 md:pr-8 lg:pr-30 2xl:pr-40 4xl:pr-48">
-                <h3 className="font-poppins font-bold text-[14px] sm:text-[16px] md:text-[18px] lg:text-[28px] 2xl:text-[32px] 4xl:text-[36px] text-white uppercase mb-2 sm:mb-3 md:mb-4 lg:mb-7 2xl:mb-9 4xl:mb-11 tracking-[2%] leading-[132%]">
+              <div className="relative z-20 flex flex-col justify-center h-full px-3 sm:px-4 md:px-5 lg:px-13 2xl:px-18 4xl:px-22 pr-3 sm:pr-4 md:pr-8 lg:pr-27 2xl:pr-36 4xl:pr-43">
+                <h3 className="font-poppins font-bold text-[13px] sm:text-[15px] md:text-[17px] lg:text-[26px] 2xl:text-[30px] 4xl:text-[34px] text-white uppercase mb-2 sm:mb-3 md:mb-4 lg:mb-6 2xl:mb-8 4xl:mb-10 tracking-[2%] leading-[132%]">
                   PRODUCTS
                 </h3>
                 
-                <h4 className="font-poppins font-normal text-[12px] sm:text-[14px] md:text-[16px] lg:text-[28px] 2xl:text-[32px] 4xl:text-[36px] text-white mb-2 sm:mb-3 md:mb-4 lg:mb-7 2xl:mb-9 4xl:mb-11 tracking-[0%] leading-[132%] uppercase">
+                <h4 className="font-poppins font-normal text-[11px] sm:text-[13px] md:text-[15px] lg:text-[26px] 2xl:text-[30px] 4xl:text-[34px] text-white mb-2 sm:mb-3 md:mb-4 lg:mb-6 2xl:mb-8 4xl:mb-10 tracking-[0%] leading-[132%] uppercase">
                   BV1 PRO + 14 INSTRUCTIONAL FOOTBALL VIDEO TUTORIALS BY JORDI ROURA
                 </h4>
                 
-                <p className="text-white/80 text-[10px] sm:text-[11px] md:text-[12px] lg:text-[14px] 2xl:text-[16px] 4xl:text-[18px] leading-[150%] max-w-[440px] 2xl:max-w-[550px] 4xl:max-w-[660px]">
+                <p className="text-white/80 text-[9px] sm:text-[10px] md:text-[11px] lg:text-[13px] 2xl:text-[15px] 4xl:text-[17px] leading-[150%] max-w-[396px] 2xl:max-w-[495px] 4xl:max-w-[594px]">
                   Best Version 1 Pro is a set of premium instructional football video content that Jordi has been implementing successfully throughout his career in La Masia, it is a set of fundamental concepts that worked to shape the football game of hundreds of pro players in the best leagues throughout the world.
                 </p>
               </div>
