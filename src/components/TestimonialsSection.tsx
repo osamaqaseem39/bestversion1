@@ -37,7 +37,7 @@ const TestimonialsSection = () => {
     {
       role: "Emma Rodriguez, Youth Player, Barcelona Academy",
       quote: "I used to get frustrated because I had good skills but never got picked for trials. BV1 taught me it's not about fancy tricks - it's about making smart decisions and reading the game. Now scouts are calling my coach asking about me.",
-      image: "/player.jpg",
+      image: "/juniorplayer.jpg",
       stars: 5
     },
     {
