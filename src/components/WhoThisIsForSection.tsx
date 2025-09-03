@@ -33,7 +33,7 @@ export default function WhoThisIsForSection() {
   ]
 
   return (
-    <section className="relative py-6 sm:py-8 md:py-12 lg:py-20 px-3 sm:px-4 md:px-6 lg:px-8 overflow-hidden bg-transparent min-h-screen">
+    <section className="relative py-6 sm:py-8 md:py-12 lg:py-15 px-3 sm:px-4 md:px-6 lg:px-8 overflow-hidden bg-transparent min-h-screen">
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto">

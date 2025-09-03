@@ -205,7 +205,7 @@ export default function ProgramsSection() {
                 >
                   {/* Product Card using front and back images */}
                   <div 
-                    className={`relative w-[300px] h-[450px] 2xl:w-[350px] 2xl:h-[525px] 4xl:w-[400px] 4xl:h-[600px] cursor-pointer perspective-1000 transition-all duration-500 ${flippedCards[index] ? 'transform scale-110 -translate-y-4 shadow-2xl' : 'transform scale-100 shadow-lg'}`}
+                    className={`relative w-[300px] h-[450px] 2xl:w-[350px] 2xl:h-[525px] 4xl:w-[400px] 4xl:h-[600px] cursor-pointer perspective-1000 preserve-3d transition-all duration-500 ${flippedCards[index] ? 'transform scale-110 -translate-y-4 shadow-2xl' : 'transform scale-100 shadow-lg'}`}
                     style={{
                       filter: flippedCards[index] ? 'drop-shadow(0 25px 50px rgba(0, 0, 0, 0.5))' : 'none'
                     }}
@@ -229,10 +229,9 @@ export default function ProgramsSection() {
                   >
                     {/* Front of card */}
                     <div 
-                      className="absolute inset-0 transition-transform duration-700 backface-hidden"
+                      className="absolute inset-0 transition-transform duration-700 backface-hidden preserve-3d"
                       style={{
-                        transform: flippedCards[index] ? 'rotateY(180deg)' : 'rotateY(0deg)',
-                        transformStyle: 'preserve-3d'
+                        transform: flippedCards[index] ? 'rotateY(180deg)' : 'rotateY(0deg)'
                       }}
                     >
                       <Image
@@ -250,10 +249,9 @@ export default function ProgramsSection() {
                     
                     {/* Back of card */}
                     <div 
-                      className="absolute inset-0 transition-transform duration-700 backface-hidden"
+                      className="absolute inset-0 transition-transform duration-700 backface-hidden preserve-3d"
                       style={{
-                        transform: flippedCards[index] ? 'rotateY(0deg)' : 'rotateY(-180deg)',
-                        transformStyle: 'preserve-3d'
+                        transform: flippedCards[index] ? 'rotateY(0deg)' : 'rotateY(-180deg)'
                       }}
                     >
                       <Image
