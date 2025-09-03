@@ -5,51 +5,51 @@ import React, { useEffect, useRef, useState } from 'react';
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      role: "Parent",
-      quote: "BV1 finally gave my son the clarity and confidence to play his best",
-      image: "/card1.png",
+      role: "Marcus Chen, Academy Player, Manchester",
+      quote: "Before BV1, I was just running around the pitch hoping something would happen. Now I see the game completely differently - I know where to look, when to move, and how to position myself like the pros do. My coach says I went from being reactive to being two steps ahead of everyone else. The scanning drills alone changed my entire game.",
+      image: "/proplayer.png",
       stars: 5
     },
     {
-      role: "Coach",
-      quote: "These are the same principles I use at the professional level",
-      image: "/card2.png",
+      role: "Alessandro Rodriguez, Former Serie A Midfielder & Current BV1 Student",
+      quote: "Having played at the professional level for 8 years, I thought I knew everything about football intelligence. Jordi's methods opened my eyes to details I'd been missing my entire career. The positional awareness techniques and decision-making frameworks are exactly what separated Barcelona's golden generation from everyone else. I wish I'd had access to this 15 years ago.",
+      image: "/semiproplayer.jpg",
       stars: 5
     },
     {
-      role: "Player",
-      quote: "I started applying what I learned and immediately got noticed",
-      image: "/card3.png",
+      role: "James McKenna, Director of Youth Development, Celtic FC Academy",
+      quote: "We've implemented several concepts from the BV1 program across our academy, and the transformation in our players' tactical understanding has been remarkable. What Jordi teaches isn't just theory - it's the exact methodology that produced Messi, Xavi, and the greatest generation of footballers we've ever seen. Our coaches are learning alongside the players, and everyone's game IQ has elevated dramatically.",
+      image: "/manager.png",
       stars: 5
     },
     {
-      role: "Jordi",
-      quote: "We built BV1 to give every player access to the education they deserve.",
-      image: "/jordi.jpg",
+      role: "John Thompson, Mother of Academy Player, London",
+      quote: "As a parent, you're always looking for programs that actually deliver results, not just empty promises. Within 3 months of my son starting BV1, his club coach pulled me aside to ask what had changed - his game awareness and decision-making had improved dramatically. When I told him about Jordi's program, he said 'That explains everything - your son is now playing with La Masia intelligence.' Worth every penny.",
+      image: "/parent.png",
       stars: 5
     },
     {
-      role: "Former Pro",
-      quote: "This training program transformed my understanding of the game completely",
-      image: "/card4.png",
-      stars: 4.5
-    },
-    {
-      role: "Youth Coach",
-      quote: "I've seen incredible improvements in my team since implementing these methods",
-      image: "/card1.png",
+      role: "David Martinez, Youth Coach, Real Salt Lake Academy",
+      quote: "I've been coaching youth football for 12 years, and I thought I understood tactics until I experienced BV1. Jordi's approach to teaching positional play and game reading is completely different from anything else out there. My players are now asking better questions, making smarter runs, and understanding the 'why' behind every movement. It's not just improved their play - it's made me a better coach.",
+      image: "/coach.png",
       stars: 5
     },
     {
-      role: "Student Athlete",
-      quote: "The tactical knowledge I gained here is unmatched by any other program",
-      image: "/card2.png",
-      stars: 4
+      role: "Emma Rodriguez, Youth Player, Barcelona Academy",
+      quote: "I used to get frustrated because I had good skills but never got picked for trials. BV1 taught me it's not about fancy tricks - it's about making smart decisions and reading the game. Now scouts are calling my coach asking about me.",
+      image: "/juniorplayer.png",
+      stars: 5
     },
     {
-      role: "Club Director",
-      quote: "Best Version 1 has become our go-to resource for player development",
-      image: "/card3.png",
+      role: "Carlos Mendez, Professional Midfielder, La Liga",
+      quote: "The mental side of Jordi's training is incredible. Learning how Barcelona's legends think about the game has made me a more complete player even at 28. My positioning and timing have improved more in 6 months than in my previous 3 seasons.",
+      image: "/proplayer1.png",
+      stars: 5
+    },
+    {
+      role: "Michael O'Connor, Academy Director, Arsenal Youth",
+      quote: "We've tried many development programs, but nothing comes close to the depth and authenticity of what BV1 offers. Having La Masia's actual methods taught by someone who lived it is invaluable for serious player development.",
+      image: "/young.jpeg",
       stars: 5
     }
   ];
@@ -109,17 +109,19 @@ const TestimonialsSection = () => {
     ));
   };
 
-  // Create pairs of testimonials for two-column layout
-  const testimonialPairs = [];
-  for (let i = 0; i < testimonials.length; i += 2) {
-    testimonialPairs.push([
+  // Create groups of four testimonials for four-column layout
+  const testimonialGroups = [];
+  for (let i = 0; i < testimonials.length; i += 4) {
+    testimonialGroups.push([
       testimonials[i],
-      testimonials[i + 1] || null
+      testimonials[i + 1] || null,
+      testimonials[i + 2] || null,
+      testimonials[i + 3] || null
     ]);
   }
 
-  // Duplicate pairs for seamless loop
-  const duplicatedPairs = [...testimonialPairs, ...testimonialPairs];
+  // Duplicate groups for seamless loop
+  const duplicatedGroups = [...testimonialGroups, ...testimonialGroups];
 
   return (
     <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-transparent relative">
@@ -150,12 +152,12 @@ const TestimonialsSection = () => {
                 willChange: 'transform'
               }}
             >
-              {duplicatedPairs.map((pair, pairIndex) => (
+              {duplicatedGroups.map((group, groupIndex) => (
                 <div 
-                  key={pairIndex}
-                  className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12 md:mb-16"
+                  key={groupIndex}
+                  className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12 md:mb-16"
                 >
-                  {/* First testimonial in pair */}
+                  {/* First testimonial in group */}
                   <div
                     className="bg-transparent rounded-xl p-4 sm:p-6 md:p-8 border border-gray-700/30 transition-all duration-300 min-h-[250px] sm:min-h-[300px] md:min-h-[350px] lg:min-h-[400px] w-full"
                   >
@@ -164,8 +166,8 @@ const TestimonialsSection = () => {
                       <div className="mb-4 sm:mb-6 flex justify-center">
                         <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-gray-600/50">
                           <img
-                            src={pair[0].image}
-                            alt={pair[0].role}
+                            src={group[0]?.image}
+                            alt={group[0]?.role}
                             className="w-full h-full object-cover"
                           />
                         </div>
@@ -174,21 +176,21 @@ const TestimonialsSection = () => {
                       {/* Stars Section */}
                       <div className="mb-3 sm:mb-4 flex justify-center">
                         <div className="flex space-x-1">
-                          {renderStars(pair[0].stars)}
+                          {renderStars(group[0]?.stars || 0)}
                         </div>
                       </div>
 
                       <h3 className="font-poppins text-white mb-3 sm:mb-4" style={{ fontSize: 'clamp(16px, 3vw, 35px)', fontWeight: '400', lineHeight: '100%', letterSpacing: '0%' }}>
-                        {pair[0].role}
+                        {group[0]?.role}
                       </h3>
                       <p className="font-poppins text-white" style={{ fontSize: 'clamp(14px, 2.5vw, 30px)', fontWeight: '400', lineHeight: '120%', letterSpacing: '0%' }}>
-                        {pair[0].quote}
+                        {group[0]?.quote}
                       </p>
                     </div>
                   </div>
 
-                  {/* Second testimonial in pair (if exists) */}
-                  {pair[1] && (
+                  {/* Second testimonial in group (if exists) */}
+                  {group[1] && (
                     <div
                       className="bg-transparent rounded-xl p-4 sm:p-6 md:p-8 border border-gray-700/30 transition-all duration-300 min-h-[250px] sm:min-h-[300px] md:min-h-[350px] lg:min-h-[400px] w-full"
                     >
@@ -197,8 +199,8 @@ const TestimonialsSection = () => {
                         <div className="mb-4 sm:mb-6 flex justify-center">
                           <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-gray-600/50">
                             <img
-                              src={pair[1].image}
-                              alt={pair[1].role}
+                              src={group[1]?.image}
+                              alt={group[1]?.role}
                               className="w-full h-full object-cover"
                             />
                           </div>
@@ -207,15 +209,83 @@ const TestimonialsSection = () => {
                         {/* Stars Section */}
                         <div className="mb-3 sm:mb-4 flex justify-center">
                           <div className="flex space-x-1">
-                            {renderStars(pair[1].stars)}
+                            {renderStars(group[1]?.stars || 0)}
                           </div>
                         </div>
 
                         <h3 className="font-poppins text-white mb-3 sm:mb-4" style={{ fontSize: 'clamp(16px, 3vw, 35px)', fontWeight: '400', lineHeight: '100%', letterSpacing: '0%' }}>
-                          {pair[1].role}
+                          {group[1]?.role}
                         </h3>
                         <p className="font-poppins text-white" style={{ fontSize: 'clamp(14px, 2.5vw, 30px)', fontWeight: '400', lineHeight: '120%', letterSpacing: '0%' }}>
-                          {pair[1].quote}
+                          {group[1]?.quote}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Third testimonial in group (if exists) */}
+                  {group[2] && (
+                    <div
+                      className="bg-transparent rounded-xl p-4 sm:p-6 md:p-8 border border-gray-700/30 transition-all duration-300 min-h-[250px] sm:min-h-[300px] md:min-h-[350px] lg:min-h-[400px] w-full"
+                    >
+                      <div className="h-full flex flex-col justify-center text-center">
+                        {/* Images Section */}
+                        <div className="mb-4 sm:mb-6 flex justify-center">
+                          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-gray-600/50">
+                            <img
+                              src={group[2]?.image}
+                              alt={group[2]?.role}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        </div>
+
+                        {/* Stars Section */}
+                        <div className="mb-3 sm:mb-4 flex justify-center">
+                          <div className="flex space-x-1">
+                            {renderStars(group[2]?.stars || 0)}
+                          </div>
+                        </div>
+
+                        <h3 className="font-poppins text-white mb-3 sm:mb-4" style={{ fontSize: 'clamp(16px, 3vw, 35px)', fontWeight: '400', lineHeight: '100%', letterSpacing: '0%' }}>
+                          {group[2]?.role}
+                        </h3>
+                        <p className="font-poppins text-white" style={{ fontSize: 'clamp(14px, 2.5vw, 30px)', fontWeight: '400', lineHeight: '120%', letterSpacing: '0%' }}>
+                          {group[2]?.quote}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Fourth testimonial in group (if exists) */}
+                  {group[3] && (
+                    <div
+                      className="bg-transparent rounded-xl p-4 sm:p-6 md:p-8 border border-gray-700/30 transition-all duration-300 min-h-[250px] sm:min-h-[300px] md:min-h-[350px] lg:min-h-[400px] w-full"
+                    >
+                      <div className="h-full flex flex-col justify-center text-center">
+                        {/* Images Section */}
+                        <div className="mb-4 sm:mb-6 flex justify-center">
+                          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-gray-600/50">
+                            <img
+                              src={group[3]?.image}
+                              alt={group[3]?.role}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        </div>
+
+                        {/* Stars Section */}
+                        <div className="mb-3 sm:mb-4 flex justify-center">
+                          <div className="flex space-x-1">
+                            {renderStars(group[3]?.stars || 0)}
+                          </div>
+                        </div>
+
+                        <h3 className="font-poppins text-white mb-3 sm:mb-4" style={{ fontSize: 'clamp(16px, 3vw, 35px)', fontWeight: '400', lineHeight: '100%', letterSpacing: '0%' }}>
+                          {group[3]?.role}
+                        </h3>
+                        <p className="font-poppins text-white" style={{ fontSize: 'clamp(14px, 2.5vw, 30px)', fontWeight: '400', lineHeight: '120%', letterSpacing: '0%' }}>
+                          {group[3]?.quote}
                         </p>
                       </div>
                     </div>

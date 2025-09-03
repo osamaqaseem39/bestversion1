@@ -16,9 +16,7 @@ const PlayerOutcomesSection = () => {
       { title: "Advanced Tactics", image: "/card5.png" },
       { title: "Leadership Skills", image: "/card6.png" },
       { title: "Game Intelligence", image: "/card7.png" },
-      { title: "Professional Mindset", image: "/card8.png" },
-      { title: "Mental Strength", image: "/card8.png" },
-      { title: "Tactical Mastery", image: "/card9.png" }
+      { title: "Professional Mindset", image: "/card8.png" }
     ]
   ];
 
@@ -43,7 +41,7 @@ const PlayerOutcomesSection = () => {
               PLAYER OUTCOMES
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-              How BV1 Helps Serious Players Succeed
+            Players that Jordi Roura Helped Succeed
             </h2>
           </div>
 

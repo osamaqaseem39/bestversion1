@@ -46,7 +46,7 @@ export default function WhoThisIsForSection() {
             </h3>
           </div>
           <h2 className="font-poppins font-semibold text-[18px] sm:text-[22px] md:text-[28px] lg:text-[36px] xl:text-[45px] text-white leading-[132%] text-center mb-4 sm:mb-6 md:mb-8" style={{ fontWeight: 600, letterSpacing: '0%' }}>
-            Built For Players Who Want More
+          Built For Players Who Want To Achieve More
           </h2>
           
                 </div>
