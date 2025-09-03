@@ -65,7 +65,7 @@ const CallToActionSection = () => {
           {/* Text links in bottom right */}
           <div className="absolute bottom-4 sm:bottom-6 right-4 sm:right-6 space-y-2 text-right">
             <a 
-              href="/programs" 
+              href="/#programs" 
               className="block text-white font-semibold transition-all duration-300 hover:text-blue-200"
               style={{
                 fontFamily: 'Poppins',
