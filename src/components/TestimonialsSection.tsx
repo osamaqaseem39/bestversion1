@@ -23,7 +23,7 @@ const TestimonialsSection = () => {
       stars: 5
     },
     {
-      role: "John Thompson, Mother of Academy Player, London",
+      role: "John Thompson, Father of Academy Player, London",
       quote: "As a parent, you're always looking for programs that actually deliver results, not just empty promises. Within 3 months of my son starting BV1, his club coach pulled me aside to ask what had changed - his game awareness and decision-making had improved dramatically. When I told him about Jordi's program, he said 'That explains everything - your son is now playing with La Masia intelligence.' Worth every penny.",
       image: "/parent.png",
       stars: 5
